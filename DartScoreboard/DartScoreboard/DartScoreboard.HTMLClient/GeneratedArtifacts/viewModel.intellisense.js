@@ -4,6 +4,138 @@
 
     var $element = document.createElement("div");
 
+    lightSwitchApplication.AddEditGame.prototype._$contentItems = {
+        Tabs: {
+            _$class: msls.ContentItem,
+            _$name: "Tabs",
+            _$parentName: "RootContentItem",
+            screen: lightSwitchApplication.AddEditGame
+        },
+        Details: {
+            _$class: msls.ContentItem,
+            _$name: "Details",
+            _$parentName: "Tabs",
+            screen: lightSwitchApplication.AddEditGame,
+            data: lightSwitchApplication.AddEditGame,
+            value: lightSwitchApplication.AddEditGame
+        },
+        columns: {
+            _$class: msls.ContentItem,
+            _$name: "columns",
+            _$parentName: "Details",
+            screen: lightSwitchApplication.AddEditGame,
+            data: lightSwitchApplication.AddEditGame,
+            value: lightSwitchApplication.GameSetItem
+        },
+        left: {
+            _$class: msls.ContentItem,
+            _$name: "left",
+            _$parentName: "columns",
+            screen: lightSwitchApplication.AddEditGame,
+            data: lightSwitchApplication.GameSetItem,
+            value: lightSwitchApplication.GameSetItem
+        },
+        Player1User: {
+            _$class: msls.ContentItem,
+            _$name: "Player1User",
+            _$parentName: "left",
+            screen: lightSwitchApplication.AddEditGame,
+            data: lightSwitchApplication.GameSetItem,
+            value: lightSwitchApplication.UserSetItem
+        },
+        RowTemplate: {
+            _$class: msls.ContentItem,
+            _$name: "RowTemplate",
+            _$parentName: "Player1User",
+            screen: lightSwitchApplication.AddEditGame,
+            data: lightSwitchApplication.UserSetItem,
+            value: lightSwitchApplication.UserSetItem
+        },
+        Player2User: {
+            _$class: msls.ContentItem,
+            _$name: "Player2User",
+            _$parentName: "left",
+            screen: lightSwitchApplication.AddEditGame,
+            data: lightSwitchApplication.GameSetItem,
+            value: lightSwitchApplication.UserSetItem
+        },
+        RowTemplate1: {
+            _$class: msls.ContentItem,
+            _$name: "RowTemplate1",
+            _$parentName: "Player2User",
+            screen: lightSwitchApplication.AddEditGame,
+            data: lightSwitchApplication.UserSetItem,
+            value: lightSwitchApplication.UserSetItem
+        },
+        StartScore: {
+            _$class: msls.ContentItem,
+            _$name: "StartScore",
+            _$parentName: "left",
+            screen: lightSwitchApplication.AddEditGame,
+            data: lightSwitchApplication.GameSetItem,
+            value: Number
+        },
+        Popups: {
+            _$class: msls.ContentItem,
+            _$name: "Popups",
+            _$parentName: "RootContentItem",
+            screen: lightSwitchApplication.AddEditGame
+        }
+    };
+
+    msls._addEntryPoints(lightSwitchApplication.AddEditGame, {
+        /// <field>
+        /// Called when a new AddEditGame screen is created.
+        /// <br/>created(msls.application.AddEditGame screen)
+        /// </field>
+        created: [lightSwitchApplication.AddEditGame],
+        /// <field>
+        /// Called before changes on an active AddEditGame screen are applied.
+        /// <br/>beforeApplyChanges(msls.application.AddEditGame screen)
+        /// </field>
+        beforeApplyChanges: [lightSwitchApplication.AddEditGame],
+        /// <field>
+        /// Called after the Details content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        Details_postRender: [$element, function () { return new lightSwitchApplication.AddEditGame().findContentItem("Details"); }],
+        /// <field>
+        /// Called after the columns content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        columns_postRender: [$element, function () { return new lightSwitchApplication.AddEditGame().findContentItem("columns"); }],
+        /// <field>
+        /// Called after the left content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        left_postRender: [$element, function () { return new lightSwitchApplication.AddEditGame().findContentItem("left"); }],
+        /// <field>
+        /// Called after the Player1User content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        Player1User_postRender: [$element, function () { return new lightSwitchApplication.AddEditGame().findContentItem("Player1User"); }],
+        /// <field>
+        /// Called after the RowTemplate content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        RowTemplate_postRender: [$element, function () { return new lightSwitchApplication.AddEditGame().findContentItem("RowTemplate"); }],
+        /// <field>
+        /// Called after the Player2User content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        Player2User_postRender: [$element, function () { return new lightSwitchApplication.AddEditGame().findContentItem("Player2User"); }],
+        /// <field>
+        /// Called after the RowTemplate1 content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        RowTemplate1_postRender: [$element, function () { return new lightSwitchApplication.AddEditGame().findContentItem("RowTemplate1"); }],
+        /// <field>
+        /// Called after the StartScore content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        StartScore_postRender: [$element, function () { return new lightSwitchApplication.AddEditGame().findContentItem("StartScore"); }]
+    });
+
     lightSwitchApplication.AddEditUser.prototype._$contentItems = {
         Tabs: {
             _$class: msls.ContentItem,
@@ -285,138 +417,6 @@
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         P2ActualScore_postRender: [$element, function () { return new lightSwitchApplication.BrowseGameSet().findContentItem("P2ActualScore"); }]
-    });
-
-    lightSwitchApplication.AddEditGame.prototype._$contentItems = {
-        Tabs: {
-            _$class: msls.ContentItem,
-            _$name: "Tabs",
-            _$parentName: "RootContentItem",
-            screen: lightSwitchApplication.AddEditGame
-        },
-        Details: {
-            _$class: msls.ContentItem,
-            _$name: "Details",
-            _$parentName: "Tabs",
-            screen: lightSwitchApplication.AddEditGame,
-            data: lightSwitchApplication.AddEditGame,
-            value: lightSwitchApplication.AddEditGame
-        },
-        columns: {
-            _$class: msls.ContentItem,
-            _$name: "columns",
-            _$parentName: "Details",
-            screen: lightSwitchApplication.AddEditGame,
-            data: lightSwitchApplication.AddEditGame,
-            value: lightSwitchApplication.GameSetItem
-        },
-        left: {
-            _$class: msls.ContentItem,
-            _$name: "left",
-            _$parentName: "columns",
-            screen: lightSwitchApplication.AddEditGame,
-            data: lightSwitchApplication.GameSetItem,
-            value: lightSwitchApplication.GameSetItem
-        },
-        Player1User: {
-            _$class: msls.ContentItem,
-            _$name: "Player1User",
-            _$parentName: "left",
-            screen: lightSwitchApplication.AddEditGame,
-            data: lightSwitchApplication.GameSetItem,
-            value: lightSwitchApplication.UserSetItem
-        },
-        RowTemplate: {
-            _$class: msls.ContentItem,
-            _$name: "RowTemplate",
-            _$parentName: "Player1User",
-            screen: lightSwitchApplication.AddEditGame,
-            data: lightSwitchApplication.UserSetItem,
-            value: lightSwitchApplication.UserSetItem
-        },
-        Player2User: {
-            _$class: msls.ContentItem,
-            _$name: "Player2User",
-            _$parentName: "left",
-            screen: lightSwitchApplication.AddEditGame,
-            data: lightSwitchApplication.GameSetItem,
-            value: lightSwitchApplication.UserSetItem
-        },
-        RowTemplate1: {
-            _$class: msls.ContentItem,
-            _$name: "RowTemplate1",
-            _$parentName: "Player2User",
-            screen: lightSwitchApplication.AddEditGame,
-            data: lightSwitchApplication.UserSetItem,
-            value: lightSwitchApplication.UserSetItem
-        },
-        StartScore: {
-            _$class: msls.ContentItem,
-            _$name: "StartScore",
-            _$parentName: "left",
-            screen: lightSwitchApplication.AddEditGame,
-            data: lightSwitchApplication.GameSetItem,
-            value: Number
-        },
-        Popups: {
-            _$class: msls.ContentItem,
-            _$name: "Popups",
-            _$parentName: "RootContentItem",
-            screen: lightSwitchApplication.AddEditGame
-        }
-    };
-
-    msls._addEntryPoints(lightSwitchApplication.AddEditGame, {
-        /// <field>
-        /// Called when a new AddEditGame screen is created.
-        /// <br/>created(msls.application.AddEditGame screen)
-        /// </field>
-        created: [lightSwitchApplication.AddEditGame],
-        /// <field>
-        /// Called before changes on an active AddEditGame screen are applied.
-        /// <br/>beforeApplyChanges(msls.application.AddEditGame screen)
-        /// </field>
-        beforeApplyChanges: [lightSwitchApplication.AddEditGame],
-        /// <field>
-        /// Called after the Details content item has been rendered.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        Details_postRender: [$element, function () { return new lightSwitchApplication.AddEditGame().findContentItem("Details"); }],
-        /// <field>
-        /// Called after the columns content item has been rendered.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        columns_postRender: [$element, function () { return new lightSwitchApplication.AddEditGame().findContentItem("columns"); }],
-        /// <field>
-        /// Called after the left content item has been rendered.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        left_postRender: [$element, function () { return new lightSwitchApplication.AddEditGame().findContentItem("left"); }],
-        /// <field>
-        /// Called after the Player1User content item has been rendered.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        Player1User_postRender: [$element, function () { return new lightSwitchApplication.AddEditGame().findContentItem("Player1User"); }],
-        /// <field>
-        /// Called after the RowTemplate content item has been rendered.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        RowTemplate_postRender: [$element, function () { return new lightSwitchApplication.AddEditGame().findContentItem("RowTemplate"); }],
-        /// <field>
-        /// Called after the Player2User content item has been rendered.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        Player2User_postRender: [$element, function () { return new lightSwitchApplication.AddEditGame().findContentItem("Player2User"); }],
-        /// <field>
-        /// Called after the RowTemplate1 content item has been rendered.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        RowTemplate1_postRender: [$element, function () { return new lightSwitchApplication.AddEditGame().findContentItem("RowTemplate1"); }],
-        /// <field>
-        /// Called after the StartScore content item has been rendered.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        StartScore_postRender: [$element, function () { return new lightSwitchApplication.AddEditGame().findContentItem("StartScore"); }]
     });
 
     lightSwitchApplication.BrowseUserSet.prototype._$contentItems = {

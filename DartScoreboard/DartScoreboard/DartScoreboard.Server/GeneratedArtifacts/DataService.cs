@@ -60,42 +60,6 @@ namespace LightSwitchApplication
         #region Server Interceptions Points
     
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        partial void UserSet_CanInsert(ref bool result);
-    
-        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        partial void UserSet_CanUpdate(ref bool result);
-    
-        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        partial void UserSet_CanDelete(ref bool result);
-    
-        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        partial void UserSet_CanRead(ref bool result);
-    
-        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        partial void UserSet_Inserting(global::LightSwitchApplication.UserSetItem entity);
-    
-        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        partial void UserSet_Inserted(global::LightSwitchApplication.UserSetItem entity);
-    
-        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        partial void UserSet_Updating(global::LightSwitchApplication.UserSetItem entity);
-    
-        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        partial void UserSet_Updated(global::LightSwitchApplication.UserSetItem entity);
-    
-        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        partial void UserSet_Deleting(global::LightSwitchApplication.UserSetItem entity);
-    
-        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        partial void UserSet_Deleted(global::LightSwitchApplication.UserSetItem entity);
-    
-        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        partial void UserSet_Validate(global::LightSwitchApplication.UserSetItem entity, global::Microsoft.LightSwitch.EntitySetValidationResultsBuilder results);
-    
-        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        partial void UserSet_Filter(ref global::System.Linq.Expressions.Expression<global::System.Func<global::LightSwitchApplication.UserSetItem, bool>> filter);
-    
-        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
         partial void GameSet_CanInsert(ref bool result);
     
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -168,6 +132,42 @@ namespace LightSwitchApplication
         partial void HitSet_Filter(ref global::System.Linq.Expressions.Expression<global::System.Func<global::LightSwitchApplication.HitSetItem, bool>> filter);
     
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void UserSet_CanInsert(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void UserSet_CanUpdate(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void UserSet_CanDelete(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void UserSet_CanRead(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void UserSet_Inserting(global::LightSwitchApplication.UserSetItem entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void UserSet_Inserted(global::LightSwitchApplication.UserSetItem entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void UserSet_Updating(global::LightSwitchApplication.UserSetItem entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void UserSet_Updated(global::LightSwitchApplication.UserSetItem entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void UserSet_Deleting(global::LightSwitchApplication.UserSetItem entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void UserSet_Deleted(global::LightSwitchApplication.UserSetItem entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void UserSet_Validate(global::LightSwitchApplication.UserSetItem entity, global::Microsoft.LightSwitch.EntitySetValidationResultsBuilder results);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void UserSet_Filter(ref global::System.Linq.Expressions.Expression<global::System.Func<global::LightSwitchApplication.UserSetItem, bool>> filter);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
         partial void SaveChanges_CanExecute(ref bool result);
     
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -204,82 +204,6 @@ namespace LightSwitchApplication
             [global::System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Performance", "CA1810:InitializeReferenceTypeStaticFieldsInline")]
             static DetailsClass()
             {
-            }
-            
-            [global::System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-            private static readonly global::Microsoft.LightSwitch.Details.Framework.Server.EntitySetEntry<global::LightSwitchApplication.ApplicationDataService, global::LightSwitchApplication.UserSetItem>
-                __UserSetEntry = new global::Microsoft.LightSwitch.Details.Framework.Server.EntitySetEntry<global::LightSwitchApplication.ApplicationDataService, global::LightSwitchApplication.UserSetItem>(
-                    "UserSet",
-                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__UserSet_CanInsert,
-                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__UserSet_CanUpdate,
-                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__UserSet_CanDelete,
-                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__UserSet_CanRead,
-                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__UserSet_Inserting,
-                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__UserSet_Inserted,
-                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__UserSet_Updating,
-                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__UserSet_Updated,
-                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__UserSet_Deleting,
-                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__UserSet_Deleted,
-                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__UserSet_Validate,
-                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__UserSet_Filter);
-            private static bool __UserSet_CanInsert(global::LightSwitchApplication.ApplicationDataService d)
-            {
-                bool result = true;
-                d.UserSet_CanInsert(ref result);
-                return result;
-            }
-            private static bool __UserSet_CanUpdate(global::LightSwitchApplication.ApplicationDataService d)
-            {
-                bool result = true;
-                d.UserSet_CanUpdate(ref result);
-                return result;
-            }
-            private static bool __UserSet_CanDelete(global::LightSwitchApplication.ApplicationDataService d)
-            {
-                bool result = true;
-                d.UserSet_CanDelete(ref result);
-                return result;
-            }
-            private static bool __UserSet_CanRead(global::LightSwitchApplication.ApplicationDataService d)
-            {
-                bool result = true;
-                d.UserSet_CanRead(ref result);
-                return result;
-            }
-            private static void __UserSet_Inserting(global::LightSwitchApplication.ApplicationDataService d, global::LightSwitchApplication.UserSetItem e)
-            {
-                d.UserSet_Inserting(e);
-            }
-            private static void __UserSet_Inserted(global::LightSwitchApplication.ApplicationDataService d, global::LightSwitchApplication.UserSetItem e)
-            {
-                d.UserSet_Inserted(e);
-            }
-            private static void __UserSet_Updating(global::LightSwitchApplication.ApplicationDataService d, global::LightSwitchApplication.UserSetItem e)
-            {
-                d.UserSet_Updating(e);
-            }
-            private static void __UserSet_Updated(global::LightSwitchApplication.ApplicationDataService d, global::LightSwitchApplication.UserSetItem e)
-            {
-                d.UserSet_Updated(e);
-            }
-            private static void __UserSet_Deleting(global::LightSwitchApplication.ApplicationDataService d, global::LightSwitchApplication.UserSetItem e)
-            {
-                d.UserSet_Deleting(e);
-            }
-            private static void __UserSet_Deleted(global::LightSwitchApplication.ApplicationDataService d, global::LightSwitchApplication.UserSetItem e)
-            {
-                d.UserSet_Deleted(e);
-            }
-            private static void __UserSet_Validate(global::LightSwitchApplication.ApplicationDataService d, global::LightSwitchApplication.UserSetItem e, global::Microsoft.LightSwitch.EntitySetValidationResultsBuilder r)
-            {
-                d.UserSet_Validate(e, r);
-            }
-            private static global::System.Linq.Expressions.Expression<global::System.Func<global::LightSwitchApplication.UserSetItem, bool>> __UserSet_Filter(global::LightSwitchApplication.ApplicationDataService d)
-            {
-                global::System.Linq.Expressions.Expression<global::System.Func<global::LightSwitchApplication.UserSetItem, bool>> filter = null;
-                d.UserSet_Filter(ref filter);
-                return filter;
             }
             
             [global::System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
@@ -431,6 +355,82 @@ namespace LightSwitchApplication
             {
                 global::System.Linq.Expressions.Expression<global::System.Func<global::LightSwitchApplication.HitSetItem, bool>> filter = null;
                 d.HitSet_Filter(ref filter);
+                return filter;
+            }
+            
+            [global::System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private static readonly global::Microsoft.LightSwitch.Details.Framework.Server.EntitySetEntry<global::LightSwitchApplication.ApplicationDataService, global::LightSwitchApplication.UserSetItem>
+                __UserSetEntry = new global::Microsoft.LightSwitch.Details.Framework.Server.EntitySetEntry<global::LightSwitchApplication.ApplicationDataService, global::LightSwitchApplication.UserSetItem>(
+                    "UserSet",
+                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__UserSet_CanInsert,
+                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__UserSet_CanUpdate,
+                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__UserSet_CanDelete,
+                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__UserSet_CanRead,
+                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__UserSet_Inserting,
+                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__UserSet_Inserted,
+                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__UserSet_Updating,
+                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__UserSet_Updated,
+                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__UserSet_Deleting,
+                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__UserSet_Deleted,
+                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__UserSet_Validate,
+                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__UserSet_Filter);
+            private static bool __UserSet_CanInsert(global::LightSwitchApplication.ApplicationDataService d)
+            {
+                bool result = true;
+                d.UserSet_CanInsert(ref result);
+                return result;
+            }
+            private static bool __UserSet_CanUpdate(global::LightSwitchApplication.ApplicationDataService d)
+            {
+                bool result = true;
+                d.UserSet_CanUpdate(ref result);
+                return result;
+            }
+            private static bool __UserSet_CanDelete(global::LightSwitchApplication.ApplicationDataService d)
+            {
+                bool result = true;
+                d.UserSet_CanDelete(ref result);
+                return result;
+            }
+            private static bool __UserSet_CanRead(global::LightSwitchApplication.ApplicationDataService d)
+            {
+                bool result = true;
+                d.UserSet_CanRead(ref result);
+                return result;
+            }
+            private static void __UserSet_Inserting(global::LightSwitchApplication.ApplicationDataService d, global::LightSwitchApplication.UserSetItem e)
+            {
+                d.UserSet_Inserting(e);
+            }
+            private static void __UserSet_Inserted(global::LightSwitchApplication.ApplicationDataService d, global::LightSwitchApplication.UserSetItem e)
+            {
+                d.UserSet_Inserted(e);
+            }
+            private static void __UserSet_Updating(global::LightSwitchApplication.ApplicationDataService d, global::LightSwitchApplication.UserSetItem e)
+            {
+                d.UserSet_Updating(e);
+            }
+            private static void __UserSet_Updated(global::LightSwitchApplication.ApplicationDataService d, global::LightSwitchApplication.UserSetItem e)
+            {
+                d.UserSet_Updated(e);
+            }
+            private static void __UserSet_Deleting(global::LightSwitchApplication.ApplicationDataService d, global::LightSwitchApplication.UserSetItem e)
+            {
+                d.UserSet_Deleting(e);
+            }
+            private static void __UserSet_Deleted(global::LightSwitchApplication.ApplicationDataService d, global::LightSwitchApplication.UserSetItem e)
+            {
+                d.UserSet_Deleted(e);
+            }
+            private static void __UserSet_Validate(global::LightSwitchApplication.ApplicationDataService d, global::LightSwitchApplication.UserSetItem e, global::Microsoft.LightSwitch.EntitySetValidationResultsBuilder r)
+            {
+                d.UserSet_Validate(e, r);
+            }
+            private static global::System.Linq.Expressions.Expression<global::System.Func<global::LightSwitchApplication.UserSetItem, bool>> __UserSet_Filter(global::LightSwitchApplication.ApplicationDataService d)
+            {
+                global::System.Linq.Expressions.Expression<global::System.Func<global::LightSwitchApplication.UserSetItem, bool>> filter = null;
+                d.UserSet_Filter(ref filter);
                 return filter;
             }
             

@@ -19,9 +19,9 @@ using System.Xml.Serialization;
 [assembly: EdmSchemaAttribute()]
 #region EDM Relationship Metadata
 
+[assembly: EdmRelationshipAttribute("LightSwitchApplication", "HitSetItem_GameSetItem", "GameSetItem", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(LightSwitchApplication.Implementation.GameSetItem), "HitSetItem", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(LightSwitchApplication.Implementation.HitSetItem), true)]
 [assembly: EdmRelationshipAttribute("LightSwitchApplication", "GameSetItem_UserSetItem", "UserSetItem", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(LightSwitchApplication.Implementation.UserSetItem), "GameSetItem", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(LightSwitchApplication.Implementation.GameSetItem), true)]
 [assembly: EdmRelationshipAttribute("LightSwitchApplication", "GameSetItem_UserSetItem1", "UserSetItem", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(LightSwitchApplication.Implementation.UserSetItem), "GameSetItem", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(LightSwitchApplication.Implementation.GameSetItem), true)]
-[assembly: EdmRelationshipAttribute("LightSwitchApplication", "HitSetItem_GameSetItem", "GameSetItem", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(LightSwitchApplication.Implementation.GameSetItem), "HitSetItem", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(LightSwitchApplication.Implementation.HitSetItem), true)]
 [assembly: EdmRelationshipAttribute("LightSwitchApplication", "HitSetItem_UserSetItem", "UserSetItem", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(LightSwitchApplication.Implementation.UserSetItem), "HitSetItem", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(LightSwitchApplication.Implementation.HitSetItem), true)]
 
 #endregion
@@ -74,22 +74,6 @@ namespace LightSwitchApplication.Implementation
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
-        public ObjectSet<UserSetItem> UserSet
-        {
-            get
-            {
-                if ((_UserSet == null))
-                {
-                    _UserSet = base.CreateObjectSet<UserSetItem>("UserSet");
-                }
-                return _UserSet;
-            }
-        }
-        private ObjectSet<UserSetItem> _UserSet;
-    
-        /// <summary>
-        /// No Metadata Documentation available.
-        /// </summary>
         public ObjectSet<GameSetItem> GameSet
         {
             get
@@ -118,18 +102,26 @@ namespace LightSwitchApplication.Implementation
             }
         }
         private ObjectSet<HitSetItem> _HitSet;
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        public ObjectSet<UserSetItem> UserSet
+        {
+            get
+            {
+                if ((_UserSet == null))
+                {
+                    _UserSet = base.CreateObjectSet<UserSetItem>("UserSet");
+                }
+                return _UserSet;
+            }
+        }
+        private ObjectSet<UserSetItem> _UserSet;
 
         #endregion
 
         #region AddTo Methods
-    
-        /// <summary>
-        /// Deprecated Method for adding a new object to the UserSet EntitySet. Consider using the .Add method of the associated ObjectSet&lt;T&gt; property instead.
-        /// </summary>
-        public void AddToUserSet(UserSetItem userSetItem)
-        {
-            base.AddObject("UserSet", userSetItem);
-        }
     
         /// <summary>
         /// Deprecated Method for adding a new object to the GameSet EntitySet. Consider using the .Add method of the associated ObjectSet&lt;T&gt; property instead.
@@ -145,6 +137,14 @@ namespace LightSwitchApplication.Implementation
         public void AddToHitSet(HitSetItem hitSetItem)
         {
             base.AddObject("HitSet", hitSetItem);
+        }
+    
+        /// <summary>
+        /// Deprecated Method for adding a new object to the UserSet EntitySet. Consider using the .Add method of the associated ObjectSet&lt;T&gt; property instead.
+        /// </summary>
+        public void AddToUserSet(UserSetItem userSetItem)
+        {
+            base.AddObject("UserSet", userSetItem);
         }
 
         #endregion

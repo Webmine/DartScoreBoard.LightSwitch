@@ -57,6 +57,12 @@
     <NoWarn>1522</NoWarn>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="DartScoreboard.Extensions.Common">
+      <HintPath>..\_Pvt_Extensions\DartScoreboard.Extensions\Server\Reference\DartScoreboard.Extensions.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="DartScoreboard.Extensions.Server">
+      <HintPath>..\_Pvt_Extensions\DartScoreboard.Extensions\Server\Reference\DartScoreboard.Extensions.Server.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.LightSwitch.Extensions.Server">
       <HintPath>..\_Pvt_Extensions\Microsoft.LightSwitch.Extensions\Server\Reference\Microsoft.LightSwitch.Extensions.Server.dll</HintPath>
     </Reference>
@@ -240,7 +246,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>0</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:36266/</IISUrl>
+          <IISUrl>http://localhost:38347/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

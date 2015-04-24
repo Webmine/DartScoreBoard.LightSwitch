@@ -26,7 +26,7 @@
               Name="UsersSet"
               Kind="Collection"
               DataType="CollectionView$UserSetItem"
-              View="Microsoft.LightSwitch.MobileWeb:List">
+              View="Microsoft.LightSwitch.MobileWeb:Table">
               <ContentItem.Attributes>
                 <DisplayName
                   Value="UsersSet" />

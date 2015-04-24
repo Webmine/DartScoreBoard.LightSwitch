@@ -1993,6 +1993,165 @@
       ]
     },
     {
+      "id": "Microsoft.LightSwitch.Extensions:!module",
+      "name": "Microsoft.LightSwitch.Extensions",
+      "globalItems":
+      [
+        {
+          "id": "Microsoft.LightSwitch.Extensions:EmailAddress*",
+          "name": "EmailAddress*",
+          "kind": "Enumerable",
+          "elementType": { "__id": "Microsoft.LightSwitch.Extensions:EmailAddress" }
+        },
+        {
+          "__isNullableType": 1,
+          "id": "Microsoft.LightSwitch.Extensions:EmailAddress?",
+          "name": "EmailAddress?",
+          "underlyingType": { "__id": "Microsoft.LightSwitch.Extensions:EmailAddress" }
+        },
+        {
+          "id": "Microsoft.LightSwitch.Extensions:EmailAddress?*",
+          "name": "EmailAddress?*",
+          "kind": "Enumerable",
+          "elementType": { "__id": "Microsoft.LightSwitch.Extensions:EmailAddress?" }
+        },
+        {
+          "id": "Microsoft.LightSwitch.Extensions:Image*",
+          "name": "Image*",
+          "kind": "Enumerable",
+          "elementType": { "__id": "Microsoft.LightSwitch.Extensions:Image" }
+        },
+        {
+          "__isNullableType": 1,
+          "id": "Microsoft.LightSwitch.Extensions:Image?",
+          "name": "Image?",
+          "underlyingType": { "__id": "Microsoft.LightSwitch.Extensions:Image" }
+        },
+        {
+          "id": "Microsoft.LightSwitch.Extensions:Image?*",
+          "name": "Image?*",
+          "kind": "Enumerable",
+          "elementType": { "__id": "Microsoft.LightSwitch.Extensions:Image?" }
+        },
+        {
+          "id": "Microsoft.LightSwitch.Extensions:Money*",
+          "name": "Money*",
+          "kind": "Enumerable",
+          "elementType": { "__id": "Microsoft.LightSwitch.Extensions:Money" }
+        },
+        {
+          "__isNullableType": 1,
+          "id": "Microsoft.LightSwitch.Extensions:Money?",
+          "name": "Money?",
+          "underlyingType": { "__id": "Microsoft.LightSwitch.Extensions:Money" }
+        },
+        {
+          "id": "Microsoft.LightSwitch.Extensions:Money?*",
+          "name": "Money?*",
+          "kind": "Enumerable",
+          "elementType": { "__id": "Microsoft.LightSwitch.Extensions:Money?" }
+        },
+        {
+          "id": "Microsoft.LightSwitch.Extensions:PhoneNumber*",
+          "name": "PhoneNumber*",
+          "kind": "Enumerable",
+          "elementType": { "__id": "Microsoft.LightSwitch.Extensions:PhoneNumber" }
+        },
+        {
+          "__isNullableType": 1,
+          "id": "Microsoft.LightSwitch.Extensions:PhoneNumber?",
+          "name": "PhoneNumber?",
+          "underlyingType": { "__id": "Microsoft.LightSwitch.Extensions:PhoneNumber" }
+        },
+        {
+          "id": "Microsoft.LightSwitch.Extensions:PhoneNumber?*",
+          "name": "PhoneNumber?*",
+          "kind": "Enumerable",
+          "elementType": { "__id": "Microsoft.LightSwitch.Extensions:PhoneNumber?" }
+        },
+        {
+          "id": "Microsoft.LightSwitch.Extensions:Percent*",
+          "name": "Percent*",
+          "kind": "Enumerable",
+          "elementType": { "__id": "Microsoft.LightSwitch.Extensions:Percent" }
+        },
+        {
+          "__isNullableType": 1,
+          "id": "Microsoft.LightSwitch.Extensions:Percent?",
+          "name": "Percent?",
+          "underlyingType": { "__id": "Microsoft.LightSwitch.Extensions:Percent" }
+        },
+        {
+          "id": "Microsoft.LightSwitch.Extensions:Percent?*",
+          "name": "Percent?*",
+          "kind": "Enumerable",
+          "elementType": { "__id": "Microsoft.LightSwitch.Extensions:Percent?" }
+        },
+        {
+          "id": "Microsoft.LightSwitch.Extensions:WebAddress*",
+          "name": "WebAddress*",
+          "kind": "Enumerable",
+          "elementType": { "__id": "Microsoft.LightSwitch.Extensions:WebAddress" }
+        },
+        {
+          "__isNullableType": 1,
+          "id": "Microsoft.LightSwitch.Extensions:WebAddress?",
+          "name": "WebAddress?",
+          "underlyingType": { "__id": "Microsoft.LightSwitch.Extensions:WebAddress" }
+        },
+        {
+          "id": "Microsoft.LightSwitch.Extensions:WebAddress?*",
+          "name": "WebAddress?*",
+          "kind": "Enumerable",
+          "elementType": { "__id": "Microsoft.LightSwitch.Extensions:WebAddress?" }
+        },
+        {
+          "__isSemanticType": 1,
+          "id": "Microsoft.LightSwitch.Extensions:EmailAddress",
+          "name": "EmailAddress",
+          "underlyingType": { "__id": ":String" },
+          "Microsoft.LightSwitch.Extensions:@EmailAddressValidation": { "domainRequired": true }
+        },
+        {
+          "__isSemanticType": 1,
+          "id": "Microsoft.LightSwitch.Extensions:Image",
+          "name": "Image",
+          "underlyingType": { "__id": ":Binary" }
+        },
+        {
+          "__isSemanticType": 1,
+          "id": "Microsoft.LightSwitch.Extensions:Money",
+          "name": "Money",
+          "underlyingType": { "__id": ":Decimal" }
+        },
+        {
+          "__isSemanticType": 1,
+          "id": "Microsoft.LightSwitch.Extensions:PhoneNumber",
+          "name": "PhoneNumber",
+          "underlyingType": { "__id": ":String" },
+          "Microsoft.LightSwitch.Extensions:@PhoneNumberValidation": { "formats": "C (AAA) NNN-NNNN;C (AAA) NNNNNNN;CAAANNNNNNN;(AAA) NNN-NNNN;(AAA) NNNNNNN;AAANNNNNNN;NNN-NNNN;NNNNNNN" }
+        },
+        {
+          "__isSemanticType": 1,
+          "id": "Microsoft.LightSwitch.Extensions:Percent",
+          "name": "Percent",
+          "underlyingType": { "__id": ":Decimal" },
+          "Microsoft.LightSwitch.Extensions:@FormatParameter": { "decimalDigits": 2 },
+          ":@DecimalConstraint":
+          {
+            "scale": 9
+          }
+        },
+        {
+          "__isSemanticType": 1,
+          "id": "Microsoft.LightSwitch.Extensions:WebAddress",
+          "name": "WebAddress",
+          "underlyingType": { "__id": ":String" },
+          "Microsoft.LightSwitch.Extensions:@WebAddressValidation": { }
+        }
+      ]
+    },
+    {
       "homeScreen": { "__id": "BrowseUserSet" },
       "id": "!module",
       "name": "LightSwitchApplication.DartScoreboard.HTMLClient",
@@ -2021,6 +2180,12 @@
         {
           "id": "LightSwitchServiceApplicationGroup",
           "name": "LightSwitchServiceApplicationGroup"
+        },
+        {
+          "id": "HitSetItem*",
+          "name": "HitSetItem*",
+          "kind": "Enumerable",
+          "elementType": { "__id": "HitSetItem" }
         },
         {
           "id": "CollectionView$HitSetItem",
@@ -2075,10 +2240,10 @@
           ]
         },
         {
-          "id": "HitSetItem*",
-          "name": "HitSetItem*",
+          "id": "GameSetItem*",
+          "name": "GameSetItem*",
           "kind": "Enumerable",
-          "elementType": { "__id": "HitSetItem" }
+          "elementType": { "__id": "GameSetItem" }
         },
         {
           "id": "CollectionView$GameSetItem",
@@ -2100,7 +2265,7 @@
             {
               "id": "CollectionView$GameSetItem/Methods[showSearch]",
               "name": "showSearch",
-              "returnType": { "__id": "HitSetItem" }
+              "returnType": { "__id": "GameSetItem" }
             },
             {
               "id": "CollectionView$GameSetItem/Methods[editSelected]",
@@ -2133,10 +2298,10 @@
           ]
         },
         {
-          "id": "GameSetItem*",
-          "name": "GameSetItem*",
+          "id": "UserSetItem*",
+          "name": "UserSetItem*",
           "kind": "Enumerable",
-          "elementType": { "__id": "GameSetItem" }
+          "elementType": { "__id": "UserSetItem" }
         },
         {
           "id": "CollectionView$UserSetItem",
@@ -2158,7 +2323,7 @@
             {
               "id": "CollectionView$UserSetItem/Methods[showSearch]",
               "name": "showSearch",
-              "returnType": { "__id": "HitSetItem" }
+              "returnType": { "__id": "UserSetItem" }
             },
             {
               "id": "CollectionView$UserSetItem/Methods[editSelected]",
@@ -2191,18 +2356,33 @@
           ]
         },
         {
-          "id": "UserSetItem*",
-          "name": "UserSetItem*",
-          "kind": "Enumerable",
-          "elementType": { "__id": "UserSetItem" }
-        },
-        {
           "id": "ApplicationData",
           "name": "ApplicationData",
           "dataProvider": "EntityFrameworkDataProvider",
           "isIntrinsic": true,
+          ":@Partial": { "isPrimary": true },
           "associationSets":
           [
+            {
+              "id": "ApplicationData/Members[HitSetItem_GameSetItems]",
+              "name": "HitSetItem_GameSetItems",
+              "association": { "__id": "HitSetItem_GameSetItem" },
+              "ends":
+              [
+                {
+                  "properties": [ "Hits_Games" ],
+                  "id": "ApplicationData/Members[HitSetItem_GameSetItems]/Members[HitSetItem]",
+                  "name": "HitSetItem",
+                  "entitySet": { "__id": "ApplicationData/Members[HitSet]" }
+                },
+                {
+                  "properties": [ "Id" ],
+                  "id": "ApplicationData/Members[HitSetItem_GameSetItems]/Members[GameSetItem]",
+                  "name": "GameSetItem",
+                  "entitySet": { "__id": "ApplicationData/Members[GameSet]" }
+                }
+              ]
+            },
             {
               "id": "ApplicationData/Members[GameSetItem_UserSetItems]",
               "name": "GameSetItem_UserSetItems",
@@ -2244,26 +2424,6 @@
               ]
             },
             {
-              "id": "ApplicationData/Members[HitSetItem_GameSetItems]",
-              "name": "HitSetItem_GameSetItems",
-              "association": { "__id": "HitSetItem_GameSetItem" },
-              "ends":
-              [
-                {
-                  "properties": [ "Hits_Games" ],
-                  "id": "ApplicationData/Members[HitSetItem_GameSetItems]/Members[HitSetItem]",
-                  "name": "HitSetItem",
-                  "entitySet": { "__id": "ApplicationData/Members[HitSet]" }
-                },
-                {
-                  "properties": [ "Id" ],
-                  "id": "ApplicationData/Members[HitSetItem_GameSetItems]/Members[GameSetItem]",
-                  "name": "GameSetItem",
-                  "entitySet": { "__id": "ApplicationData/Members[GameSet]" }
-                }
-              ]
-            },
-            {
               "id": "ApplicationData/Members[HitSetItem_UserSetItems]",
               "name": "HitSetItem_UserSetItems",
               "association": { "__id": "HitSetItem_UserSetItem" },
@@ -2287,15 +2447,6 @@
           "entitySets":
           [
             {
-              "id": "ApplicationData/Members[UserSet]",
-              "name": "UserSet",
-              "canDelete": true,
-              "canInsert": true,
-              "canUpdate": true,
-              "elementType": { "__id": "UserSetItem" },
-              "entityType": { "__id": "UserSetItem" }
-            },
-            {
               "id": "ApplicationData/Members[GameSet]",
               "name": "GameSet",
               "canDelete": true,
@@ -2312,48 +2463,19 @@
               "canUpdate": true,
               "elementType": { "__id": "HitSetItem" },
               "entityType": { "__id": "HitSetItem" }
+            },
+            {
+              "id": "ApplicationData/Members[UserSet]",
+              "name": "UserSet",
+              "canDelete": true,
+              "canInsert": true,
+              "canUpdate": true,
+              "elementType": { "__id": "UserSetItem" },
+              "entityType": { "__id": "UserSetItem" }
             }
           ],
           "queryOperations":
           [
-            {
-              "id": "ApplicationData/Members[UserSet_Single]",
-              "name": "UserSet_Single",
-              "elementType": { "__id": "UserSetItem" },
-              "query": { "__id": "ApplicationData/Members[UserSet_Single]" },
-              "returnType": { "__id": "UserSetItem" },
-              "source":
-              {
-                "member": { "__id": "ApplicationData/Members[UserSet]" }
-              },
-              "parameters":
-              [
-                {
-                  "id": "ApplicationData/Members[UserSet_Single]/Parameters[Id]",
-                  "name": "Id",
-                  "parameterType": { "__id": ":Int32?" }
-                }
-              ]
-            },
-            {
-              "id": "ApplicationData/Members[UserSet_SingleOrDefault]",
-              "name": "UserSet_SingleOrDefault",
-              "elementType": { "__id": "UserSetItem" },
-              "query": { "__id": "ApplicationData/Members[UserSet_SingleOrDefault]" },
-              "returnType": { "__id": "UserSetItem" },
-              "source":
-              {
-                "member": { "__id": "ApplicationData/Members[UserSet]" }
-              },
-              "parameters":
-              [
-                {
-                  "id": "ApplicationData/Members[UserSet_SingleOrDefault]/Parameters[Id]",
-                  "name": "Id",
-                  "parameterType": { "__id": ":Int32?" }
-                }
-              ]
-            },
             {
               "id": "ApplicationData/Members[GameSet_Single]",
               "name": "GameSet_Single",
@@ -2429,6 +2551,44 @@
                   "parameterType": { "__id": ":Int32?" }
                 }
               ]
+            },
+            {
+              "id": "ApplicationData/Members[UserSet_Single]",
+              "name": "UserSet_Single",
+              "elementType": { "__id": "UserSetItem" },
+              "query": { "__id": "ApplicationData/Members[UserSet_Single]" },
+              "returnType": { "__id": "UserSetItem" },
+              "source":
+              {
+                "member": { "__id": "ApplicationData/Members[UserSet]" }
+              },
+              "parameters":
+              [
+                {
+                  "id": "ApplicationData/Members[UserSet_Single]/Parameters[Id]",
+                  "name": "Id",
+                  "parameterType": { "__id": ":Int32?" }
+                }
+              ]
+            },
+            {
+              "id": "ApplicationData/Members[UserSet_SingleOrDefault]",
+              "name": "UserSet_SingleOrDefault",
+              "elementType": { "__id": "UserSetItem" },
+              "query": { "__id": "ApplicationData/Members[UserSet_SingleOrDefault]" },
+              "returnType": { "__id": "UserSetItem" },
+              "source":
+              {
+                "member": { "__id": "ApplicationData/Members[UserSet]" }
+              },
+              "parameters":
+              [
+                {
+                  "id": "ApplicationData/Members[UserSet_SingleOrDefault]/Parameters[Id]",
+                  "name": "Id",
+                  "parameterType": { "__id": ":Int32?" }
+                }
+              ]
             }
           ]
         },
@@ -2445,12 +2605,12 @@
               "name": "deleteEntity"
             },
             {
-              "id": "UserSetItem/Methods[view]",
-              "name": "view"
-            },
-            {
               "id": "UserSetItem/Methods[edit]",
               "name": "edit"
+            },
+            {
+              "id": "UserSetItem/Methods[view]",
+              "name": "view"
             }
           ],
           "properties":
@@ -2575,12 +2735,12 @@
               "name": "deleteEntity"
             },
             {
-              "id": "GameSetItem/Methods[view]",
-              "name": "view"
-            },
-            {
               "id": "GameSetItem/Methods[edit]",
               "name": "edit"
+            },
+            {
+              "id": "GameSetItem/Methods[view]",
+              "name": "view"
             }
           ],
           "properties":
@@ -2762,12 +2922,12 @@
               "name": "deleteEntity"
             },
             {
-              "id": "HitSetItem/Methods[view]",
-              "name": "view"
-            },
-            {
               "id": "HitSetItem/Methods[edit]",
               "name": "edit"
+            },
+            {
+              "id": "HitSetItem/Methods[view]",
+              "name": "view"
             }
           ],
           "properties":
@@ -2925,6 +3085,187 @@
               "multiplicity": "One",
               "entityType": { "__id": "UserSetItem" },
               ":@DeleteRule": { "action": "Restrict" }
+            }
+          ]
+        },
+        {
+          "displayName": "Add Edit Game",
+          "id": "AddEditGame",
+          "name": "AddEditGame",
+          "launchMode": "Single",
+          ":@SaveChangesTo":
+          {
+            "property": { "__id": "DataWorkspace/Members[ApplicationData]" }
+          },
+          "rootContentItem":
+          {
+            "displayName": "Root Content Item",
+            "name": "RootContentItem",
+            "kind": "Screen",
+            "view": { "__id": ":Screen" },
+            "childContentItems":
+            [
+              {
+                "displayName": "Tabs",
+                "name": "Tabs",
+                "kind": "Group",
+                "view": { "__id": ":TabPages" },
+                "childContentItems":
+                [
+                  {
+                    "displayName": "Details",
+                    "name": "Details",
+                    "kind": "Tab",
+                    "view": { "__id": ":RowsLayout" },
+                    "childContentItems":
+                    [
+                      {
+                        "displayName": "columns",
+                        "name": "columns",
+                        "kind": "Details",
+                        "view": { "__id": ":ColumnsLayout" },
+                        "dataSource":
+                        {
+                          "member": { "__id": "AddEditGame/Properties[Game]" }
+                        },
+                        "childContentItems":
+                        [
+                          {
+                            "displayName": "left",
+                            "name": "left",
+                            "kind": "Group",
+                            "view": { "__id": ":RowsLayout" },
+                            "childContentItems":
+                            [
+                              {
+                                "displayName": "Player1User",
+                                "name": "Player1User",
+                                "kind": "Details",
+                                "view": { "__id": ":DetailsModalPicker" },
+                                "dataSource":
+                                {
+                                  "member": { "__id": "GameSetItem/Properties[Player1User]" }
+                                },
+                                "childContentItems":
+                                [
+                                  {
+                                    "displayName": "User Set Item",
+                                    "name": "RowTemplate",
+                                    "kind": "Value",
+                                    "view": { "__id": ":Text" },
+                                    "dataSource":
+                                    {
+                                      "member": { "__id": "UserSetItem/Properties[Name]" }
+                                    }
+                                  }
+                                ]
+                              },
+                              {
+                                "displayName": "Player2User",
+                                "name": "Player2User",
+                                "kind": "Details",
+                                "view": { "__id": ":DetailsModalPicker" },
+                                "dataSource":
+                                {
+                                  "member": { "__id": "GameSetItem/Properties[Player2User]" }
+                                },
+                                "childContentItems":
+                                [
+                                  {
+                                    "displayName": "User Set Item",
+                                    "name": "RowTemplate1",
+                                    "kind": "Value",
+                                    "view": { "__id": ":Text" },
+                                    "dataSource":
+                                    {
+                                      "member": { "__id": "UserSetItem/Properties[Name]" }
+                                    }
+                                  }
+                                ]
+                              },
+                              {
+                                "displayName": "Start Score",
+                                "name": "StartScore",
+                                "kind": "Value",
+                                "view": { "__id": ":TextBox" },
+                                "dataSource":
+                                {
+                                  "member": { "__id": "GameSetItem/Properties[StartScore]" }
+                                }
+                              }
+                            ],
+                            "propertySources":
+                            [
+                              {
+                                "property": { "__id": ":RootControl/Properties[MinWidth]" },
+                                "value": 200
+                              },
+                              {
+                                "property": { "__id": ":RootControl/Properties[MaxWidth]" },
+                                "value": 400
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "displayName": "Popups",
+                "name": "Popups",
+                "kind": "Group",
+                "view": { "__id": ":DialogPages" }
+              }
+            ],
+            "propertySources":
+            [
+              {
+                "property": { "__id": ":Screen/Properties[ScreenType]" },
+                "value": "Edit"
+              },
+              {
+                "property": { "__id": ":Screen/Properties[ShowAsDialog]" },
+                "value": true
+              }
+            ]
+          },
+          "methods":
+          [
+            {
+              "id": "AddEditGame/Methods[showTab]",
+              "name": "showTab",
+              "parameters":
+              [
+                {
+                  "id": "AddEditGame/Methods[showTab]/Parameters[tabName]",
+                  "name": "tabName",
+                  "parameterType": { "__id": ":String" }
+                }
+              ]
+            },
+            {
+              "id": "AddEditGame/Methods[showDialog]",
+              "name": "showDialog",
+              "parameters":
+              [
+                {
+                  "id": "AddEditGame/Methods[showDialog]/Parameters[dialogName]",
+                  "name": "dialogName",
+                  "parameterType": { "__id": ":String" }
+                }
+              ]
+            }
+          ],
+          "properties":
+          [
+            {
+              "id": "AddEditGame/Properties[Game]",
+              "name": "Game",
+              "elementType": { "__id": "GameSetItem" },
+              "propertyType": { "__id": "GameSetItem" },
+              ":@IsParameter": { }
             }
           ]
         },
@@ -3413,187 +3754,6 @@
           ]
         },
         {
-          "displayName": "Add Edit Game",
-          "id": "AddEditGame",
-          "name": "AddEditGame",
-          "launchMode": "Single",
-          ":@SaveChangesTo":
-          {
-            "property": { "__id": "DataWorkspace/Members[ApplicationData]" }
-          },
-          "rootContentItem":
-          {
-            "displayName": "Root Content Item",
-            "name": "RootContentItem",
-            "kind": "Screen",
-            "view": { "__id": ":Screen" },
-            "childContentItems":
-            [
-              {
-                "displayName": "Tabs",
-                "name": "Tabs",
-                "kind": "Group",
-                "view": { "__id": ":TabPages" },
-                "childContentItems":
-                [
-                  {
-                    "displayName": "Details",
-                    "name": "Details",
-                    "kind": "Tab",
-                    "view": { "__id": ":RowsLayout" },
-                    "childContentItems":
-                    [
-                      {
-                        "displayName": "columns",
-                        "name": "columns",
-                        "kind": "Details",
-                        "view": { "__id": ":ColumnsLayout" },
-                        "dataSource":
-                        {
-                          "member": { "__id": "AddEditGame/Properties[Game]" }
-                        },
-                        "childContentItems":
-                        [
-                          {
-                            "displayName": "left",
-                            "name": "left",
-                            "kind": "Group",
-                            "view": { "__id": ":RowsLayout" },
-                            "childContentItems":
-                            [
-                              {
-                                "displayName": "Player1User",
-                                "name": "Player1User",
-                                "kind": "Details",
-                                "view": { "__id": ":DetailsModalPicker" },
-                                "dataSource":
-                                {
-                                  "member": { "__id": "GameSetItem/Properties[Player1User]" }
-                                },
-                                "childContentItems":
-                                [
-                                  {
-                                    "displayName": "User Set Item",
-                                    "name": "RowTemplate",
-                                    "kind": "Value",
-                                    "view": { "__id": ":Text" },
-                                    "dataSource":
-                                    {
-                                      "member": { "__id": "UserSetItem/Properties[Name]" }
-                                    }
-                                  }
-                                ]
-                              },
-                              {
-                                "displayName": "Player2User",
-                                "name": "Player2User",
-                                "kind": "Details",
-                                "view": { "__id": ":DetailsModalPicker" },
-                                "dataSource":
-                                {
-                                  "member": { "__id": "GameSetItem/Properties[Player2User]" }
-                                },
-                                "childContentItems":
-                                [
-                                  {
-                                    "displayName": "User Set Item",
-                                    "name": "RowTemplate1",
-                                    "kind": "Value",
-                                    "view": { "__id": ":Text" },
-                                    "dataSource":
-                                    {
-                                      "member": { "__id": "UserSetItem/Properties[Name]" }
-                                    }
-                                  }
-                                ]
-                              },
-                              {
-                                "displayName": "Start Score",
-                                "name": "StartScore",
-                                "kind": "Value",
-                                "view": { "__id": ":TextBox" },
-                                "dataSource":
-                                {
-                                  "member": { "__id": "GameSetItem/Properties[StartScore]" }
-                                }
-                              }
-                            ],
-                            "propertySources":
-                            [
-                              {
-                                "property": { "__id": ":RootControl/Properties[MinWidth]" },
-                                "value": 200
-                              },
-                              {
-                                "property": { "__id": ":RootControl/Properties[MaxWidth]" },
-                                "value": 400
-                              }
-                            ]
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "displayName": "Popups",
-                "name": "Popups",
-                "kind": "Group",
-                "view": { "__id": ":DialogPages" }
-              }
-            ],
-            "propertySources":
-            [
-              {
-                "property": { "__id": ":Screen/Properties[ScreenType]" },
-                "value": "Edit"
-              },
-              {
-                "property": { "__id": ":Screen/Properties[ShowAsDialog]" },
-                "value": true
-              }
-            ]
-          },
-          "methods":
-          [
-            {
-              "id": "AddEditGame/Methods[showTab]",
-              "name": "showTab",
-              "parameters":
-              [
-                {
-                  "id": "AddEditGame/Methods[showTab]/Parameters[tabName]",
-                  "name": "tabName",
-                  "parameterType": { "__id": ":String" }
-                }
-              ]
-            },
-            {
-              "id": "AddEditGame/Methods[showDialog]",
-              "name": "showDialog",
-              "parameters":
-              [
-                {
-                  "id": "AddEditGame/Methods[showDialog]/Parameters[dialogName]",
-                  "name": "dialogName",
-                  "parameterType": { "__id": ":String" }
-                }
-              ]
-            }
-          ],
-          "properties":
-          [
-            {
-              "id": "AddEditGame/Properties[Game]",
-              "name": "Game",
-              "elementType": { "__id": "GameSetItem" },
-              "propertyType": { "__id": "GameSetItem" },
-              ":@IsParameter": { }
-            }
-          ]
-        },
-        {
           "displayName": "Browse User Set",
           "id": "BrowseUserSet",
           "name": "BrowseUserSet",
@@ -3628,7 +3788,7 @@
                         "displayName": "UsersSet",
                         "name": "UsersSet",
                         "kind": "Collection",
-                        "view": { "__id": ":List" },
+                        "view": { "__id": ":Table" },
                         "dataSource":
                         {
                           "member": { "__id": "BrowseUserSet/Properties[UsersSet]" }
@@ -3639,7 +3799,7 @@
                             "displayName": "rows",
                             "name": "rows",
                             "kind": "Details",
-                            "view": { "__id": ":RowsLayout" },
+                            "view": { "__id": ":TableRowLayout" },
                             "dataSource":
                             {
                               "links":
@@ -3860,6 +4020,19 @@
       "methods":
       [
         {
+          "id": "!module/Methods[showAddEditGame]",
+          "name": "showAddEditGame",
+          ":@ShowScreenMethod": { "targetScreen": { "__id": "AddEditGame" } },
+          "parameters":
+          [
+            {
+              "id": "!module/Methods[showAddEditGame]/Parameters[Game]",
+              "name": "Game",
+              "parameterType": { "__id": "GameSetItem" }
+            }
+          ]
+        },
+        {
           "id": "!module/Methods[showAddEditUser]",
           "name": "showAddEditUser",
           ":@ShowScreenMethod": { "targetScreen": { "__id": "AddEditUser" } },
@@ -3878,19 +4051,6 @@
           ":@ShowScreenMethod": { "targetScreen": { "__id": "BrowseGameSet" } }
         },
         {
-          "id": "!module/Methods[showAddEditGame]",
-          "name": "showAddEditGame",
-          ":@ShowScreenMethod": { "targetScreen": { "__id": "AddEditGame" } },
-          "parameters":
-          [
-            {
-              "id": "!module/Methods[showAddEditGame]/Parameters[Game]",
-              "name": "Game",
-              "parameterType": { "__id": "GameSetItem" }
-            }
-          ]
-        },
-        {
           "id": "!module/Methods[showBrowseUserSet]",
           "name": "showBrowseUserSet",
           ":@ShowScreenMethod": { "targetScreen": { "__id": "BrowseUserSet" } }
@@ -3907,165 +4067,6 @@
           "id": "!module/NavigationItems[link1]",
           "name": "link1",
           "method": { "__id": "!module/Methods[showBrowseUserSet]" }
-        }
-      ]
-    },
-    {
-      "id": "Microsoft.LightSwitch.Extensions:!module",
-      "name": "Microsoft.LightSwitch.Extensions",
-      "globalItems":
-      [
-        {
-          "id": "Microsoft.LightSwitch.Extensions:WebAddress?*",
-          "name": "WebAddress?*",
-          "kind": "Enumerable",
-          "elementType": { "__id": "Microsoft.LightSwitch.Extensions:WebAddress?" }
-        },
-        {
-          "__isNullableType": 1,
-          "id": "Microsoft.LightSwitch.Extensions:WebAddress?",
-          "name": "WebAddress?",
-          "underlyingType": { "__id": "Microsoft.LightSwitch.Extensions:WebAddress" }
-        },
-        {
-          "id": "Microsoft.LightSwitch.Extensions:WebAddress*",
-          "name": "WebAddress*",
-          "kind": "Enumerable",
-          "elementType": { "__id": "Microsoft.LightSwitch.Extensions:WebAddress" }
-        },
-        {
-          "id": "Microsoft.LightSwitch.Extensions:Percent?*",
-          "name": "Percent?*",
-          "kind": "Enumerable",
-          "elementType": { "__id": "Microsoft.LightSwitch.Extensions:Percent?" }
-        },
-        {
-          "__isNullableType": 1,
-          "id": "Microsoft.LightSwitch.Extensions:Percent?",
-          "name": "Percent?",
-          "underlyingType": { "__id": "Microsoft.LightSwitch.Extensions:Percent" }
-        },
-        {
-          "id": "Microsoft.LightSwitch.Extensions:Percent*",
-          "name": "Percent*",
-          "kind": "Enumerable",
-          "elementType": { "__id": "Microsoft.LightSwitch.Extensions:Percent" }
-        },
-        {
-          "id": "Microsoft.LightSwitch.Extensions:PhoneNumber?*",
-          "name": "PhoneNumber?*",
-          "kind": "Enumerable",
-          "elementType": { "__id": "Microsoft.LightSwitch.Extensions:PhoneNumber?" }
-        },
-        {
-          "__isNullableType": 1,
-          "id": "Microsoft.LightSwitch.Extensions:PhoneNumber?",
-          "name": "PhoneNumber?",
-          "underlyingType": { "__id": "Microsoft.LightSwitch.Extensions:PhoneNumber" }
-        },
-        {
-          "id": "Microsoft.LightSwitch.Extensions:PhoneNumber*",
-          "name": "PhoneNumber*",
-          "kind": "Enumerable",
-          "elementType": { "__id": "Microsoft.LightSwitch.Extensions:PhoneNumber" }
-        },
-        {
-          "id": "Microsoft.LightSwitch.Extensions:Money?*",
-          "name": "Money?*",
-          "kind": "Enumerable",
-          "elementType": { "__id": "Microsoft.LightSwitch.Extensions:Money?" }
-        },
-        {
-          "__isNullableType": 1,
-          "id": "Microsoft.LightSwitch.Extensions:Money?",
-          "name": "Money?",
-          "underlyingType": { "__id": "Microsoft.LightSwitch.Extensions:Money" }
-        },
-        {
-          "id": "Microsoft.LightSwitch.Extensions:Money*",
-          "name": "Money*",
-          "kind": "Enumerable",
-          "elementType": { "__id": "Microsoft.LightSwitch.Extensions:Money" }
-        },
-        {
-          "id": "Microsoft.LightSwitch.Extensions:Image?*",
-          "name": "Image?*",
-          "kind": "Enumerable",
-          "elementType": { "__id": "Microsoft.LightSwitch.Extensions:Image?" }
-        },
-        {
-          "__isNullableType": 1,
-          "id": "Microsoft.LightSwitch.Extensions:Image?",
-          "name": "Image?",
-          "underlyingType": { "__id": "Microsoft.LightSwitch.Extensions:Image" }
-        },
-        {
-          "id": "Microsoft.LightSwitch.Extensions:Image*",
-          "name": "Image*",
-          "kind": "Enumerable",
-          "elementType": { "__id": "Microsoft.LightSwitch.Extensions:Image" }
-        },
-        {
-          "id": "Microsoft.LightSwitch.Extensions:EmailAddress?*",
-          "name": "EmailAddress?*",
-          "kind": "Enumerable",
-          "elementType": { "__id": "Microsoft.LightSwitch.Extensions:EmailAddress?" }
-        },
-        {
-          "__isNullableType": 1,
-          "id": "Microsoft.LightSwitch.Extensions:EmailAddress?",
-          "name": "EmailAddress?",
-          "underlyingType": { "__id": "Microsoft.LightSwitch.Extensions:EmailAddress" }
-        },
-        {
-          "id": "Microsoft.LightSwitch.Extensions:EmailAddress*",
-          "name": "EmailAddress*",
-          "kind": "Enumerable",
-          "elementType": { "__id": "Microsoft.LightSwitch.Extensions:EmailAddress" }
-        },
-        {
-          "__isSemanticType": 1,
-          "id": "Microsoft.LightSwitch.Extensions:EmailAddress",
-          "name": "EmailAddress",
-          "underlyingType": { "__id": ":String" },
-          "Microsoft.LightSwitch.Extensions:@EmailAddressValidation": { "domainRequired": true }
-        },
-        {
-          "__isSemanticType": 1,
-          "id": "Microsoft.LightSwitch.Extensions:Image",
-          "name": "Image",
-          "underlyingType": { "__id": ":Binary" }
-        },
-        {
-          "__isSemanticType": 1,
-          "id": "Microsoft.LightSwitch.Extensions:Money",
-          "name": "Money",
-          "underlyingType": { "__id": ":Decimal" }
-        },
-        {
-          "__isSemanticType": 1,
-          "id": "Microsoft.LightSwitch.Extensions:PhoneNumber",
-          "name": "PhoneNumber",
-          "underlyingType": { "__id": ":String" },
-          "Microsoft.LightSwitch.Extensions:@PhoneNumberValidation": { "formats": "C (AAA) NNN-NNNN;C (AAA) NNNNNNN;CAAANNNNNNN;(AAA) NNN-NNNN;(AAA) NNNNNNN;AAANNNNNNN;NNN-NNNN;NNNNNNN" }
-        },
-        {
-          "__isSemanticType": 1,
-          "id": "Microsoft.LightSwitch.Extensions:Percent",
-          "name": "Percent",
-          "underlyingType": { "__id": ":Decimal" },
-          "Microsoft.LightSwitch.Extensions:@FormatParameter": { "decimalDigits": 2 },
-          ":@DecimalConstraint":
-          {
-            "scale": 9
-          }
-        },
-        {
-          "__isSemanticType": 1,
-          "id": "Microsoft.LightSwitch.Extensions:WebAddress",
-          "name": "WebAddress",
-          "underlyingType": { "__id": ":String" },
-          "Microsoft.LightSwitch.Extensions:@WebAddressValidation": { }
         }
       ]
     }

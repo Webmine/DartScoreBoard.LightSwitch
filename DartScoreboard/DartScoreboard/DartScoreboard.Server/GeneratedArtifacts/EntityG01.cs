@@ -17,32 +17,32 @@ namespace LightSwitchApplication
     /// No Modeled Description Available
     /// </summary>
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "12.1.0.0")]
-    public sealed partial class UserSetItem : global::Microsoft.LightSwitch.Framework.Base.EntityObject<global::LightSwitchApplication.UserSetItem, global::LightSwitchApplication.UserSetItem.DetailsClass>
+    public sealed partial class GameSetItem : global::Microsoft.LightSwitch.Framework.Base.EntityObject<global::LightSwitchApplication.GameSetItem, global::LightSwitchApplication.GameSetItem.DetailsClass>
     {
         #region Constructors
     
         /// <summary>
-        /// Initializes a new instance of the UserSetItem entity.
+        /// Initializes a new instance of the GameSetItem entity.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "12.1.0.0")]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        public UserSetItem()
+        public GameSetItem()
             : this(null)
         {
         }
     
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "12.1.0.0")]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        public UserSetItem(global::Microsoft.LightSwitch.Framework.EntitySet<global::LightSwitchApplication.UserSetItem> entitySet)
+        public GameSetItem(global::Microsoft.LightSwitch.Framework.EntitySet<global::LightSwitchApplication.GameSetItem> entitySet)
             : base(entitySet)
         {
-            global::LightSwitchApplication.UserSetItem.DetailsClass.Initialize(this);
+            global::LightSwitchApplication.GameSetItem.DetailsClass.Initialize(this);
         }
     
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        partial void UserSetItem_Created();
+        partial void GameSetItem_Created();
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        partial void UserSetItem_AllowSaveWithErrors(ref bool result);
+        partial void GameSetItem_AllowSaveWithErrors(ref bool result);
     
         #endregion
     
@@ -87,11 +87,11 @@ namespace LightSwitchApplication
         {
             get
             {
-                return global::LightSwitchApplication.UserSetItem.DetailsClass.GetValue(this, global::LightSwitchApplication.UserSetItem.DetailsClass.PropertySetProperties.Id);
+                return global::LightSwitchApplication.GameSetItem.DetailsClass.GetValue(this, global::LightSwitchApplication.GameSetItem.DetailsClass.PropertySetProperties.Id);
             }
             set
             {
-                global::LightSwitchApplication.UserSetItem.DetailsClass.SetValue(this, global::LightSwitchApplication.UserSetItem.DetailsClass.PropertySetProperties.Id, value);
+                global::LightSwitchApplication.GameSetItem.DetailsClass.SetValue(this, global::LightSwitchApplication.GameSetItem.DetailsClass.PropertySetProperties.Id, value);
             }
         }
         
@@ -107,83 +107,11 @@ namespace LightSwitchApplication
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "12.1.0.0")]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        public string Name
-        {
-            get
-            {
-                return global::LightSwitchApplication.UserSetItem.DetailsClass.GetValue(this, global::LightSwitchApplication.UserSetItem.DetailsClass.PropertySetProperties.Name);
-            }
-            set
-            {
-                global::LightSwitchApplication.UserSetItem.DetailsClass.SetValue(this, global::LightSwitchApplication.UserSetItem.DetailsClass.PropertySetProperties.Name, value);
-            }
-        }
-        
-        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        partial void Name_IsReadOnly(ref bool result);
-        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        partial void Name_Validate(global::Microsoft.LightSwitch.EntityValidationResultsBuilder results);
-        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        partial void Name_Changed();
-
-        /// <summary>
-        /// No Modeled Description Available
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "12.1.0.0")]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        public int Win
-        {
-            get
-            {
-                return global::LightSwitchApplication.UserSetItem.DetailsClass.GetValue(this, global::LightSwitchApplication.UserSetItem.DetailsClass.PropertySetProperties.Win);
-            }
-            set
-            {
-                global::LightSwitchApplication.UserSetItem.DetailsClass.SetValue(this, global::LightSwitchApplication.UserSetItem.DetailsClass.PropertySetProperties.Win, value);
-            }
-        }
-        
-        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        partial void Win_IsReadOnly(ref bool result);
-        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        partial void Win_Validate(global::Microsoft.LightSwitch.EntityValidationResultsBuilder results);
-        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        partial void Win_Changed();
-
-        /// <summary>
-        /// No Modeled Description Available
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "12.1.0.0")]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        public int Lose
-        {
-            get
-            {
-                return global::LightSwitchApplication.UserSetItem.DetailsClass.GetValue(this, global::LightSwitchApplication.UserSetItem.DetailsClass.PropertySetProperties.Lose);
-            }
-            set
-            {
-                global::LightSwitchApplication.UserSetItem.DetailsClass.SetValue(this, global::LightSwitchApplication.UserSetItem.DetailsClass.PropertySetProperties.Lose, value);
-            }
-        }
-        
-        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        partial void Lose_IsReadOnly(ref bool result);
-        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        partial void Lose_Validate(global::Microsoft.LightSwitch.EntityValidationResultsBuilder results);
-        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        partial void Lose_Changed();
-
-        /// <summary>
-        /// No Modeled Description Available
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "12.1.0.0")]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         public string CreatedBy
         {
             get
             {
-                return global::LightSwitchApplication.UserSetItem.DetailsClass.GetValue(this, global::LightSwitchApplication.UserSetItem.DetailsClass.PropertySetProperties.CreatedBy);
+                return global::LightSwitchApplication.GameSetItem.DetailsClass.GetValue(this, global::LightSwitchApplication.GameSetItem.DetailsClass.PropertySetProperties.CreatedBy);
             }
         }
         
@@ -211,7 +139,7 @@ namespace LightSwitchApplication
         {
             get
             {
-                return global::LightSwitchApplication.UserSetItem.DetailsClass.GetValue(this, global::LightSwitchApplication.UserSetItem.DetailsClass.PropertySetProperties.Created);
+                return global::LightSwitchApplication.GameSetItem.DetailsClass.GetValue(this, global::LightSwitchApplication.GameSetItem.DetailsClass.PropertySetProperties.Created);
             }
         }
         
@@ -231,7 +159,7 @@ namespace LightSwitchApplication
         {
             get
             {
-                return global::LightSwitchApplication.UserSetItem.DetailsClass.GetValue(this, global::LightSwitchApplication.UserSetItem.DetailsClass.PropertySetProperties.ModifiedBy);
+                return global::LightSwitchApplication.GameSetItem.DetailsClass.GetValue(this, global::LightSwitchApplication.GameSetItem.DetailsClass.PropertySetProperties.ModifiedBy);
             }
         }
         
@@ -259,7 +187,7 @@ namespace LightSwitchApplication
         {
             get
             {
-                return global::LightSwitchApplication.UserSetItem.DetailsClass.GetValue(this, global::LightSwitchApplication.UserSetItem.DetailsClass.PropertySetProperties.Modified);
+                return global::LightSwitchApplication.GameSetItem.DetailsClass.GetValue(this, global::LightSwitchApplication.GameSetItem.DetailsClass.PropertySetProperties.Modified);
             }
         }
         
@@ -280,11 +208,11 @@ namespace LightSwitchApplication
         {
             get
             {
-                return global::LightSwitchApplication.UserSetItem.DetailsClass.GetValue(this, global::LightSwitchApplication.UserSetItem.DetailsClass.PropertySetProperties.RowVersion);
+                return global::LightSwitchApplication.GameSetItem.DetailsClass.GetValue(this, global::LightSwitchApplication.GameSetItem.DetailsClass.PropertySetProperties.RowVersion);
             }
             set
             {
-                global::LightSwitchApplication.UserSetItem.DetailsClass.SetValue(this, global::LightSwitchApplication.UserSetItem.DetailsClass.PropertySetProperties.RowVersion, value);
+                global::LightSwitchApplication.GameSetItem.DetailsClass.SetValue(this, global::LightSwitchApplication.GameSetItem.DetailsClass.PropertySetProperties.RowVersion, value);
             }
         }
         
@@ -300,46 +228,192 @@ namespace LightSwitchApplication
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "12.1.0.0")]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        public global::Microsoft.LightSwitch.Framework.EntityCollection<global::LightSwitchApplication.GameSetItem> GamesAsPlayer1Collection
+        public bool IsFinished
         {
             get
             {
-                return global::LightSwitchApplication.UserSetItem.DetailsClass.GetValue(this, global::LightSwitchApplication.UserSetItem.DetailsClass.PropertySetProperties.GamesAsPlayer1Collection);
+                return global::LightSwitchApplication.GameSetItem.DetailsClass.GetValue(this, global::LightSwitchApplication.GameSetItem.DetailsClass.PropertySetProperties.IsFinished);
+            }
+            set
+            {
+                global::LightSwitchApplication.GameSetItem.DetailsClass.SetValue(this, global::LightSwitchApplication.GameSetItem.DetailsClass.PropertySetProperties.IsFinished, value);
             }
         }
         
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "12.1.0.0")]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        public Microsoft.LightSwitch.IDataServiceQueryable<global::LightSwitchApplication.GameSetItem> GamesAsPlayer1CollectionQuery
-        {
-            get
-            {
-                return global::LightSwitchApplication.UserSetItem.DetailsClass.GetQuery(this, global::LightSwitchApplication.UserSetItem.DetailsClass.PropertySetProperties.GamesAsPlayer1Collection);
-            }
-        }
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void IsFinished_IsReadOnly(ref bool result);
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void IsFinished_Validate(global::Microsoft.LightSwitch.EntityValidationResultsBuilder results);
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void IsFinished_Changed();
 
         /// <summary>
         /// No Modeled Description Available
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "12.1.0.0")]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        public global::Microsoft.LightSwitch.Framework.EntityCollection<global::LightSwitchApplication.GameSetItem> GamesAsPlayer2Collection
+        public int StartScore
         {
             get
             {
-                return global::LightSwitchApplication.UserSetItem.DetailsClass.GetValue(this, global::LightSwitchApplication.UserSetItem.DetailsClass.PropertySetProperties.GamesAsPlayer2Collection);
+                return global::LightSwitchApplication.GameSetItem.DetailsClass.GetValue(this, global::LightSwitchApplication.GameSetItem.DetailsClass.PropertySetProperties.StartScore);
+            }
+            set
+            {
+                global::LightSwitchApplication.GameSetItem.DetailsClass.SetValue(this, global::LightSwitchApplication.GameSetItem.DetailsClass.PropertySetProperties.StartScore, value);
             }
         }
         
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void StartScore_IsReadOnly(ref bool result);
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void StartScore_Validate(global::Microsoft.LightSwitch.EntityValidationResultsBuilder results);
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void StartScore_Changed();
+
+        /// <summary>
+        /// No Modeled Description Available
+        /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "12.1.0.0")]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        public Microsoft.LightSwitch.IDataServiceQueryable<global::LightSwitchApplication.GameSetItem> GamesAsPlayer2CollectionQuery
+        public int P1ActualScore
         {
             get
             {
-                return global::LightSwitchApplication.UserSetItem.DetailsClass.GetQuery(this, global::LightSwitchApplication.UserSetItem.DetailsClass.PropertySetProperties.GamesAsPlayer2Collection);
+                return global::LightSwitchApplication.GameSetItem.DetailsClass.GetValue(this, global::LightSwitchApplication.GameSetItem.DetailsClass.PropertySetProperties.P1ActualScore);
+            }
+            set
+            {
+                global::LightSwitchApplication.GameSetItem.DetailsClass.SetValue(this, global::LightSwitchApplication.GameSetItem.DetailsClass.PropertySetProperties.P1ActualScore, value);
             }
         }
+        
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void P1ActualScore_IsReadOnly(ref bool result);
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void P1ActualScore_Validate(global::Microsoft.LightSwitch.EntityValidationResultsBuilder results);
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void P1ActualScore_Changed();
+
+        /// <summary>
+        /// No Modeled Description Available
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "12.1.0.0")]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public int P2ActualScore
+        {
+            get
+            {
+                return global::LightSwitchApplication.GameSetItem.DetailsClass.GetValue(this, global::LightSwitchApplication.GameSetItem.DetailsClass.PropertySetProperties.P2ActualScore);
+            }
+            set
+            {
+                global::LightSwitchApplication.GameSetItem.DetailsClass.SetValue(this, global::LightSwitchApplication.GameSetItem.DetailsClass.PropertySetProperties.P2ActualScore, value);
+            }
+        }
+        
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void P2ActualScore_IsReadOnly(ref bool result);
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void P2ActualScore_Validate(global::Microsoft.LightSwitch.EntityValidationResultsBuilder results);
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void P2ActualScore_Changed();
+
+        /// <summary>
+        /// No Modeled Description Available
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "12.1.0.0")]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public global::System.DateTime StartDate
+        {
+            get
+            {
+                return global::LightSwitchApplication.GameSetItem.DetailsClass.GetValue(this, global::LightSwitchApplication.GameSetItem.DetailsClass.PropertySetProperties.StartDate);
+            }
+            set
+            {
+                global::LightSwitchApplication.GameSetItem.DetailsClass.SetValue(this, global::LightSwitchApplication.GameSetItem.DetailsClass.PropertySetProperties.StartDate, value);
+            }
+        }
+        
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void StartDate_IsReadOnly(ref bool result);
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void StartDate_Validate(global::Microsoft.LightSwitch.EntityValidationResultsBuilder results);
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void StartDate_Changed();
+
+        /// <summary>
+        /// No Modeled Description Available
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "12.1.0.0")]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public global::System.Nullable<global::System.DateTime> EndDate
+        {
+            get
+            {
+                return global::LightSwitchApplication.GameSetItem.DetailsClass.GetValue(this, global::LightSwitchApplication.GameSetItem.DetailsClass.PropertySetProperties.EndDate);
+            }
+            set
+            {
+                global::LightSwitchApplication.GameSetItem.DetailsClass.SetValue(this, global::LightSwitchApplication.GameSetItem.DetailsClass.PropertySetProperties.EndDate, value);
+            }
+        }
+        
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void EndDate_IsReadOnly(ref bool result);
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void EndDate_Validate(global::Microsoft.LightSwitch.EntityValidationResultsBuilder results);
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void EndDate_Changed();
+
+        /// <summary>
+        /// No Modeled Description Available
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "12.1.0.0")]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public global::LightSwitchApplication.UserSetItem Player1User
+        {
+            get
+            {
+                return global::LightSwitchApplication.GameSetItem.DetailsClass.GetValue(this, global::LightSwitchApplication.GameSetItem.DetailsClass.PropertySetProperties.Player1User);
+            }
+            set
+            {
+                global::LightSwitchApplication.GameSetItem.DetailsClass.SetValue(this, global::LightSwitchApplication.GameSetItem.DetailsClass.PropertySetProperties.Player1User, value);
+            }
+        }
+        
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Player1User_IsReadOnly(ref bool result);
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Player1User_Validate(global::Microsoft.LightSwitch.EntityValidationResultsBuilder results);
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Player1User_Changed();
+
+        /// <summary>
+        /// No Modeled Description Available
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "12.1.0.0")]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public global::LightSwitchApplication.UserSetItem Player2User
+        {
+            get
+            {
+                return global::LightSwitchApplication.GameSetItem.DetailsClass.GetValue(this, global::LightSwitchApplication.GameSetItem.DetailsClass.PropertySetProperties.Player2User);
+            }
+            set
+            {
+                global::LightSwitchApplication.GameSetItem.DetailsClass.SetValue(this, global::LightSwitchApplication.GameSetItem.DetailsClass.PropertySetProperties.Player2User, value);
+            }
+        }
+        
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Player2User_IsReadOnly(ref bool result);
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Player2User_Validate(global::Microsoft.LightSwitch.EntityValidationResultsBuilder results);
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Player2User_Changed();
 
         /// <summary>
         /// No Modeled Description Available
@@ -350,7 +424,7 @@ namespace LightSwitchApplication
         {
             get
             {
-                return global::LightSwitchApplication.UserSetItem.DetailsClass.GetValue(this, global::LightSwitchApplication.UserSetItem.DetailsClass.PropertySetProperties.HitsCollection);
+                return global::LightSwitchApplication.GameSetItem.DetailsClass.GetValue(this, global::LightSwitchApplication.GameSetItem.DetailsClass.PropertySetProperties.HitsCollection);
             }
         }
         
@@ -360,7 +434,7 @@ namespace LightSwitchApplication
         {
             get
             {
-                return global::LightSwitchApplication.UserSetItem.DetailsClass.GetQuery(this, global::LightSwitchApplication.UserSetItem.DetailsClass.PropertySetProperties.HitsCollection);
+                return global::LightSwitchApplication.GameSetItem.DetailsClass.GetQuery(this, global::LightSwitchApplication.GameSetItem.DetailsClass.PropertySetProperties.HitsCollection);
             }
         }
 
@@ -373,37 +447,37 @@ namespace LightSwitchApplication
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "12.1.0.0")]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         public sealed class DetailsClass : global::Microsoft.LightSwitch.Details.Framework.Base.EntityDetails<
-                global::LightSwitchApplication.UserSetItem,
-                global::LightSwitchApplication.UserSetItem.DetailsClass,
-                global::LightSwitchApplication.UserSetItem.DetailsClass.IImplementation,
-                global::LightSwitchApplication.UserSetItem.DetailsClass.PropertySet,
-                global::Microsoft.LightSwitch.Details.Framework.EntityCommandSet<global::LightSwitchApplication.UserSetItem, global::LightSwitchApplication.UserSetItem.DetailsClass>,
-                global::Microsoft.LightSwitch.Details.Framework.EntityMethodSet<global::LightSwitchApplication.UserSetItem, global::LightSwitchApplication.UserSetItem.DetailsClass>>
+                global::LightSwitchApplication.GameSetItem,
+                global::LightSwitchApplication.GameSetItem.DetailsClass,
+                global::LightSwitchApplication.GameSetItem.DetailsClass.IImplementation,
+                global::LightSwitchApplication.GameSetItem.DetailsClass.PropertySet,
+                global::Microsoft.LightSwitch.Details.Framework.EntityCommandSet<global::LightSwitchApplication.GameSetItem, global::LightSwitchApplication.GameSetItem.DetailsClass>,
+                global::Microsoft.LightSwitch.Details.Framework.EntityMethodSet<global::LightSwitchApplication.GameSetItem, global::LightSwitchApplication.GameSetItem.DetailsClass>>
         {
     
             static DetailsClass()
             {
-                var initializeEntry = global::LightSwitchApplication.UserSetItem.DetailsClass.PropertySetProperties.Id;
+                var initializeEntry = global::LightSwitchApplication.GameSetItem.DetailsClass.PropertySetProperties.Id;
             }
     
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-            private static readonly global::Microsoft.LightSwitch.Details.Framework.Base.EntityDetails<global::LightSwitchApplication.UserSetItem, global::LightSwitchApplication.UserSetItem.DetailsClass>.Entry
-                __UserSetItemEntry = new global::Microsoft.LightSwitch.Details.Framework.Base.EntityDetails<global::LightSwitchApplication.UserSetItem, global::LightSwitchApplication.UserSetItem.DetailsClass>.Entry(
-                    global::LightSwitchApplication.UserSetItem.DetailsClass.__UserSetItem_CreateNew,
-                    global::LightSwitchApplication.UserSetItem.DetailsClass.__UserSetItem_Created,
-                    global::LightSwitchApplication.UserSetItem.DetailsClass.__UserSetItem_AllowSaveWithErrors);
-            private static global::LightSwitchApplication.UserSetItem __UserSetItem_CreateNew(global::Microsoft.LightSwitch.Framework.EntitySet<global::LightSwitchApplication.UserSetItem> es)
+            private static readonly global::Microsoft.LightSwitch.Details.Framework.Base.EntityDetails<global::LightSwitchApplication.GameSetItem, global::LightSwitchApplication.GameSetItem.DetailsClass>.Entry
+                __GameSetItemEntry = new global::Microsoft.LightSwitch.Details.Framework.Base.EntityDetails<global::LightSwitchApplication.GameSetItem, global::LightSwitchApplication.GameSetItem.DetailsClass>.Entry(
+                    global::LightSwitchApplication.GameSetItem.DetailsClass.__GameSetItem_CreateNew,
+                    global::LightSwitchApplication.GameSetItem.DetailsClass.__GameSetItem_Created,
+                    global::LightSwitchApplication.GameSetItem.DetailsClass.__GameSetItem_AllowSaveWithErrors);
+            private static global::LightSwitchApplication.GameSetItem __GameSetItem_CreateNew(global::Microsoft.LightSwitch.Framework.EntitySet<global::LightSwitchApplication.GameSetItem> es)
             {
-                return new global::LightSwitchApplication.UserSetItem(es);
+                return new global::LightSwitchApplication.GameSetItem(es);
             }
-            private static void __UserSetItem_Created(global::LightSwitchApplication.UserSetItem e)
+            private static void __GameSetItem_Created(global::LightSwitchApplication.GameSetItem e)
             {
-                e.UserSetItem_Created();
+                e.GameSetItem_Created();
             }
-            private static bool __UserSetItem_AllowSaveWithErrors(global::LightSwitchApplication.UserSetItem e)
+            private static bool __GameSetItem_AllowSaveWithErrors(global::LightSwitchApplication.GameSetItem e)
             {
                 bool result = false;
-                e.UserSetItem_AllowSaveWithErrors(ref result);
+                e.GameSetItem_AllowSaveWithErrors(ref result);
                 return result;
             }
     
@@ -411,7 +485,7 @@ namespace LightSwitchApplication
             {
             }
     
-            public new global::Microsoft.LightSwitch.Details.Framework.EntityCommandSet<global::LightSwitchApplication.UserSetItem, global::LightSwitchApplication.UserSetItem.DetailsClass> Commands
+            public new global::Microsoft.LightSwitch.Details.Framework.EntityCommandSet<global::LightSwitchApplication.GameSetItem, global::LightSwitchApplication.GameSetItem.DetailsClass> Commands
             {
                 get
                 {
@@ -419,7 +493,7 @@ namespace LightSwitchApplication
                 }
             }
     
-            public new global::Microsoft.LightSwitch.Details.Framework.EntityMethodSet<global::LightSwitchApplication.UserSetItem, global::LightSwitchApplication.UserSetItem.DetailsClass> Methods
+            public new global::Microsoft.LightSwitch.Details.Framework.EntityMethodSet<global::LightSwitchApplication.GameSetItem, global::LightSwitchApplication.GameSetItem.DetailsClass> Methods
             {
                 get
                 {
@@ -427,7 +501,7 @@ namespace LightSwitchApplication
                 }
             }
     
-            public new global::LightSwitchApplication.UserSetItem.DetailsClass.PropertySet Properties
+            public new global::LightSwitchApplication.GameSetItem.DetailsClass.PropertySet Properties
             {
                 get
                 {
@@ -439,106 +513,130 @@ namespace LightSwitchApplication
             [global::System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1034:NestedTypesShouldNotBeVisible")]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "12.1.0.0")]
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            public sealed class PropertySet : global::Microsoft.LightSwitch.Details.Framework.Base.EntityPropertySet<global::LightSwitchApplication.UserSetItem, global::LightSwitchApplication.UserSetItem.DetailsClass>
+            public sealed class PropertySet : global::Microsoft.LightSwitch.Details.Framework.Base.EntityPropertySet<global::LightSwitchApplication.GameSetItem, global::LightSwitchApplication.GameSetItem.DetailsClass>
             {
     
                 public PropertySet() : base()
                 {
                 }
     
-                public global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.UserSetItem, global::LightSwitchApplication.UserSetItem.DetailsClass, int> Id
+                public global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.GameSetItem, global::LightSwitchApplication.GameSetItem.DetailsClass, int> Id
                 {
                     get
                     {
-                        return base.GetItem(global::LightSwitchApplication.UserSetItem.DetailsClass.PropertySetProperties.Id) as global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.UserSetItem, global::LightSwitchApplication.UserSetItem.DetailsClass, int>;
+                        return base.GetItem(global::LightSwitchApplication.GameSetItem.DetailsClass.PropertySetProperties.Id) as global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.GameSetItem, global::LightSwitchApplication.GameSetItem.DetailsClass, int>;
                     }
                 }
                 
-                public global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.UserSetItem, global::LightSwitchApplication.UserSetItem.DetailsClass, string> Name
+                public global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.GameSetItem, global::LightSwitchApplication.GameSetItem.DetailsClass, string> CreatedBy
                 {
                     get
                     {
-                        return base.GetItem(global::LightSwitchApplication.UserSetItem.DetailsClass.PropertySetProperties.Name) as global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.UserSetItem, global::LightSwitchApplication.UserSetItem.DetailsClass, string>;
+                        return base.GetItem(global::LightSwitchApplication.GameSetItem.DetailsClass.PropertySetProperties.CreatedBy) as global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.GameSetItem, global::LightSwitchApplication.GameSetItem.DetailsClass, string>;
                     }
                 }
                 
-                public global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.UserSetItem, global::LightSwitchApplication.UserSetItem.DetailsClass, int> Win
+                public global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.GameSetItem, global::LightSwitchApplication.GameSetItem.DetailsClass, global::System.Nullable<global::System.DateTimeOffset>> Created
                 {
                     get
                     {
-                        return base.GetItem(global::LightSwitchApplication.UserSetItem.DetailsClass.PropertySetProperties.Win) as global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.UserSetItem, global::LightSwitchApplication.UserSetItem.DetailsClass, int>;
+                        return base.GetItem(global::LightSwitchApplication.GameSetItem.DetailsClass.PropertySetProperties.Created) as global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.GameSetItem, global::LightSwitchApplication.GameSetItem.DetailsClass, global::System.Nullable<global::System.DateTimeOffset>>;
                     }
                 }
                 
-                public global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.UserSetItem, global::LightSwitchApplication.UserSetItem.DetailsClass, int> Lose
+                public global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.GameSetItem, global::LightSwitchApplication.GameSetItem.DetailsClass, string> ModifiedBy
                 {
                     get
                     {
-                        return base.GetItem(global::LightSwitchApplication.UserSetItem.DetailsClass.PropertySetProperties.Lose) as global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.UserSetItem, global::LightSwitchApplication.UserSetItem.DetailsClass, int>;
+                        return base.GetItem(global::LightSwitchApplication.GameSetItem.DetailsClass.PropertySetProperties.ModifiedBy) as global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.GameSetItem, global::LightSwitchApplication.GameSetItem.DetailsClass, string>;
                     }
                 }
                 
-                public global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.UserSetItem, global::LightSwitchApplication.UserSetItem.DetailsClass, string> CreatedBy
+                public global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.GameSetItem, global::LightSwitchApplication.GameSetItem.DetailsClass, global::System.Nullable<global::System.DateTimeOffset>> Modified
                 {
                     get
                     {
-                        return base.GetItem(global::LightSwitchApplication.UserSetItem.DetailsClass.PropertySetProperties.CreatedBy) as global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.UserSetItem, global::LightSwitchApplication.UserSetItem.DetailsClass, string>;
+                        return base.GetItem(global::LightSwitchApplication.GameSetItem.DetailsClass.PropertySetProperties.Modified) as global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.GameSetItem, global::LightSwitchApplication.GameSetItem.DetailsClass, global::System.Nullable<global::System.DateTimeOffset>>;
                     }
                 }
                 
-                public global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.UserSetItem, global::LightSwitchApplication.UserSetItem.DetailsClass, global::System.Nullable<global::System.DateTimeOffset>> Created
+                public global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.GameSetItem, global::LightSwitchApplication.GameSetItem.DetailsClass, byte[]> RowVersion
                 {
                     get
                     {
-                        return base.GetItem(global::LightSwitchApplication.UserSetItem.DetailsClass.PropertySetProperties.Created) as global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.UserSetItem, global::LightSwitchApplication.UserSetItem.DetailsClass, global::System.Nullable<global::System.DateTimeOffset>>;
+                        return base.GetItem(global::LightSwitchApplication.GameSetItem.DetailsClass.PropertySetProperties.RowVersion) as global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.GameSetItem, global::LightSwitchApplication.GameSetItem.DetailsClass, byte[]>;
                     }
                 }
                 
-                public global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.UserSetItem, global::LightSwitchApplication.UserSetItem.DetailsClass, string> ModifiedBy
+                public global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.GameSetItem, global::LightSwitchApplication.GameSetItem.DetailsClass, bool> IsFinished
                 {
                     get
                     {
-                        return base.GetItem(global::LightSwitchApplication.UserSetItem.DetailsClass.PropertySetProperties.ModifiedBy) as global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.UserSetItem, global::LightSwitchApplication.UserSetItem.DetailsClass, string>;
+                        return base.GetItem(global::LightSwitchApplication.GameSetItem.DetailsClass.PropertySetProperties.IsFinished) as global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.GameSetItem, global::LightSwitchApplication.GameSetItem.DetailsClass, bool>;
                     }
                 }
                 
-                public global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.UserSetItem, global::LightSwitchApplication.UserSetItem.DetailsClass, global::System.Nullable<global::System.DateTimeOffset>> Modified
+                public global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.GameSetItem, global::LightSwitchApplication.GameSetItem.DetailsClass, int> StartScore
                 {
                     get
                     {
-                        return base.GetItem(global::LightSwitchApplication.UserSetItem.DetailsClass.PropertySetProperties.Modified) as global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.UserSetItem, global::LightSwitchApplication.UserSetItem.DetailsClass, global::System.Nullable<global::System.DateTimeOffset>>;
+                        return base.GetItem(global::LightSwitchApplication.GameSetItem.DetailsClass.PropertySetProperties.StartScore) as global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.GameSetItem, global::LightSwitchApplication.GameSetItem.DetailsClass, int>;
                     }
                 }
                 
-                public global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.UserSetItem, global::LightSwitchApplication.UserSetItem.DetailsClass, byte[]> RowVersion
+                public global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.GameSetItem, global::LightSwitchApplication.GameSetItem.DetailsClass, int> P1ActualScore
                 {
                     get
                     {
-                        return base.GetItem(global::LightSwitchApplication.UserSetItem.DetailsClass.PropertySetProperties.RowVersion) as global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.UserSetItem, global::LightSwitchApplication.UserSetItem.DetailsClass, byte[]>;
+                        return base.GetItem(global::LightSwitchApplication.GameSetItem.DetailsClass.PropertySetProperties.P1ActualScore) as global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.GameSetItem, global::LightSwitchApplication.GameSetItem.DetailsClass, int>;
                     }
                 }
                 
-                public global::Microsoft.LightSwitch.Details.Framework.EntityCollectionProperty<global::LightSwitchApplication.UserSetItem, global::LightSwitchApplication.UserSetItem.DetailsClass, global::LightSwitchApplication.GameSetItem> GamesAsPlayer1Collection
+                public global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.GameSetItem, global::LightSwitchApplication.GameSetItem.DetailsClass, int> P2ActualScore
                 {
                     get
                     {
-                        return base.GetItem(global::LightSwitchApplication.UserSetItem.DetailsClass.PropertySetProperties.GamesAsPlayer1Collection) as global::Microsoft.LightSwitch.Details.Framework.EntityCollectionProperty<global::LightSwitchApplication.UserSetItem, global::LightSwitchApplication.UserSetItem.DetailsClass, global::LightSwitchApplication.GameSetItem>;
+                        return base.GetItem(global::LightSwitchApplication.GameSetItem.DetailsClass.PropertySetProperties.P2ActualScore) as global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.GameSetItem, global::LightSwitchApplication.GameSetItem.DetailsClass, int>;
                     }
                 }
                 
-                public global::Microsoft.LightSwitch.Details.Framework.EntityCollectionProperty<global::LightSwitchApplication.UserSetItem, global::LightSwitchApplication.UserSetItem.DetailsClass, global::LightSwitchApplication.GameSetItem> GamesAsPlayer2Collection
+                public global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.GameSetItem, global::LightSwitchApplication.GameSetItem.DetailsClass, global::System.DateTime> StartDate
                 {
                     get
                     {
-                        return base.GetItem(global::LightSwitchApplication.UserSetItem.DetailsClass.PropertySetProperties.GamesAsPlayer2Collection) as global::Microsoft.LightSwitch.Details.Framework.EntityCollectionProperty<global::LightSwitchApplication.UserSetItem, global::LightSwitchApplication.UserSetItem.DetailsClass, global::LightSwitchApplication.GameSetItem>;
+                        return base.GetItem(global::LightSwitchApplication.GameSetItem.DetailsClass.PropertySetProperties.StartDate) as global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.GameSetItem, global::LightSwitchApplication.GameSetItem.DetailsClass, global::System.DateTime>;
                     }
                 }
                 
-                public global::Microsoft.LightSwitch.Details.Framework.EntityCollectionProperty<global::LightSwitchApplication.UserSetItem, global::LightSwitchApplication.UserSetItem.DetailsClass, global::LightSwitchApplication.HitSetItem> HitsCollection
+                public global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.GameSetItem, global::LightSwitchApplication.GameSetItem.DetailsClass, global::System.Nullable<global::System.DateTime>> EndDate
                 {
                     get
                     {
-                        return base.GetItem(global::LightSwitchApplication.UserSetItem.DetailsClass.PropertySetProperties.HitsCollection) as global::Microsoft.LightSwitch.Details.Framework.EntityCollectionProperty<global::LightSwitchApplication.UserSetItem, global::LightSwitchApplication.UserSetItem.DetailsClass, global::LightSwitchApplication.HitSetItem>;
+                        return base.GetItem(global::LightSwitchApplication.GameSetItem.DetailsClass.PropertySetProperties.EndDate) as global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.GameSetItem, global::LightSwitchApplication.GameSetItem.DetailsClass, global::System.Nullable<global::System.DateTime>>;
+                    }
+                }
+                
+                public global::Microsoft.LightSwitch.Details.Framework.EntityReferenceProperty<global::LightSwitchApplication.GameSetItem, global::LightSwitchApplication.GameSetItem.DetailsClass, global::LightSwitchApplication.UserSetItem> Player1User
+                {
+                    get
+                    {
+                        return base.GetItem(global::LightSwitchApplication.GameSetItem.DetailsClass.PropertySetProperties.Player1User) as global::Microsoft.LightSwitch.Details.Framework.EntityReferenceProperty<global::LightSwitchApplication.GameSetItem, global::LightSwitchApplication.GameSetItem.DetailsClass, global::LightSwitchApplication.UserSetItem>;
+                    }
+                }
+                
+                public global::Microsoft.LightSwitch.Details.Framework.EntityReferenceProperty<global::LightSwitchApplication.GameSetItem, global::LightSwitchApplication.GameSetItem.DetailsClass, global::LightSwitchApplication.UserSetItem> Player2User
+                {
+                    get
+                    {
+                        return base.GetItem(global::LightSwitchApplication.GameSetItem.DetailsClass.PropertySetProperties.Player2User) as global::Microsoft.LightSwitch.Details.Framework.EntityReferenceProperty<global::LightSwitchApplication.GameSetItem, global::LightSwitchApplication.GameSetItem.DetailsClass, global::LightSwitchApplication.UserSetItem>;
+                    }
+                }
+                
+                public global::Microsoft.LightSwitch.Details.Framework.EntityCollectionProperty<global::LightSwitchApplication.GameSetItem, global::LightSwitchApplication.GameSetItem.DetailsClass, global::LightSwitchApplication.HitSetItem> HitsCollection
+                {
+                    get
+                    {
+                        return base.GetItem(global::LightSwitchApplication.GameSetItem.DetailsClass.PropertySetProperties.HitsCollection) as global::Microsoft.LightSwitch.Details.Framework.EntityCollectionProperty<global::LightSwitchApplication.GameSetItem, global::LightSwitchApplication.GameSetItem.DetailsClass, global::LightSwitchApplication.HitSetItem>;
                     }
                 }
                 
@@ -549,16 +647,19 @@ namespace LightSwitchApplication
             public interface IImplementation : global::Microsoft.LightSwitch.Internal.IEntityImplementation
             {
                 new int Id { get; set; }
-                new string Name { get; set; }
-                new int Win { get; set; }
-                new int Lose { get; set; }
                 new string CreatedBy { get; }
                 new global::System.Nullable<global::System.DateTimeOffset> Created { get; }
                 new string ModifiedBy { get; }
                 new global::System.Nullable<global::System.DateTimeOffset> Modified { get; }
                 new byte[] RowVersion { get; set; }
-                new global::System.Collections.IEnumerable GamesAsPlayer1Collection { get; }
-                new global::System.Collections.IEnumerable GamesAsPlayer2Collection { get; }
+                new bool IsFinished { get; set; }
+                new int StartScore { get; set; }
+                new int P1ActualScore { get; set; }
+                new int P2ActualScore { get; set; }
+                new global::System.DateTime StartDate { get; set; }
+                new global::System.Nullable<global::System.DateTime> EndDate { get; set; }
+                new global::Microsoft.LightSwitch.Internal.IEntityImplementation Player1User { get; set; }
+                new global::Microsoft.LightSwitch.Internal.IEntityImplementation Player2User { get; set; }
                 new global::System.Collections.IEnumerable HitsCollection { get; }
             }
             #pragma warning restore 109
@@ -570,378 +671,543 @@ namespace LightSwitchApplication
             {
     
                 [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-                public static readonly global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.UserSetItem, global::LightSwitchApplication.UserSetItem.DetailsClass, int>.Entry
-                    Id = new global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.UserSetItem, global::LightSwitchApplication.UserSetItem.DetailsClass, int>.Entry(
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.GameSetItem, global::LightSwitchApplication.GameSetItem.DetailsClass, int>.Entry
+                    Id = new global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.GameSetItem, global::LightSwitchApplication.GameSetItem.DetailsClass, int>.Entry(
                         "Id",
-                        global::LightSwitchApplication.UserSetItem.DetailsClass.PropertySetProperties._Id_Stub,
-                        global::LightSwitchApplication.UserSetItem.DetailsClass.PropertySetProperties._Id_ComputeIsReadOnly,
-                        global::LightSwitchApplication.UserSetItem.DetailsClass.PropertySetProperties._Id_Validate,
-                        global::LightSwitchApplication.UserSetItem.DetailsClass.PropertySetProperties._Id_GetImplementationValue,
-                        global::LightSwitchApplication.UserSetItem.DetailsClass.PropertySetProperties._Id_SetImplementationValue,
-                        global::LightSwitchApplication.UserSetItem.DetailsClass.PropertySetProperties._Id_OnValueChanged);
-                private static void _Id_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.UserSetItem.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.UserSetItem, global::LightSwitchApplication.UserSetItem.DetailsClass, int>.Data> c, global::LightSwitchApplication.UserSetItem.DetailsClass d, object sf)
+                        global::LightSwitchApplication.GameSetItem.DetailsClass.PropertySetProperties._Id_Stub,
+                        global::LightSwitchApplication.GameSetItem.DetailsClass.PropertySetProperties._Id_ComputeIsReadOnly,
+                        global::LightSwitchApplication.GameSetItem.DetailsClass.PropertySetProperties._Id_Validate,
+                        global::LightSwitchApplication.GameSetItem.DetailsClass.PropertySetProperties._Id_GetImplementationValue,
+                        global::LightSwitchApplication.GameSetItem.DetailsClass.PropertySetProperties._Id_SetImplementationValue,
+                        global::LightSwitchApplication.GameSetItem.DetailsClass.PropertySetProperties._Id_OnValueChanged);
+                private static void _Id_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.GameSetItem.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.GameSetItem, global::LightSwitchApplication.GameSetItem.DetailsClass, int>.Data> c, global::LightSwitchApplication.GameSetItem.DetailsClass d, object sf)
                 {
                     c(d, ref d._Id, sf);
                 }
-                private static bool _Id_ComputeIsReadOnly(global::LightSwitchApplication.UserSetItem e)
+                private static bool _Id_ComputeIsReadOnly(global::LightSwitchApplication.GameSetItem e)
                 {
                     bool result = false;
                     e.Id_IsReadOnly(ref result);
                     return result;
                 }
-                private static void _Id_Validate(global::LightSwitchApplication.UserSetItem e, global::Microsoft.LightSwitch.EntityValidationResultsBuilder r)
+                private static void _Id_Validate(global::LightSwitchApplication.GameSetItem e, global::Microsoft.LightSwitch.EntityValidationResultsBuilder r)
                 {
                     e.Id_Validate(r);
                 }
-                private static int _Id_GetImplementationValue(global::LightSwitchApplication.UserSetItem.DetailsClass d)
+                private static int _Id_GetImplementationValue(global::LightSwitchApplication.GameSetItem.DetailsClass d)
                 {
                     return d.ImplementationEntity.Id;
                 }
-                private static void _Id_SetImplementationValue(global::LightSwitchApplication.UserSetItem.DetailsClass d, int v)
+                private static void _Id_SetImplementationValue(global::LightSwitchApplication.GameSetItem.DetailsClass d, int v)
                 {
                     d.ImplementationEntity.Id = v;
                 }
-                private static void _Id_OnValueChanged(global::LightSwitchApplication.UserSetItem e)
+                private static void _Id_OnValueChanged(global::LightSwitchApplication.GameSetItem e)
                 {
                     e.Id_Changed();
                 }
     
                 [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-                public static readonly global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.UserSetItem, global::LightSwitchApplication.UserSetItem.DetailsClass, string>.Entry
-                    Name = new global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.UserSetItem, global::LightSwitchApplication.UserSetItem.DetailsClass, string>.Entry(
-                        "Name",
-                        global::LightSwitchApplication.UserSetItem.DetailsClass.PropertySetProperties._Name_Stub,
-                        global::LightSwitchApplication.UserSetItem.DetailsClass.PropertySetProperties._Name_ComputeIsReadOnly,
-                        global::LightSwitchApplication.UserSetItem.DetailsClass.PropertySetProperties._Name_Validate,
-                        global::LightSwitchApplication.UserSetItem.DetailsClass.PropertySetProperties._Name_GetImplementationValue,
-                        global::LightSwitchApplication.UserSetItem.DetailsClass.PropertySetProperties._Name_SetImplementationValue,
-                        global::LightSwitchApplication.UserSetItem.DetailsClass.PropertySetProperties._Name_OnValueChanged);
-                private static void _Name_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.UserSetItem.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.UserSetItem, global::LightSwitchApplication.UserSetItem.DetailsClass, string>.Data> c, global::LightSwitchApplication.UserSetItem.DetailsClass d, object sf)
-                {
-                    c(d, ref d._Name, sf);
-                }
-                private static bool _Name_ComputeIsReadOnly(global::LightSwitchApplication.UserSetItem e)
-                {
-                    bool result = false;
-                    e.Name_IsReadOnly(ref result);
-                    return result;
-                }
-                private static void _Name_Validate(global::LightSwitchApplication.UserSetItem e, global::Microsoft.LightSwitch.EntityValidationResultsBuilder r)
-                {
-                    e.Name_Validate(r);
-                }
-                private static string _Name_GetImplementationValue(global::LightSwitchApplication.UserSetItem.DetailsClass d)
-                {
-                    return d.ImplementationEntity.Name;
-                }
-                private static void _Name_SetImplementationValue(global::LightSwitchApplication.UserSetItem.DetailsClass d, string v)
-                {
-                    d.ImplementationEntity.Name = v;
-                }
-                private static void _Name_OnValueChanged(global::LightSwitchApplication.UserSetItem e)
-                {
-                    e.Name_Changed();
-                }
-    
-                [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-                public static readonly global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.UserSetItem, global::LightSwitchApplication.UserSetItem.DetailsClass, int>.Entry
-                    Win = new global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.UserSetItem, global::LightSwitchApplication.UserSetItem.DetailsClass, int>.Entry(
-                        "Win",
-                        global::LightSwitchApplication.UserSetItem.DetailsClass.PropertySetProperties._Win_Stub,
-                        global::LightSwitchApplication.UserSetItem.DetailsClass.PropertySetProperties._Win_ComputeIsReadOnly,
-                        global::LightSwitchApplication.UserSetItem.DetailsClass.PropertySetProperties._Win_Validate,
-                        global::LightSwitchApplication.UserSetItem.DetailsClass.PropertySetProperties._Win_GetImplementationValue,
-                        global::LightSwitchApplication.UserSetItem.DetailsClass.PropertySetProperties._Win_SetImplementationValue,
-                        global::LightSwitchApplication.UserSetItem.DetailsClass.PropertySetProperties._Win_OnValueChanged);
-                private static void _Win_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.UserSetItem.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.UserSetItem, global::LightSwitchApplication.UserSetItem.DetailsClass, int>.Data> c, global::LightSwitchApplication.UserSetItem.DetailsClass d, object sf)
-                {
-                    c(d, ref d._Win, sf);
-                }
-                private static bool _Win_ComputeIsReadOnly(global::LightSwitchApplication.UserSetItem e)
-                {
-                    bool result = false;
-                    e.Win_IsReadOnly(ref result);
-                    return result;
-                }
-                private static void _Win_Validate(global::LightSwitchApplication.UserSetItem e, global::Microsoft.LightSwitch.EntityValidationResultsBuilder r)
-                {
-                    e.Win_Validate(r);
-                }
-                private static int _Win_GetImplementationValue(global::LightSwitchApplication.UserSetItem.DetailsClass d)
-                {
-                    return d.ImplementationEntity.Win;
-                }
-                private static void _Win_SetImplementationValue(global::LightSwitchApplication.UserSetItem.DetailsClass d, int v)
-                {
-                    d.ImplementationEntity.Win = v;
-                }
-                private static void _Win_OnValueChanged(global::LightSwitchApplication.UserSetItem e)
-                {
-                    e.Win_Changed();
-                }
-    
-                [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-                public static readonly global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.UserSetItem, global::LightSwitchApplication.UserSetItem.DetailsClass, int>.Entry
-                    Lose = new global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.UserSetItem, global::LightSwitchApplication.UserSetItem.DetailsClass, int>.Entry(
-                        "Lose",
-                        global::LightSwitchApplication.UserSetItem.DetailsClass.PropertySetProperties._Lose_Stub,
-                        global::LightSwitchApplication.UserSetItem.DetailsClass.PropertySetProperties._Lose_ComputeIsReadOnly,
-                        global::LightSwitchApplication.UserSetItem.DetailsClass.PropertySetProperties._Lose_Validate,
-                        global::LightSwitchApplication.UserSetItem.DetailsClass.PropertySetProperties._Lose_GetImplementationValue,
-                        global::LightSwitchApplication.UserSetItem.DetailsClass.PropertySetProperties._Lose_SetImplementationValue,
-                        global::LightSwitchApplication.UserSetItem.DetailsClass.PropertySetProperties._Lose_OnValueChanged);
-                private static void _Lose_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.UserSetItem.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.UserSetItem, global::LightSwitchApplication.UserSetItem.DetailsClass, int>.Data> c, global::LightSwitchApplication.UserSetItem.DetailsClass d, object sf)
-                {
-                    c(d, ref d._Lose, sf);
-                }
-                private static bool _Lose_ComputeIsReadOnly(global::LightSwitchApplication.UserSetItem e)
-                {
-                    bool result = false;
-                    e.Lose_IsReadOnly(ref result);
-                    return result;
-                }
-                private static void _Lose_Validate(global::LightSwitchApplication.UserSetItem e, global::Microsoft.LightSwitch.EntityValidationResultsBuilder r)
-                {
-                    e.Lose_Validate(r);
-                }
-                private static int _Lose_GetImplementationValue(global::LightSwitchApplication.UserSetItem.DetailsClass d)
-                {
-                    return d.ImplementationEntity.Lose;
-                }
-                private static void _Lose_SetImplementationValue(global::LightSwitchApplication.UserSetItem.DetailsClass d, int v)
-                {
-                    d.ImplementationEntity.Lose = v;
-                }
-                private static void _Lose_OnValueChanged(global::LightSwitchApplication.UserSetItem e)
-                {
-                    e.Lose_Changed();
-                }
-    
-                [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-                public static readonly global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.UserSetItem, global::LightSwitchApplication.UserSetItem.DetailsClass, string>.Entry
-                    CreatedBy = new global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.UserSetItem, global::LightSwitchApplication.UserSetItem.DetailsClass, string>.Entry(
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.GameSetItem, global::LightSwitchApplication.GameSetItem.DetailsClass, string>.Entry
+                    CreatedBy = new global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.GameSetItem, global::LightSwitchApplication.GameSetItem.DetailsClass, string>.Entry(
                         "CreatedBy",
-                        global::LightSwitchApplication.UserSetItem.DetailsClass.PropertySetProperties._CreatedBy_Stub,
-                        global::LightSwitchApplication.UserSetItem.DetailsClass.PropertySetProperties._CreatedBy_ComputeIsReadOnly,
-                        global::LightSwitchApplication.UserSetItem.DetailsClass.PropertySetProperties._CreatedBy_Validate,
-                        global::LightSwitchApplication.UserSetItem.DetailsClass.PropertySetProperties._CreatedBy_GetImplementationValue,
+                        global::LightSwitchApplication.GameSetItem.DetailsClass.PropertySetProperties._CreatedBy_Stub,
+                        global::LightSwitchApplication.GameSetItem.DetailsClass.PropertySetProperties._CreatedBy_ComputeIsReadOnly,
+                        global::LightSwitchApplication.GameSetItem.DetailsClass.PropertySetProperties._CreatedBy_Validate,
+                        global::LightSwitchApplication.GameSetItem.DetailsClass.PropertySetProperties._CreatedBy_GetImplementationValue,
                         null,
-                        global::LightSwitchApplication.UserSetItem.DetailsClass.PropertySetProperties._CreatedBy_OnValueChanged);
-                private static void _CreatedBy_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.UserSetItem.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.UserSetItem, global::LightSwitchApplication.UserSetItem.DetailsClass, string>.Data> c, global::LightSwitchApplication.UserSetItem.DetailsClass d, object sf)
+                        global::LightSwitchApplication.GameSetItem.DetailsClass.PropertySetProperties._CreatedBy_OnValueChanged);
+                private static void _CreatedBy_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.GameSetItem.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.GameSetItem, global::LightSwitchApplication.GameSetItem.DetailsClass, string>.Data> c, global::LightSwitchApplication.GameSetItem.DetailsClass d, object sf)
                 {
                     c(d, ref d._CreatedBy, sf);
                 }
-                private static bool _CreatedBy_ComputeIsReadOnly(global::LightSwitchApplication.UserSetItem e)
+                private static bool _CreatedBy_ComputeIsReadOnly(global::LightSwitchApplication.GameSetItem e)
                 {
                     bool result = false;
                     e.CreatedBy_IsReadOnly(ref result);
                     return result;
                 }
-                private static void _CreatedBy_Validate(global::LightSwitchApplication.UserSetItem e, global::Microsoft.LightSwitch.EntityValidationResultsBuilder r)
+                private static void _CreatedBy_Validate(global::LightSwitchApplication.GameSetItem e, global::Microsoft.LightSwitch.EntityValidationResultsBuilder r)
                 {
                     e.CreatedBy_Validate(r);
                 }
-                private static string _CreatedBy_GetImplementationValue(global::LightSwitchApplication.UserSetItem.DetailsClass d)
+                private static string _CreatedBy_GetImplementationValue(global::LightSwitchApplication.GameSetItem.DetailsClass d)
                 {
                     return d.ImplementationEntity.CreatedBy;
                 }
-                private static void _CreatedBy_OnValueChanged(global::LightSwitchApplication.UserSetItem e)
+                private static void _CreatedBy_OnValueChanged(global::LightSwitchApplication.GameSetItem e)
                 {
                     e.CreatedBy_Changed();
                 }
     
                 [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-                public static readonly global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.UserSetItem, global::LightSwitchApplication.UserSetItem.DetailsClass, global::System.Nullable<global::System.DateTimeOffset>>.Entry
-                    Created = new global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.UserSetItem, global::LightSwitchApplication.UserSetItem.DetailsClass, global::System.Nullable<global::System.DateTimeOffset>>.Entry(
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.GameSetItem, global::LightSwitchApplication.GameSetItem.DetailsClass, global::System.Nullable<global::System.DateTimeOffset>>.Entry
+                    Created = new global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.GameSetItem, global::LightSwitchApplication.GameSetItem.DetailsClass, global::System.Nullable<global::System.DateTimeOffset>>.Entry(
                         "Created",
-                        global::LightSwitchApplication.UserSetItem.DetailsClass.PropertySetProperties._Created_Stub,
-                        global::LightSwitchApplication.UserSetItem.DetailsClass.PropertySetProperties._Created_ComputeIsReadOnly,
-                        global::LightSwitchApplication.UserSetItem.DetailsClass.PropertySetProperties._Created_Validate,
-                        global::LightSwitchApplication.UserSetItem.DetailsClass.PropertySetProperties._Created_GetImplementationValue,
+                        global::LightSwitchApplication.GameSetItem.DetailsClass.PropertySetProperties._Created_Stub,
+                        global::LightSwitchApplication.GameSetItem.DetailsClass.PropertySetProperties._Created_ComputeIsReadOnly,
+                        global::LightSwitchApplication.GameSetItem.DetailsClass.PropertySetProperties._Created_Validate,
+                        global::LightSwitchApplication.GameSetItem.DetailsClass.PropertySetProperties._Created_GetImplementationValue,
                         null,
-                        global::LightSwitchApplication.UserSetItem.DetailsClass.PropertySetProperties._Created_OnValueChanged);
-                private static void _Created_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.UserSetItem.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.UserSetItem, global::LightSwitchApplication.UserSetItem.DetailsClass, global::System.Nullable<global::System.DateTimeOffset>>.Data> c, global::LightSwitchApplication.UserSetItem.DetailsClass d, object sf)
+                        global::LightSwitchApplication.GameSetItem.DetailsClass.PropertySetProperties._Created_OnValueChanged);
+                private static void _Created_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.GameSetItem.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.GameSetItem, global::LightSwitchApplication.GameSetItem.DetailsClass, global::System.Nullable<global::System.DateTimeOffset>>.Data> c, global::LightSwitchApplication.GameSetItem.DetailsClass d, object sf)
                 {
                     c(d, ref d._Created, sf);
                 }
-                private static bool _Created_ComputeIsReadOnly(global::LightSwitchApplication.UserSetItem e)
+                private static bool _Created_ComputeIsReadOnly(global::LightSwitchApplication.GameSetItem e)
                 {
                     bool result = false;
                     e.Created_IsReadOnly(ref result);
                     return result;
                 }
-                private static void _Created_Validate(global::LightSwitchApplication.UserSetItem e, global::Microsoft.LightSwitch.EntityValidationResultsBuilder r)
+                private static void _Created_Validate(global::LightSwitchApplication.GameSetItem e, global::Microsoft.LightSwitch.EntityValidationResultsBuilder r)
                 {
                     e.Created_Validate(r);
                 }
-                private static global::System.Nullable<global::System.DateTimeOffset> _Created_GetImplementationValue(global::LightSwitchApplication.UserSetItem.DetailsClass d)
+                private static global::System.Nullable<global::System.DateTimeOffset> _Created_GetImplementationValue(global::LightSwitchApplication.GameSetItem.DetailsClass d)
                 {
                     return d.ImplementationEntity.Created;
                 }
-                private static void _Created_OnValueChanged(global::LightSwitchApplication.UserSetItem e)
+                private static void _Created_OnValueChanged(global::LightSwitchApplication.GameSetItem e)
                 {
                     e.Created_Changed();
                 }
     
                 [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-                public static readonly global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.UserSetItem, global::LightSwitchApplication.UserSetItem.DetailsClass, string>.Entry
-                    ModifiedBy = new global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.UserSetItem, global::LightSwitchApplication.UserSetItem.DetailsClass, string>.Entry(
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.GameSetItem, global::LightSwitchApplication.GameSetItem.DetailsClass, string>.Entry
+                    ModifiedBy = new global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.GameSetItem, global::LightSwitchApplication.GameSetItem.DetailsClass, string>.Entry(
                         "ModifiedBy",
-                        global::LightSwitchApplication.UserSetItem.DetailsClass.PropertySetProperties._ModifiedBy_Stub,
-                        global::LightSwitchApplication.UserSetItem.DetailsClass.PropertySetProperties._ModifiedBy_ComputeIsReadOnly,
-                        global::LightSwitchApplication.UserSetItem.DetailsClass.PropertySetProperties._ModifiedBy_Validate,
-                        global::LightSwitchApplication.UserSetItem.DetailsClass.PropertySetProperties._ModifiedBy_GetImplementationValue,
+                        global::LightSwitchApplication.GameSetItem.DetailsClass.PropertySetProperties._ModifiedBy_Stub,
+                        global::LightSwitchApplication.GameSetItem.DetailsClass.PropertySetProperties._ModifiedBy_ComputeIsReadOnly,
+                        global::LightSwitchApplication.GameSetItem.DetailsClass.PropertySetProperties._ModifiedBy_Validate,
+                        global::LightSwitchApplication.GameSetItem.DetailsClass.PropertySetProperties._ModifiedBy_GetImplementationValue,
                         null,
-                        global::LightSwitchApplication.UserSetItem.DetailsClass.PropertySetProperties._ModifiedBy_OnValueChanged);
-                private static void _ModifiedBy_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.UserSetItem.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.UserSetItem, global::LightSwitchApplication.UserSetItem.DetailsClass, string>.Data> c, global::LightSwitchApplication.UserSetItem.DetailsClass d, object sf)
+                        global::LightSwitchApplication.GameSetItem.DetailsClass.PropertySetProperties._ModifiedBy_OnValueChanged);
+                private static void _ModifiedBy_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.GameSetItem.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.GameSetItem, global::LightSwitchApplication.GameSetItem.DetailsClass, string>.Data> c, global::LightSwitchApplication.GameSetItem.DetailsClass d, object sf)
                 {
                     c(d, ref d._ModifiedBy, sf);
                 }
-                private static bool _ModifiedBy_ComputeIsReadOnly(global::LightSwitchApplication.UserSetItem e)
+                private static bool _ModifiedBy_ComputeIsReadOnly(global::LightSwitchApplication.GameSetItem e)
                 {
                     bool result = false;
                     e.ModifiedBy_IsReadOnly(ref result);
                     return result;
                 }
-                private static void _ModifiedBy_Validate(global::LightSwitchApplication.UserSetItem e, global::Microsoft.LightSwitch.EntityValidationResultsBuilder r)
+                private static void _ModifiedBy_Validate(global::LightSwitchApplication.GameSetItem e, global::Microsoft.LightSwitch.EntityValidationResultsBuilder r)
                 {
                     e.ModifiedBy_Validate(r);
                 }
-                private static string _ModifiedBy_GetImplementationValue(global::LightSwitchApplication.UserSetItem.DetailsClass d)
+                private static string _ModifiedBy_GetImplementationValue(global::LightSwitchApplication.GameSetItem.DetailsClass d)
                 {
                     return d.ImplementationEntity.ModifiedBy;
                 }
-                private static void _ModifiedBy_OnValueChanged(global::LightSwitchApplication.UserSetItem e)
+                private static void _ModifiedBy_OnValueChanged(global::LightSwitchApplication.GameSetItem e)
                 {
                     e.ModifiedBy_Changed();
                 }
     
                 [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-                public static readonly global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.UserSetItem, global::LightSwitchApplication.UserSetItem.DetailsClass, global::System.Nullable<global::System.DateTimeOffset>>.Entry
-                    Modified = new global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.UserSetItem, global::LightSwitchApplication.UserSetItem.DetailsClass, global::System.Nullable<global::System.DateTimeOffset>>.Entry(
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.GameSetItem, global::LightSwitchApplication.GameSetItem.DetailsClass, global::System.Nullable<global::System.DateTimeOffset>>.Entry
+                    Modified = new global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.GameSetItem, global::LightSwitchApplication.GameSetItem.DetailsClass, global::System.Nullable<global::System.DateTimeOffset>>.Entry(
                         "Modified",
-                        global::LightSwitchApplication.UserSetItem.DetailsClass.PropertySetProperties._Modified_Stub,
-                        global::LightSwitchApplication.UserSetItem.DetailsClass.PropertySetProperties._Modified_ComputeIsReadOnly,
-                        global::LightSwitchApplication.UserSetItem.DetailsClass.PropertySetProperties._Modified_Validate,
-                        global::LightSwitchApplication.UserSetItem.DetailsClass.PropertySetProperties._Modified_GetImplementationValue,
+                        global::LightSwitchApplication.GameSetItem.DetailsClass.PropertySetProperties._Modified_Stub,
+                        global::LightSwitchApplication.GameSetItem.DetailsClass.PropertySetProperties._Modified_ComputeIsReadOnly,
+                        global::LightSwitchApplication.GameSetItem.DetailsClass.PropertySetProperties._Modified_Validate,
+                        global::LightSwitchApplication.GameSetItem.DetailsClass.PropertySetProperties._Modified_GetImplementationValue,
                         null,
-                        global::LightSwitchApplication.UserSetItem.DetailsClass.PropertySetProperties._Modified_OnValueChanged);
-                private static void _Modified_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.UserSetItem.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.UserSetItem, global::LightSwitchApplication.UserSetItem.DetailsClass, global::System.Nullable<global::System.DateTimeOffset>>.Data> c, global::LightSwitchApplication.UserSetItem.DetailsClass d, object sf)
+                        global::LightSwitchApplication.GameSetItem.DetailsClass.PropertySetProperties._Modified_OnValueChanged);
+                private static void _Modified_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.GameSetItem.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.GameSetItem, global::LightSwitchApplication.GameSetItem.DetailsClass, global::System.Nullable<global::System.DateTimeOffset>>.Data> c, global::LightSwitchApplication.GameSetItem.DetailsClass d, object sf)
                 {
                     c(d, ref d._Modified, sf);
                 }
-                private static bool _Modified_ComputeIsReadOnly(global::LightSwitchApplication.UserSetItem e)
+                private static bool _Modified_ComputeIsReadOnly(global::LightSwitchApplication.GameSetItem e)
                 {
                     bool result = false;
                     e.Modified_IsReadOnly(ref result);
                     return result;
                 }
-                private static void _Modified_Validate(global::LightSwitchApplication.UserSetItem e, global::Microsoft.LightSwitch.EntityValidationResultsBuilder r)
+                private static void _Modified_Validate(global::LightSwitchApplication.GameSetItem e, global::Microsoft.LightSwitch.EntityValidationResultsBuilder r)
                 {
                     e.Modified_Validate(r);
                 }
-                private static global::System.Nullable<global::System.DateTimeOffset> _Modified_GetImplementationValue(global::LightSwitchApplication.UserSetItem.DetailsClass d)
+                private static global::System.Nullable<global::System.DateTimeOffset> _Modified_GetImplementationValue(global::LightSwitchApplication.GameSetItem.DetailsClass d)
                 {
                     return d.ImplementationEntity.Modified;
                 }
-                private static void _Modified_OnValueChanged(global::LightSwitchApplication.UserSetItem e)
+                private static void _Modified_OnValueChanged(global::LightSwitchApplication.GameSetItem e)
                 {
                     e.Modified_Changed();
                 }
     
                 [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-                public static readonly global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.UserSetItem, global::LightSwitchApplication.UserSetItem.DetailsClass, byte[]>.Entry
-                    RowVersion = new global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.UserSetItem, global::LightSwitchApplication.UserSetItem.DetailsClass, byte[]>.Entry(
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.GameSetItem, global::LightSwitchApplication.GameSetItem.DetailsClass, byte[]>.Entry
+                    RowVersion = new global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.GameSetItem, global::LightSwitchApplication.GameSetItem.DetailsClass, byte[]>.Entry(
                         "RowVersion",
-                        global::LightSwitchApplication.UserSetItem.DetailsClass.PropertySetProperties._RowVersion_Stub,
-                        global::LightSwitchApplication.UserSetItem.DetailsClass.PropertySetProperties._RowVersion_ComputeIsReadOnly,
-                        global::LightSwitchApplication.UserSetItem.DetailsClass.PropertySetProperties._RowVersion_Validate,
-                        global::LightSwitchApplication.UserSetItem.DetailsClass.PropertySetProperties._RowVersion_GetImplementationValue,
-                        global::LightSwitchApplication.UserSetItem.DetailsClass.PropertySetProperties._RowVersion_SetImplementationValue,
-                        global::LightSwitchApplication.UserSetItem.DetailsClass.PropertySetProperties._RowVersion_OnValueChanged);
-                private static void _RowVersion_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.UserSetItem.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.UserSetItem, global::LightSwitchApplication.UserSetItem.DetailsClass, byte[]>.Data> c, global::LightSwitchApplication.UserSetItem.DetailsClass d, object sf)
+                        global::LightSwitchApplication.GameSetItem.DetailsClass.PropertySetProperties._RowVersion_Stub,
+                        global::LightSwitchApplication.GameSetItem.DetailsClass.PropertySetProperties._RowVersion_ComputeIsReadOnly,
+                        global::LightSwitchApplication.GameSetItem.DetailsClass.PropertySetProperties._RowVersion_Validate,
+                        global::LightSwitchApplication.GameSetItem.DetailsClass.PropertySetProperties._RowVersion_GetImplementationValue,
+                        global::LightSwitchApplication.GameSetItem.DetailsClass.PropertySetProperties._RowVersion_SetImplementationValue,
+                        global::LightSwitchApplication.GameSetItem.DetailsClass.PropertySetProperties._RowVersion_OnValueChanged);
+                private static void _RowVersion_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.GameSetItem.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.GameSetItem, global::LightSwitchApplication.GameSetItem.DetailsClass, byte[]>.Data> c, global::LightSwitchApplication.GameSetItem.DetailsClass d, object sf)
                 {
                     c(d, ref d._RowVersion, sf);
                 }
-                private static bool _RowVersion_ComputeIsReadOnly(global::LightSwitchApplication.UserSetItem e)
+                private static bool _RowVersion_ComputeIsReadOnly(global::LightSwitchApplication.GameSetItem e)
                 {
                     bool result = false;
                     e.RowVersion_IsReadOnly(ref result);
                     return result;
                 }
-                private static void _RowVersion_Validate(global::LightSwitchApplication.UserSetItem e, global::Microsoft.LightSwitch.EntityValidationResultsBuilder r)
+                private static void _RowVersion_Validate(global::LightSwitchApplication.GameSetItem e, global::Microsoft.LightSwitch.EntityValidationResultsBuilder r)
                 {
                     e.RowVersion_Validate(r);
                 }
-                private static byte[] _RowVersion_GetImplementationValue(global::LightSwitchApplication.UserSetItem.DetailsClass d)
+                private static byte[] _RowVersion_GetImplementationValue(global::LightSwitchApplication.GameSetItem.DetailsClass d)
                 {
                     return d.ImplementationEntity.RowVersion;
                 }
-                private static void _RowVersion_SetImplementationValue(global::LightSwitchApplication.UserSetItem.DetailsClass d, byte[] v)
+                private static void _RowVersion_SetImplementationValue(global::LightSwitchApplication.GameSetItem.DetailsClass d, byte[] v)
                 {
                     d.ImplementationEntity.RowVersion = v;
                 }
-                private static void _RowVersion_OnValueChanged(global::LightSwitchApplication.UserSetItem e)
+                private static void _RowVersion_OnValueChanged(global::LightSwitchApplication.GameSetItem e)
                 {
                     e.RowVersion_Changed();
                 }
     
                 [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-                public static readonly global::Microsoft.LightSwitch.Details.Framework.EntityCollectionProperty<global::LightSwitchApplication.UserSetItem, global::LightSwitchApplication.UserSetItem.DetailsClass, global::LightSwitchApplication.GameSetItem>.Entry
-                    GamesAsPlayer1Collection = new global::Microsoft.LightSwitch.Details.Framework.EntityCollectionProperty<global::LightSwitchApplication.UserSetItem, global::LightSwitchApplication.UserSetItem.DetailsClass, global::LightSwitchApplication.GameSetItem>.Entry(
-                        "GamesAsPlayer1Collection",
-                        global::LightSwitchApplication.UserSetItem.DetailsClass.PropertySetProperties._GamesAsPlayer1Collection_Stub,
-                        global::LightSwitchApplication.UserSetItem.DetailsClass.PropertySetProperties._GamesAsPlayer1Collection_GetReferencedEntities,
-                        global::LightSwitchApplication.UserSetItem.DetailsClass.PropertySetProperties._GamesAsPlayer1Collection_GetEntityCollection);
-                private static void _GamesAsPlayer1Collection_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.UserSetItem.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.EntityCollectionProperty<global::LightSwitchApplication.UserSetItem, global::LightSwitchApplication.UserSetItem.DetailsClass, global::LightSwitchApplication.GameSetItem>.Data> c, global::LightSwitchApplication.UserSetItem.DetailsClass d, object sf)
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.GameSetItem, global::LightSwitchApplication.GameSetItem.DetailsClass, bool>.Entry
+                    IsFinished = new global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.GameSetItem, global::LightSwitchApplication.GameSetItem.DetailsClass, bool>.Entry(
+                        "IsFinished",
+                        global::LightSwitchApplication.GameSetItem.DetailsClass.PropertySetProperties._IsFinished_Stub,
+                        global::LightSwitchApplication.GameSetItem.DetailsClass.PropertySetProperties._IsFinished_ComputeIsReadOnly,
+                        global::LightSwitchApplication.GameSetItem.DetailsClass.PropertySetProperties._IsFinished_Validate,
+                        global::LightSwitchApplication.GameSetItem.DetailsClass.PropertySetProperties._IsFinished_GetImplementationValue,
+                        global::LightSwitchApplication.GameSetItem.DetailsClass.PropertySetProperties._IsFinished_SetImplementationValue,
+                        global::LightSwitchApplication.GameSetItem.DetailsClass.PropertySetProperties._IsFinished_OnValueChanged);
+                private static void _IsFinished_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.GameSetItem.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.GameSetItem, global::LightSwitchApplication.GameSetItem.DetailsClass, bool>.Data> c, global::LightSwitchApplication.GameSetItem.DetailsClass d, object sf)
                 {
-                    c(d, ref d._GamesAsPlayer1Collection, sf);
+                    c(d, ref d._IsFinished, sf);
                 }
-                private static global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.GameSetItem> _GamesAsPlayer1Collection_GetReferencedEntities(global::LightSwitchApplication.UserSetItem.DetailsClass d)
+                private static bool _IsFinished_ComputeIsReadOnly(global::LightSwitchApplication.GameSetItem e)
                 {
-                    return d.GetReferencedEntities<global::LightSwitchApplication.GameSetItem, global::LightSwitchApplication.GameSetItem.DetailsClass>(global::LightSwitchApplication.UserSetItem.DetailsClass.PropertySetProperties.GamesAsPlayer1Collection, ref d._GamesAsPlayer1Collection);
+                    bool result = false;
+                    e.IsFinished_IsReadOnly(ref result);
+                    return result;
                 }
-                private static global::System.Collections.IEnumerable _GamesAsPlayer1Collection_GetEntityCollection(global::LightSwitchApplication.UserSetItem.DetailsClass d)
+                private static void _IsFinished_Validate(global::LightSwitchApplication.GameSetItem e, global::Microsoft.LightSwitch.EntityValidationResultsBuilder r)
                 {
-                    return d.ImplementationEntity.GamesAsPlayer1Collection;
+                    e.IsFinished_Validate(r);
                 }
-    
-                [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-                public static readonly global::Microsoft.LightSwitch.Details.Framework.EntityCollectionProperty<global::LightSwitchApplication.UserSetItem, global::LightSwitchApplication.UserSetItem.DetailsClass, global::LightSwitchApplication.GameSetItem>.Entry
-                    GamesAsPlayer2Collection = new global::Microsoft.LightSwitch.Details.Framework.EntityCollectionProperty<global::LightSwitchApplication.UserSetItem, global::LightSwitchApplication.UserSetItem.DetailsClass, global::LightSwitchApplication.GameSetItem>.Entry(
-                        "GamesAsPlayer2Collection",
-                        global::LightSwitchApplication.UserSetItem.DetailsClass.PropertySetProperties._GamesAsPlayer2Collection_Stub,
-                        global::LightSwitchApplication.UserSetItem.DetailsClass.PropertySetProperties._GamesAsPlayer2Collection_GetReferencedEntities,
-                        global::LightSwitchApplication.UserSetItem.DetailsClass.PropertySetProperties._GamesAsPlayer2Collection_GetEntityCollection);
-                private static void _GamesAsPlayer2Collection_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.UserSetItem.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.EntityCollectionProperty<global::LightSwitchApplication.UserSetItem, global::LightSwitchApplication.UserSetItem.DetailsClass, global::LightSwitchApplication.GameSetItem>.Data> c, global::LightSwitchApplication.UserSetItem.DetailsClass d, object sf)
+                private static bool _IsFinished_GetImplementationValue(global::LightSwitchApplication.GameSetItem.DetailsClass d)
                 {
-                    c(d, ref d._GamesAsPlayer2Collection, sf);
+                    return d.ImplementationEntity.IsFinished;
                 }
-                private static global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.GameSetItem> _GamesAsPlayer2Collection_GetReferencedEntities(global::LightSwitchApplication.UserSetItem.DetailsClass d)
+                private static void _IsFinished_SetImplementationValue(global::LightSwitchApplication.GameSetItem.DetailsClass d, bool v)
                 {
-                    return d.GetReferencedEntities<global::LightSwitchApplication.GameSetItem, global::LightSwitchApplication.GameSetItem.DetailsClass>(global::LightSwitchApplication.UserSetItem.DetailsClass.PropertySetProperties.GamesAsPlayer2Collection, ref d._GamesAsPlayer2Collection);
+                    d.ImplementationEntity.IsFinished = v;
                 }
-                private static global::System.Collections.IEnumerable _GamesAsPlayer2Collection_GetEntityCollection(global::LightSwitchApplication.UserSetItem.DetailsClass d)
+                private static void _IsFinished_OnValueChanged(global::LightSwitchApplication.GameSetItem e)
                 {
-                    return d.ImplementationEntity.GamesAsPlayer2Collection;
+                    e.IsFinished_Changed();
                 }
     
                 [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-                public static readonly global::Microsoft.LightSwitch.Details.Framework.EntityCollectionProperty<global::LightSwitchApplication.UserSetItem, global::LightSwitchApplication.UserSetItem.DetailsClass, global::LightSwitchApplication.HitSetItem>.Entry
-                    HitsCollection = new global::Microsoft.LightSwitch.Details.Framework.EntityCollectionProperty<global::LightSwitchApplication.UserSetItem, global::LightSwitchApplication.UserSetItem.DetailsClass, global::LightSwitchApplication.HitSetItem>.Entry(
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.GameSetItem, global::LightSwitchApplication.GameSetItem.DetailsClass, int>.Entry
+                    StartScore = new global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.GameSetItem, global::LightSwitchApplication.GameSetItem.DetailsClass, int>.Entry(
+                        "StartScore",
+                        global::LightSwitchApplication.GameSetItem.DetailsClass.PropertySetProperties._StartScore_Stub,
+                        global::LightSwitchApplication.GameSetItem.DetailsClass.PropertySetProperties._StartScore_ComputeIsReadOnly,
+                        global::LightSwitchApplication.GameSetItem.DetailsClass.PropertySetProperties._StartScore_Validate,
+                        global::LightSwitchApplication.GameSetItem.DetailsClass.PropertySetProperties._StartScore_GetImplementationValue,
+                        global::LightSwitchApplication.GameSetItem.DetailsClass.PropertySetProperties._StartScore_SetImplementationValue,
+                        global::LightSwitchApplication.GameSetItem.DetailsClass.PropertySetProperties._StartScore_OnValueChanged);
+                private static void _StartScore_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.GameSetItem.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.GameSetItem, global::LightSwitchApplication.GameSetItem.DetailsClass, int>.Data> c, global::LightSwitchApplication.GameSetItem.DetailsClass d, object sf)
+                {
+                    c(d, ref d._StartScore, sf);
+                }
+                private static bool _StartScore_ComputeIsReadOnly(global::LightSwitchApplication.GameSetItem e)
+                {
+                    bool result = false;
+                    e.StartScore_IsReadOnly(ref result);
+                    return result;
+                }
+                private static void _StartScore_Validate(global::LightSwitchApplication.GameSetItem e, global::Microsoft.LightSwitch.EntityValidationResultsBuilder r)
+                {
+                    e.StartScore_Validate(r);
+                }
+                private static int _StartScore_GetImplementationValue(global::LightSwitchApplication.GameSetItem.DetailsClass d)
+                {
+                    return d.ImplementationEntity.StartScore;
+                }
+                private static void _StartScore_SetImplementationValue(global::LightSwitchApplication.GameSetItem.DetailsClass d, int v)
+                {
+                    d.ImplementationEntity.StartScore = v;
+                }
+                private static void _StartScore_OnValueChanged(global::LightSwitchApplication.GameSetItem e)
+                {
+                    e.StartScore_Changed();
+                }
+    
+                [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.GameSetItem, global::LightSwitchApplication.GameSetItem.DetailsClass, int>.Entry
+                    P1ActualScore = new global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.GameSetItem, global::LightSwitchApplication.GameSetItem.DetailsClass, int>.Entry(
+                        "P1ActualScore",
+                        global::LightSwitchApplication.GameSetItem.DetailsClass.PropertySetProperties._P1ActualScore_Stub,
+                        global::LightSwitchApplication.GameSetItem.DetailsClass.PropertySetProperties._P1ActualScore_ComputeIsReadOnly,
+                        global::LightSwitchApplication.GameSetItem.DetailsClass.PropertySetProperties._P1ActualScore_Validate,
+                        global::LightSwitchApplication.GameSetItem.DetailsClass.PropertySetProperties._P1ActualScore_GetImplementationValue,
+                        global::LightSwitchApplication.GameSetItem.DetailsClass.PropertySetProperties._P1ActualScore_SetImplementationValue,
+                        global::LightSwitchApplication.GameSetItem.DetailsClass.PropertySetProperties._P1ActualScore_OnValueChanged);
+                private static void _P1ActualScore_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.GameSetItem.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.GameSetItem, global::LightSwitchApplication.GameSetItem.DetailsClass, int>.Data> c, global::LightSwitchApplication.GameSetItem.DetailsClass d, object sf)
+                {
+                    c(d, ref d._P1ActualScore, sf);
+                }
+                private static bool _P1ActualScore_ComputeIsReadOnly(global::LightSwitchApplication.GameSetItem e)
+                {
+                    bool result = false;
+                    e.P1ActualScore_IsReadOnly(ref result);
+                    return result;
+                }
+                private static void _P1ActualScore_Validate(global::LightSwitchApplication.GameSetItem e, global::Microsoft.LightSwitch.EntityValidationResultsBuilder r)
+                {
+                    e.P1ActualScore_Validate(r);
+                }
+                private static int _P1ActualScore_GetImplementationValue(global::LightSwitchApplication.GameSetItem.DetailsClass d)
+                {
+                    return d.ImplementationEntity.P1ActualScore;
+                }
+                private static void _P1ActualScore_SetImplementationValue(global::LightSwitchApplication.GameSetItem.DetailsClass d, int v)
+                {
+                    d.ImplementationEntity.P1ActualScore = v;
+                }
+                private static void _P1ActualScore_OnValueChanged(global::LightSwitchApplication.GameSetItem e)
+                {
+                    e.P1ActualScore_Changed();
+                }
+    
+                [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.GameSetItem, global::LightSwitchApplication.GameSetItem.DetailsClass, int>.Entry
+                    P2ActualScore = new global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.GameSetItem, global::LightSwitchApplication.GameSetItem.DetailsClass, int>.Entry(
+                        "P2ActualScore",
+                        global::LightSwitchApplication.GameSetItem.DetailsClass.PropertySetProperties._P2ActualScore_Stub,
+                        global::LightSwitchApplication.GameSetItem.DetailsClass.PropertySetProperties._P2ActualScore_ComputeIsReadOnly,
+                        global::LightSwitchApplication.GameSetItem.DetailsClass.PropertySetProperties._P2ActualScore_Validate,
+                        global::LightSwitchApplication.GameSetItem.DetailsClass.PropertySetProperties._P2ActualScore_GetImplementationValue,
+                        global::LightSwitchApplication.GameSetItem.DetailsClass.PropertySetProperties._P2ActualScore_SetImplementationValue,
+                        global::LightSwitchApplication.GameSetItem.DetailsClass.PropertySetProperties._P2ActualScore_OnValueChanged);
+                private static void _P2ActualScore_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.GameSetItem.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.GameSetItem, global::LightSwitchApplication.GameSetItem.DetailsClass, int>.Data> c, global::LightSwitchApplication.GameSetItem.DetailsClass d, object sf)
+                {
+                    c(d, ref d._P2ActualScore, sf);
+                }
+                private static bool _P2ActualScore_ComputeIsReadOnly(global::LightSwitchApplication.GameSetItem e)
+                {
+                    bool result = false;
+                    e.P2ActualScore_IsReadOnly(ref result);
+                    return result;
+                }
+                private static void _P2ActualScore_Validate(global::LightSwitchApplication.GameSetItem e, global::Microsoft.LightSwitch.EntityValidationResultsBuilder r)
+                {
+                    e.P2ActualScore_Validate(r);
+                }
+                private static int _P2ActualScore_GetImplementationValue(global::LightSwitchApplication.GameSetItem.DetailsClass d)
+                {
+                    return d.ImplementationEntity.P2ActualScore;
+                }
+                private static void _P2ActualScore_SetImplementationValue(global::LightSwitchApplication.GameSetItem.DetailsClass d, int v)
+                {
+                    d.ImplementationEntity.P2ActualScore = v;
+                }
+                private static void _P2ActualScore_OnValueChanged(global::LightSwitchApplication.GameSetItem e)
+                {
+                    e.P2ActualScore_Changed();
+                }
+    
+                [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.GameSetItem, global::LightSwitchApplication.GameSetItem.DetailsClass, global::System.DateTime>.Entry
+                    StartDate = new global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.GameSetItem, global::LightSwitchApplication.GameSetItem.DetailsClass, global::System.DateTime>.Entry(
+                        "StartDate",
+                        global::LightSwitchApplication.GameSetItem.DetailsClass.PropertySetProperties._StartDate_Stub,
+                        global::LightSwitchApplication.GameSetItem.DetailsClass.PropertySetProperties._StartDate_ComputeIsReadOnly,
+                        global::LightSwitchApplication.GameSetItem.DetailsClass.PropertySetProperties._StartDate_Validate,
+                        global::LightSwitchApplication.GameSetItem.DetailsClass.PropertySetProperties._StartDate_GetImplementationValue,
+                        global::LightSwitchApplication.GameSetItem.DetailsClass.PropertySetProperties._StartDate_SetImplementationValue,
+                        global::LightSwitchApplication.GameSetItem.DetailsClass.PropertySetProperties._StartDate_OnValueChanged);
+                private static void _StartDate_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.GameSetItem.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.GameSetItem, global::LightSwitchApplication.GameSetItem.DetailsClass, global::System.DateTime>.Data> c, global::LightSwitchApplication.GameSetItem.DetailsClass d, object sf)
+                {
+                    c(d, ref d._StartDate, sf);
+                }
+                private static bool _StartDate_ComputeIsReadOnly(global::LightSwitchApplication.GameSetItem e)
+                {
+                    bool result = false;
+                    e.StartDate_IsReadOnly(ref result);
+                    return result;
+                }
+                private static void _StartDate_Validate(global::LightSwitchApplication.GameSetItem e, global::Microsoft.LightSwitch.EntityValidationResultsBuilder r)
+                {
+                    e.StartDate_Validate(r);
+                }
+                private static global::System.DateTime _StartDate_GetImplementationValue(global::LightSwitchApplication.GameSetItem.DetailsClass d)
+                {
+                    return d.ImplementationEntity.StartDate;
+                }
+                private static void _StartDate_SetImplementationValue(global::LightSwitchApplication.GameSetItem.DetailsClass d, global::System.DateTime v)
+                {
+                    d.ImplementationEntity.StartDate = global::LightSwitchApplication.GameSetItem.DetailsClass.ClearDateTimeKind(v);
+                }
+                private static void _StartDate_OnValueChanged(global::LightSwitchApplication.GameSetItem e)
+                {
+                    e.StartDate_Changed();
+                }
+    
+                [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.GameSetItem, global::LightSwitchApplication.GameSetItem.DetailsClass, global::System.Nullable<global::System.DateTime>>.Entry
+                    EndDate = new global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.GameSetItem, global::LightSwitchApplication.GameSetItem.DetailsClass, global::System.Nullable<global::System.DateTime>>.Entry(
+                        "EndDate",
+                        global::LightSwitchApplication.GameSetItem.DetailsClass.PropertySetProperties._EndDate_Stub,
+                        global::LightSwitchApplication.GameSetItem.DetailsClass.PropertySetProperties._EndDate_ComputeIsReadOnly,
+                        global::LightSwitchApplication.GameSetItem.DetailsClass.PropertySetProperties._EndDate_Validate,
+                        global::LightSwitchApplication.GameSetItem.DetailsClass.PropertySetProperties._EndDate_GetImplementationValue,
+                        global::LightSwitchApplication.GameSetItem.DetailsClass.PropertySetProperties._EndDate_SetImplementationValue,
+                        global::LightSwitchApplication.GameSetItem.DetailsClass.PropertySetProperties._EndDate_OnValueChanged);
+                private static void _EndDate_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.GameSetItem.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.GameSetItem, global::LightSwitchApplication.GameSetItem.DetailsClass, global::System.Nullable<global::System.DateTime>>.Data> c, global::LightSwitchApplication.GameSetItem.DetailsClass d, object sf)
+                {
+                    c(d, ref d._EndDate, sf);
+                }
+                private static bool _EndDate_ComputeIsReadOnly(global::LightSwitchApplication.GameSetItem e)
+                {
+                    bool result = false;
+                    e.EndDate_IsReadOnly(ref result);
+                    return result;
+                }
+                private static void _EndDate_Validate(global::LightSwitchApplication.GameSetItem e, global::Microsoft.LightSwitch.EntityValidationResultsBuilder r)
+                {
+                    e.EndDate_Validate(r);
+                }
+                private static global::System.Nullable<global::System.DateTime> _EndDate_GetImplementationValue(global::LightSwitchApplication.GameSetItem.DetailsClass d)
+                {
+                    return d.ImplementationEntity.EndDate;
+                }
+                private static void _EndDate_SetImplementationValue(global::LightSwitchApplication.GameSetItem.DetailsClass d, global::System.Nullable<global::System.DateTime> v)
+                {
+                    d.ImplementationEntity.EndDate = global::LightSwitchApplication.GameSetItem.DetailsClass.ClearDateTimeKind(v);
+                }
+                private static void _EndDate_OnValueChanged(global::LightSwitchApplication.GameSetItem e)
+                {
+                    e.EndDate_Changed();
+                }
+    
+                [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.EntityReferenceProperty<global::LightSwitchApplication.GameSetItem, global::LightSwitchApplication.GameSetItem.DetailsClass, global::LightSwitchApplication.UserSetItem>.Entry
+                    Player1User = new global::Microsoft.LightSwitch.Details.Framework.EntityReferenceProperty<global::LightSwitchApplication.GameSetItem, global::LightSwitchApplication.GameSetItem.DetailsClass, global::LightSwitchApplication.UserSetItem>.Entry(
+                        "Player1User",
+                        global::LightSwitchApplication.GameSetItem.DetailsClass.PropertySetProperties._Player1User_Stub,
+                        global::LightSwitchApplication.GameSetItem.DetailsClass.PropertySetProperties._Player1User_ComputeIsReadOnly,
+                        global::LightSwitchApplication.GameSetItem.DetailsClass.PropertySetProperties._Player1User_Validate,
+                        global::LightSwitchApplication.GameSetItem.DetailsClass.PropertySetProperties._Player1User_GetCoreImplementationValue,
+                        global::LightSwitchApplication.GameSetItem.DetailsClass.PropertySetProperties._Player1User_GetImplementationValue,
+                        global::LightSwitchApplication.GameSetItem.DetailsClass.PropertySetProperties._Player1User_SetImplementationValue,
+                        global::LightSwitchApplication.GameSetItem.DetailsClass.PropertySetProperties._Player1User_Refresh,
+                        global::LightSwitchApplication.GameSetItem.DetailsClass.PropertySetProperties._Player1User_OnValueChanged);
+                private static void _Player1User_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.GameSetItem.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.EntityReferenceProperty<global::LightSwitchApplication.GameSetItem, global::LightSwitchApplication.GameSetItem.DetailsClass, global::LightSwitchApplication.UserSetItem>.Data> c, global::LightSwitchApplication.GameSetItem.DetailsClass d, object sf)
+                {
+                    c(d, ref d._Player1User, sf);
+                }
+                private static bool _Player1User_ComputeIsReadOnly(global::LightSwitchApplication.GameSetItem e)
+                {
+                    bool result = false;
+                    e.Player1User_IsReadOnly(ref result);
+                    return result;
+                }
+                private static void _Player1User_Validate(global::LightSwitchApplication.GameSetItem e, global::Microsoft.LightSwitch.EntityValidationResultsBuilder r)
+                {
+                    e.Player1User_Validate(r);
+                }
+                private static global::Microsoft.LightSwitch.Internal.IEntityImplementation _Player1User_GetCoreImplementationValue(global::LightSwitchApplication.GameSetItem.DetailsClass d)
+                {
+                    return d.ImplementationEntity.Player1User;
+                }
+                private static global::LightSwitchApplication.UserSetItem _Player1User_GetImplementationValue(global::LightSwitchApplication.GameSetItem.DetailsClass d)
+                {
+                    return d.GetImplementationValue<global::LightSwitchApplication.UserSetItem, global::LightSwitchApplication.UserSetItem.DetailsClass>(global::LightSwitchApplication.GameSetItem.DetailsClass.PropertySetProperties.Player1User, ref d._Player1User);
+                }
+                private static void _Player1User_SetImplementationValue(global::LightSwitchApplication.GameSetItem.DetailsClass d, global::LightSwitchApplication.UserSetItem v)
+                {
+                    d.SetImplementationValue(global::LightSwitchApplication.GameSetItem.DetailsClass.PropertySetProperties.Player1User, ref d._Player1User, (i, ev) => i.Player1User = ev, v);
+                }
+                private static void _Player1User_Refresh(global::LightSwitchApplication.GameSetItem.DetailsClass d)
+                {
+                    d.RefreshNavigationProperty(global::LightSwitchApplication.GameSetItem.DetailsClass.PropertySetProperties.Player1User, ref d._Player1User);
+                }
+                private static void _Player1User_OnValueChanged(global::LightSwitchApplication.GameSetItem e)
+                {
+                    e.Player1User_Changed();
+                }
+    
+                [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.EntityReferenceProperty<global::LightSwitchApplication.GameSetItem, global::LightSwitchApplication.GameSetItem.DetailsClass, global::LightSwitchApplication.UserSetItem>.Entry
+                    Player2User = new global::Microsoft.LightSwitch.Details.Framework.EntityReferenceProperty<global::LightSwitchApplication.GameSetItem, global::LightSwitchApplication.GameSetItem.DetailsClass, global::LightSwitchApplication.UserSetItem>.Entry(
+                        "Player2User",
+                        global::LightSwitchApplication.GameSetItem.DetailsClass.PropertySetProperties._Player2User_Stub,
+                        global::LightSwitchApplication.GameSetItem.DetailsClass.PropertySetProperties._Player2User_ComputeIsReadOnly,
+                        global::LightSwitchApplication.GameSetItem.DetailsClass.PropertySetProperties._Player2User_Validate,
+                        global::LightSwitchApplication.GameSetItem.DetailsClass.PropertySetProperties._Player2User_GetCoreImplementationValue,
+                        global::LightSwitchApplication.GameSetItem.DetailsClass.PropertySetProperties._Player2User_GetImplementationValue,
+                        global::LightSwitchApplication.GameSetItem.DetailsClass.PropertySetProperties._Player2User_SetImplementationValue,
+                        global::LightSwitchApplication.GameSetItem.DetailsClass.PropertySetProperties._Player2User_Refresh,
+                        global::LightSwitchApplication.GameSetItem.DetailsClass.PropertySetProperties._Player2User_OnValueChanged);
+                private static void _Player2User_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.GameSetItem.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.EntityReferenceProperty<global::LightSwitchApplication.GameSetItem, global::LightSwitchApplication.GameSetItem.DetailsClass, global::LightSwitchApplication.UserSetItem>.Data> c, global::LightSwitchApplication.GameSetItem.DetailsClass d, object sf)
+                {
+                    c(d, ref d._Player2User, sf);
+                }
+                private static bool _Player2User_ComputeIsReadOnly(global::LightSwitchApplication.GameSetItem e)
+                {
+                    bool result = false;
+                    e.Player2User_IsReadOnly(ref result);
+                    return result;
+                }
+                private static void _Player2User_Validate(global::LightSwitchApplication.GameSetItem e, global::Microsoft.LightSwitch.EntityValidationResultsBuilder r)
+                {
+                    e.Player2User_Validate(r);
+                }
+                private static global::Microsoft.LightSwitch.Internal.IEntityImplementation _Player2User_GetCoreImplementationValue(global::LightSwitchApplication.GameSetItem.DetailsClass d)
+                {
+                    return d.ImplementationEntity.Player2User;
+                }
+                private static global::LightSwitchApplication.UserSetItem _Player2User_GetImplementationValue(global::LightSwitchApplication.GameSetItem.DetailsClass d)
+                {
+                    return d.GetImplementationValue<global::LightSwitchApplication.UserSetItem, global::LightSwitchApplication.UserSetItem.DetailsClass>(global::LightSwitchApplication.GameSetItem.DetailsClass.PropertySetProperties.Player2User, ref d._Player2User);
+                }
+                private static void _Player2User_SetImplementationValue(global::LightSwitchApplication.GameSetItem.DetailsClass d, global::LightSwitchApplication.UserSetItem v)
+                {
+                    d.SetImplementationValue(global::LightSwitchApplication.GameSetItem.DetailsClass.PropertySetProperties.Player2User, ref d._Player2User, (i, ev) => i.Player2User = ev, v);
+                }
+                private static void _Player2User_Refresh(global::LightSwitchApplication.GameSetItem.DetailsClass d)
+                {
+                    d.RefreshNavigationProperty(global::LightSwitchApplication.GameSetItem.DetailsClass.PropertySetProperties.Player2User, ref d._Player2User);
+                }
+                private static void _Player2User_OnValueChanged(global::LightSwitchApplication.GameSetItem e)
+                {
+                    e.Player2User_Changed();
+                }
+    
+                [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.EntityCollectionProperty<global::LightSwitchApplication.GameSetItem, global::LightSwitchApplication.GameSetItem.DetailsClass, global::LightSwitchApplication.HitSetItem>.Entry
+                    HitsCollection = new global::Microsoft.LightSwitch.Details.Framework.EntityCollectionProperty<global::LightSwitchApplication.GameSetItem, global::LightSwitchApplication.GameSetItem.DetailsClass, global::LightSwitchApplication.HitSetItem>.Entry(
                         "HitsCollection",
-                        global::LightSwitchApplication.UserSetItem.DetailsClass.PropertySetProperties._HitsCollection_Stub,
-                        global::LightSwitchApplication.UserSetItem.DetailsClass.PropertySetProperties._HitsCollection_GetReferencedEntities,
-                        global::LightSwitchApplication.UserSetItem.DetailsClass.PropertySetProperties._HitsCollection_GetEntityCollection);
-                private static void _HitsCollection_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.UserSetItem.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.EntityCollectionProperty<global::LightSwitchApplication.UserSetItem, global::LightSwitchApplication.UserSetItem.DetailsClass, global::LightSwitchApplication.HitSetItem>.Data> c, global::LightSwitchApplication.UserSetItem.DetailsClass d, object sf)
+                        global::LightSwitchApplication.GameSetItem.DetailsClass.PropertySetProperties._HitsCollection_Stub,
+                        global::LightSwitchApplication.GameSetItem.DetailsClass.PropertySetProperties._HitsCollection_GetReferencedEntities,
+                        global::LightSwitchApplication.GameSetItem.DetailsClass.PropertySetProperties._HitsCollection_GetEntityCollection);
+                private static void _HitsCollection_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.GameSetItem.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.EntityCollectionProperty<global::LightSwitchApplication.GameSetItem, global::LightSwitchApplication.GameSetItem.DetailsClass, global::LightSwitchApplication.HitSetItem>.Data> c, global::LightSwitchApplication.GameSetItem.DetailsClass d, object sf)
                 {
                     c(d, ref d._HitsCollection, sf);
                 }
-                private static global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.HitSetItem> _HitsCollection_GetReferencedEntities(global::LightSwitchApplication.UserSetItem.DetailsClass d)
+                private static global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.HitSetItem> _HitsCollection_GetReferencedEntities(global::LightSwitchApplication.GameSetItem.DetailsClass d)
                 {
-                    return d.GetReferencedEntities<global::LightSwitchApplication.HitSetItem, global::LightSwitchApplication.HitSetItem.DetailsClass>(global::LightSwitchApplication.UserSetItem.DetailsClass.PropertySetProperties.HitsCollection, ref d._HitsCollection);
+                    return d.GetReferencedEntities<global::LightSwitchApplication.HitSetItem, global::LightSwitchApplication.HitSetItem.DetailsClass>(global::LightSwitchApplication.GameSetItem.DetailsClass.PropertySetProperties.HitsCollection, ref d._HitsCollection);
                 }
-                private static global::System.Collections.IEnumerable _HitsCollection_GetEntityCollection(global::LightSwitchApplication.UserSetItem.DetailsClass d)
+                private static global::System.Collections.IEnumerable _HitsCollection_GetEntityCollection(global::LightSwitchApplication.GameSetItem.DetailsClass d)
                 {
                     return d.ImplementationEntity.HitsCollection;
                 }
@@ -949,40 +1215,49 @@ namespace LightSwitchApplication
             }
     
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-            private global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.UserSetItem, global::LightSwitchApplication.UserSetItem.DetailsClass, int>.Data _Id;
+            private global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.GameSetItem, global::LightSwitchApplication.GameSetItem.DetailsClass, int>.Data _Id;
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-            private global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.UserSetItem, global::LightSwitchApplication.UserSetItem.DetailsClass, string>.Data _Name;
+            private global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.GameSetItem, global::LightSwitchApplication.GameSetItem.DetailsClass, string>.Data _CreatedBy;
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-            private global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.UserSetItem, global::LightSwitchApplication.UserSetItem.DetailsClass, int>.Data _Win;
+            private global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.GameSetItem, global::LightSwitchApplication.GameSetItem.DetailsClass, global::System.Nullable<global::System.DateTimeOffset>>.Data _Created;
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-            private global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.UserSetItem, global::LightSwitchApplication.UserSetItem.DetailsClass, int>.Data _Lose;
+            private global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.GameSetItem, global::LightSwitchApplication.GameSetItem.DetailsClass, string>.Data _ModifiedBy;
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-            private global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.UserSetItem, global::LightSwitchApplication.UserSetItem.DetailsClass, string>.Data _CreatedBy;
+            private global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.GameSetItem, global::LightSwitchApplication.GameSetItem.DetailsClass, global::System.Nullable<global::System.DateTimeOffset>>.Data _Modified;
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-            private global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.UserSetItem, global::LightSwitchApplication.UserSetItem.DetailsClass, global::System.Nullable<global::System.DateTimeOffset>>.Data _Created;
+            private global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.GameSetItem, global::LightSwitchApplication.GameSetItem.DetailsClass, byte[]>.Data _RowVersion;
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-            private global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.UserSetItem, global::LightSwitchApplication.UserSetItem.DetailsClass, string>.Data _ModifiedBy;
+            private global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.GameSetItem, global::LightSwitchApplication.GameSetItem.DetailsClass, bool>.Data _IsFinished;
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-            private global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.UserSetItem, global::LightSwitchApplication.UserSetItem.DetailsClass, global::System.Nullable<global::System.DateTimeOffset>>.Data _Modified;
+            private global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.GameSetItem, global::LightSwitchApplication.GameSetItem.DetailsClass, int>.Data _StartScore;
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-            private global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.UserSetItem, global::LightSwitchApplication.UserSetItem.DetailsClass, byte[]>.Data _RowVersion;
+            private global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.GameSetItem, global::LightSwitchApplication.GameSetItem.DetailsClass, int>.Data _P1ActualScore;
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-            private global::Microsoft.LightSwitch.Details.Framework.EntityCollectionProperty<global::LightSwitchApplication.UserSetItem, global::LightSwitchApplication.UserSetItem.DetailsClass, global::LightSwitchApplication.GameSetItem>.Data _GamesAsPlayer1Collection;
+            private global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.GameSetItem, global::LightSwitchApplication.GameSetItem.DetailsClass, int>.Data _P2ActualScore;
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-            private global::Microsoft.LightSwitch.Details.Framework.EntityCollectionProperty<global::LightSwitchApplication.UserSetItem, global::LightSwitchApplication.UserSetItem.DetailsClass, global::LightSwitchApplication.GameSetItem>.Data _GamesAsPlayer2Collection;
+            private global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.GameSetItem, global::LightSwitchApplication.GameSetItem.DetailsClass, global::System.DateTime>.Data _StartDate;
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-            private global::Microsoft.LightSwitch.Details.Framework.EntityCollectionProperty<global::LightSwitchApplication.UserSetItem, global::LightSwitchApplication.UserSetItem.DetailsClass, global::LightSwitchApplication.HitSetItem>.Data _HitsCollection;
+            private global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.GameSetItem, global::LightSwitchApplication.GameSetItem.DetailsClass, global::System.Nullable<global::System.DateTime>>.Data _EndDate;
+            
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private global::Microsoft.LightSwitch.Details.Framework.EntityReferenceProperty<global::LightSwitchApplication.GameSetItem, global::LightSwitchApplication.GameSetItem.DetailsClass, global::LightSwitchApplication.UserSetItem>.Data _Player1User;
+            
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private global::Microsoft.LightSwitch.Details.Framework.EntityReferenceProperty<global::LightSwitchApplication.GameSetItem, global::LightSwitchApplication.GameSetItem.DetailsClass, global::LightSwitchApplication.UserSetItem>.Data _Player2User;
+            
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private global::Microsoft.LightSwitch.Details.Framework.EntityCollectionProperty<global::LightSwitchApplication.GameSetItem, global::LightSwitchApplication.GameSetItem.DetailsClass, global::LightSwitchApplication.HitSetItem>.Data _HitsCollection;
             
         }
     

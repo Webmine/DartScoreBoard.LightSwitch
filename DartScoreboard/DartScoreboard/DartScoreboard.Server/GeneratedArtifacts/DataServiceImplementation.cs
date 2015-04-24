@@ -42,10 +42,6 @@ namespace LightSwitchApplication.Implementation
     #region Protected Methods
         protected override object CreateObject(global::System.Type type)
         {
-            if (type == typeof(global::LightSwitchApplication.Implementation.UserSetItem))
-            {
-                return new global::LightSwitchApplication.Implementation.UserSetItem();
-            }
             if (type == typeof(global::LightSwitchApplication.Implementation.GameSetItem))
             {
                 return new global::LightSwitchApplication.Implementation.GameSetItem();
@@ -53,6 +49,10 @@ namespace LightSwitchApplication.Implementation
             if (type == typeof(global::LightSwitchApplication.Implementation.HitSetItem))
             {
                 return new global::LightSwitchApplication.Implementation.HitSetItem();
+            }
+            if (type == typeof(global::LightSwitchApplication.Implementation.UserSetItem))
+            {
+                return new global::LightSwitchApplication.Implementation.UserSetItem();
             }
     
             return base.CreateObject(type);
@@ -70,10 +70,6 @@ namespace LightSwitchApplication.Implementation
     
         protected override global::Microsoft.LightSwitch.Internal.IEntityImplementation CreateEntityImplementation<T>()
         {
-            if (typeof(T) == typeof(global::LightSwitchApplication.UserSetItem))
-            {
-                return new global::LightSwitchApplication.Implementation.UserSetItem();
-            }
             if (typeof(T) == typeof(global::LightSwitchApplication.GameSetItem))
             {
                 return new global::LightSwitchApplication.Implementation.GameSetItem();
@@ -81,6 +77,10 @@ namespace LightSwitchApplication.Implementation
             if (typeof(T) == typeof(global::LightSwitchApplication.HitSetItem))
             {
                 return new global::LightSwitchApplication.Implementation.HitSetItem();
+            }
+            if (typeof(T) == typeof(global::LightSwitchApplication.UserSetItem))
+            {
+                return new global::LightSwitchApplication.Implementation.UserSetItem();
             }
             return null;
         }
@@ -127,10 +127,6 @@ namespace LightSwitchApplication.Implementation
     {
         global::System.Type global::Microsoft.LightSwitch.Internal.ITypeMappingProvider.GetImplementationType(global::System.Type definitionType)
         {
-            if (typeof(global::LightSwitchApplication.UserSetItem) == definitionType)
-            {
-                return typeof(global::LightSwitchApplication.Implementation.UserSetItem);
-            }
             if (typeof(global::LightSwitchApplication.GameSetItem) == definitionType)
             {
                 return typeof(global::LightSwitchApplication.Implementation.GameSetItem);
@@ -139,68 +135,13 @@ namespace LightSwitchApplication.Implementation
             {
                 return typeof(global::LightSwitchApplication.Implementation.HitSetItem);
             }
+            if (typeof(global::LightSwitchApplication.UserSetItem) == definitionType)
+            {
+                return typeof(global::LightSwitchApplication.Implementation.UserSetItem);
+            }
             return null;
         }
     }
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "12.1.0.0")]
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-    public partial class UserSetItem :
-        global::LightSwitchApplication.UserSetItem.DetailsClass.IImplementation,
-        global::Microsoft.LightSwitch.Internal.ICreatedModifiedPropertiesImplementation
-    
-    {
-    
-        global::System.Collections.IEnumerable global::LightSwitchApplication.UserSetItem.DetailsClass.IImplementation.GamesAsPlayer1Collection
-        {
-            get
-            {
-                return this.GamesAsPlayer1Collection;
-            }
-        }
-        
-        global::System.Collections.IEnumerable global::LightSwitchApplication.UserSetItem.DetailsClass.IImplementation.GamesAsPlayer2Collection
-        {
-            get
-            {
-                return this.GamesAsPlayer2Collection;
-            }
-        }
-        
-        global::System.Collections.IEnumerable global::LightSwitchApplication.UserSetItem.DetailsClass.IImplementation.HitsCollection
-        {
-            get
-            {
-                return this.HitsCollection;
-            }
-        }
-        
-        #region IEntityImplementation Members
-        private global::Microsoft.LightSwitch.Internal.IEntityImplementationHost __host;
-        
-        global::Microsoft.LightSwitch.Internal.IEntityImplementationHost global::Microsoft.LightSwitch.Internal.IEntityImplementation.Host
-        {
-            get
-            {
-                return this.__host;
-            }
-        }
-        
-        void global::Microsoft.LightSwitch.Internal.IEntityImplementation.Initialize(global::Microsoft.LightSwitch.Internal.IEntityImplementationHost host)
-        {
-            this.__host = host;
-        }
-        
-        protected override void OnPropertyChanged(string propertyName)
-        {
-            base.OnPropertyChanged(propertyName);
-            if (this.__host != null)
-            {
-                this.__host.RaisePropertyChanged(propertyName);
-            }
-        }
-        #endregion
-    }
-    
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "12.1.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     public partial class GameSetItem :
@@ -345,6 +286,65 @@ namespace LightSwitchApplication.Implementation
             if (this.__host != null)
             {
                 this.__host.RaisePropertyChanged("Player");
+            }
+        }
+        
+        #region IEntityImplementation Members
+        private global::Microsoft.LightSwitch.Internal.IEntityImplementationHost __host;
+        
+        global::Microsoft.LightSwitch.Internal.IEntityImplementationHost global::Microsoft.LightSwitch.Internal.IEntityImplementation.Host
+        {
+            get
+            {
+                return this.__host;
+            }
+        }
+        
+        void global::Microsoft.LightSwitch.Internal.IEntityImplementation.Initialize(global::Microsoft.LightSwitch.Internal.IEntityImplementationHost host)
+        {
+            this.__host = host;
+        }
+        
+        protected override void OnPropertyChanged(string propertyName)
+        {
+            base.OnPropertyChanged(propertyName);
+            if (this.__host != null)
+            {
+                this.__host.RaisePropertyChanged(propertyName);
+            }
+        }
+        #endregion
+    }
+    
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "12.1.0.0")]
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+    public partial class UserSetItem :
+        global::LightSwitchApplication.UserSetItem.DetailsClass.IImplementation,
+        global::Microsoft.LightSwitch.Internal.ICreatedModifiedPropertiesImplementation
+    
+    {
+    
+        global::System.Collections.IEnumerable global::LightSwitchApplication.UserSetItem.DetailsClass.IImplementation.GamesAsPlayer1Collection
+        {
+            get
+            {
+                return this.GamesAsPlayer1Collection;
+            }
+        }
+        
+        global::System.Collections.IEnumerable global::LightSwitchApplication.UserSetItem.DetailsClass.IImplementation.GamesAsPlayer2Collection
+        {
+            get
+            {
+                return this.GamesAsPlayer2Collection;
+            }
+        }
+        
+        global::System.Collections.IEnumerable global::LightSwitchApplication.UserSetItem.DetailsClass.IImplementation.HitsCollection
+        {
+            get
+            {
+                return this.HitsCollection;
             }
         }
         

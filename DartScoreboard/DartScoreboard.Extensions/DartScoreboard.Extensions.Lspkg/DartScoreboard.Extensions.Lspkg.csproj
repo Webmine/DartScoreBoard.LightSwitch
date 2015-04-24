@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <AssemblyName>DartScoreboard.Extensions</AssemblyName>
+    <RootNamespace>DartScoreboard.Extensions</RootNamespace>
+    <OutputType>Library</OutputType>
+    <ProjectTypeGuids>{5D239018-5547-433D-B38B-A6DADFE8EC12};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ProjectGuid>{750D6984-03CA-41B9-A34F-7A3256D3607A}</ProjectGuid>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <CopyBuildOutputToOutputDirectory>false</CopyBuildOutputToOutputDirectory>
+    <CopyOutputSymbolsToOutputDirectory>false</CopyOutputSymbolsToOutputDirectory>
+    <LightSwitchVersion>v4.0</LightSwitchVersion>
+    <CreateLspkg>true</CreateLspkg>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DartScoreboard.Extensions.Client\DartScoreboard.Extensions.Client.csproj">
+      <Name>DartScoreboard.Extensions.Client</Name>
+      <LspkgClientContent>true</LspkgClientContent>
+    </ProjectReference>
+    <ProjectReference Include="..\DartScoreboard.Extensions.Client.Design\DartScoreboard.Extensions.Client.Design.csproj">
+      <Name>DartScoreboard.Extensions.Client.Design</Name>
+      <LspkgClientDebugOnlyContent>true</LspkgClientDebugOnlyContent>
+    </ProjectReference>
+    <ProjectReference Include="..\DartScoreboard.Extensions.Common\DartScoreboard.Extensions.Common.csproj">
+      <Name>DartScoreboard.Extensions.Common</Name>
+      <LspkgClientContent>true</LspkgClientContent>
+      <LspkgIDEContent>true</LspkgIDEContent>
+      <LspkgServerContent>true</LspkgServerContent>
+    </ProjectReference>
+    <ProjectReference Include="..\DartScoreboard.Extensions.Design\DartScoreboard.Extensions.Design.csproj">
+      <Name>DartScoreboard.Extensions.Design</Name>
+      <LspkgIDEContent>true</LspkgIDEContent>
+    </ProjectReference>
+    <ProjectReference Include="..\DartScoreboard.Extensions.Server\DartScoreboard.Extensions.Server.csproj">
+      <Name>DartScoreboard.Extensions.Server</Name>
+      <LspkgServerContent>true</LspkgServerContent>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\LightSwitch\$(LightSwitchVersion)\Microsoft.LightSwitch.Toolkit.targets" />
+</Project>

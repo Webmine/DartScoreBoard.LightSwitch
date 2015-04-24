@@ -1,10 +1,10 @@
 <?xml version="1.0"?>
 <ModelDocumentManifest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Documents>
-    <Document FullPath="C:\Users\heringei.daniel.WM\Source\Repos\DartScoreboard\DartScoreboard\DartScoreboard\DartScoreboard.Server\Properties\Service.lsml" Checksum="679C78F29C5AF23E9956A773B0E46DF90F7B86CADA0B79571E5896A1C79F5B70" />
+    <Document FullPath="C:\Users\heringei.daniel.WM\Source\Repos\DartScoreboard\DartScoreboard\DartScoreboard\DartScoreboard.Server\DataSources\ApplicationData\GameSet.lsml" Checksum="BEF5AF7368B0576B2212FED31AEC2B01EEF0B6852905FEC971A07C8B7946103F" />
+    <Document FullPath="C:\Users\heringei.daniel.WM\Source\Repos\DartScoreboard\DartScoreboard\DartScoreboard\DartScoreboard.Server\DataSources\ApplicationData\HitSet.lsml" Checksum="88939DDAF2C8905D9A0CCFA8671DEC302D9476E8B914D36EF1581DE0908D3B8E" />
+    <Document FullPath="C:\Users\heringei.daniel.WM\Source\Repos\DartScoreboard\DartScoreboard\DartScoreboard\DartScoreboard.Server\DataSources\ApplicationData\UserSet.lsml" Checksum="83F046814F1978B8AB2C28018A9637E6D0F3160E0A64D3C521019DB513B74A01" />
     <Document FullPath="C:\Users\heringei.daniel.WM\Source\Repos\DartScoreboard\DartScoreboard\DartScoreboard\DartScoreboard.Server\Properties\DataSources\ApplicationData.lsml" Checksum="E6FEEAC3B4A850AAC5F0029259A0B9F8C1BD45F2950D17BD8D6664B9422E6AD6" />
-    <Document FullPath="C:\Users\heringei.daniel.WM\Source\Repos\DartScoreboard\DartScoreboard\DartScoreboard\DartScoreboard.Server\DataSources\ApplicationData\UsersSet.lsml" Checksum="73CD393129961605FC0A91CC2E5B576A0B688A43ECCD22173CC089C85D75276D" />
-    <Document FullPath="C:\Users\heringei.daniel.WM\Source\Repos\DartScoreboard\DartScoreboard\DartScoreboard\DartScoreboard.Server\DataSources\ApplicationData\GamesSet.lsml" Checksum="79754D69A9C1336F962F4DA62B3088BC43D6AA9FDEB792DE23F5BB5E46D3C4FE" />
-    <Document FullPath="C:\Users\heringei.daniel.WM\Source\Repos\DartScoreboard\DartScoreboard\DartScoreboard\DartScoreboard.Server\DataSources\ApplicationData\HitsSet.lsml" Checksum="258C08E8245E8A26B3D6F29E370C9E91121135BA119D6ADDE9FB8084D45C5E35" />
+    <Document FullPath="C:\Users\heringei.daniel.WM\Source\Repos\DartScoreboard\DartScoreboard\DartScoreboard\DartScoreboard.Server\Properties\Service.lsml" Checksum="679C78F29C5AF23E9956A773B0E46DF90F7B86CADA0B79571E5896A1C79F5B70" />
   </Documents>
 </ModelDocumentManifest>

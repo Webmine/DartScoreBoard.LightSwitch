@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+  <Metadata>
+    <Identity Id="DartScoreboard.Extensions" Version="1.0" Language="en-US" Publisher="My Company" />
+    <DisplayName>DartScoreboard.Extensions</DisplayName>
+    <Description>DartScoreboard.Extensions description</Description>
+    <Tags>Visual Studio LightSwitch</Tags>
+  </Metadata>
+  <Installation>
+    <InstallationTarget Id="Microsoft.VisualStudio.Pro" Version="[12.0]" />
+  </Installation>
+  <Dependencies>
+  </Dependencies>
+  <Assets>
+    <Asset Type="LightSwitchPackage" d:Source="Project" d:ProjectName="DartScoreboard.Extensions.Lspkg" Path="|DartScoreboard.Extensions.Lspkg;LspkgOutputGroup|" />
+  </Assets>
+</PackageManifest>

@@ -112,6 +112,10 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <LightSwitchExtension Include="Extensions\DartScoreboard.Extensions.lspkg">
+      <ExtensionId>DartScoreboard.Extensions</ExtensionId>
+      <Server>DARTSCOREBOARD.EXTENSIONS.COMMON;DARTSCOREBOARD.EXTENSIONS.SERVER</Server>
+    </LightSwitchExtension>
     <LightSwitchExtension Include="Extensions\Microsoft.LightSwitch.Extensions.lspkg">
       <ExtensionId>Microsoft.LightSwitch.Extensions</ExtensionId>
       <Server>MICROSOFT.LIGHTSWITCH.EXTENSIONS.SERVER</Server>
