@@ -2152,7 +2152,18 @@
       ]
     },
     {
-      "homeScreen": { "__id": "BrowseUserSet" },
+      "id": "DartScoreboard.Extensions:!module",
+      "name": "DartScoreboard.Extensions",
+      "globalItems":
+      [
+        {
+          "id": "DartScoreboard.Extensions:Shell",
+          "name": "Shell"
+        }
+      ]
+    },
+    {
+      "homeScreen": { "__id": "BrowseGameSet" },
       "id": "!module",
       "name": "LightSwitchApplication.DartScoreboard.HTMLClient",
       "logo": "/Content/Images/logo.png",
@@ -2162,7 +2173,7 @@
       "theme": { "__id": ":HTMLTheme" },
       ":@ModuleNamespace": { "namespace": "LightSwitchApplication" },
       ":@Partial": { "isPrimary": true },
-      ":@HomeScreen": { "value": { "__id": "BrowseUserSet" } },
+      ":@HomeScreen": { },
       "globalItems":
       [
         {
@@ -3595,6 +3606,16 @@
                                 {
                                   "member": { "__id": "GameSetItem/Properties[P2ActualScore]" }
                                 }
+                              },
+                              {
+                                "displayName": "OpenThisShit",
+                                "name": "Id1",
+                                "kind": "Value",
+                                "view": { "__id": ":ValueCustomControl" },
+                                "dataSource":
+                                {
+                                  "member": { "__id": "GameSetItem/Properties[Id]" }
+                                }
                               }
                             ],
                             "propertySources":
@@ -3725,6 +3746,10 @@
                   "parameterType": { "__id": ":String" }
                 }
               ]
+            },
+            {
+              "id": "BrowseGameSet/Methods[OpenGameScreen]",
+              "name": "OpenGameScreen"
             }
           ],
           "properties":
@@ -4015,6 +4040,93 @@
               }
             }
           ]
+        },
+        {
+          "displayName": "Dart Game Screen",
+          "id": "DartGameScreen",
+          "name": "DartGameScreen",
+          "launchMode": "Single",
+          "rootContentItem":
+          {
+            "displayName": "Root Content Item",
+            "name": "RootContentItem",
+            "kind": "Screen",
+            "view": { "__id": ":Screen" },
+            "childContentItems":
+            [
+              {
+                "displayName": "Tabs",
+                "name": "Tabs",
+                "kind": "Group",
+                "view": { "__id": ":TabPages" },
+                "childContentItems":
+                [
+                  {
+                    "displayName": "Group",
+                    "name": "Group",
+                    "kind": "Tab",
+                    "view": { "__id": ":RowsLayout" },
+                    "childContentItems":
+                    [
+                      {
+                        "displayName": "skldnflksflksdjf",
+                        "name": "MyCustomControl",
+                        "kind": "ScreenContent",
+                        "view": { "__id": ":ScreenCustomControl" },
+                        "propertySources":
+                        [
+                          {
+                            "property": { "__id": ":RootControl/Properties[AttachedLabelPosition]" },
+                            "value": "Hidden"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "propertySources":
+                [
+                  {
+                    "property": { "__id": ":RootControl/Properties[BrowseOnly]" },
+                    "value": true
+                  }
+                ]
+              },
+              {
+                "displayName": "Popups",
+                "name": "Popups",
+                "kind": "Group",
+                "view": { "__id": ":DialogPages" }
+              }
+            ]
+          },
+          "methods":
+          [
+            {
+              "id": "DartGameScreen/Methods[showTab]",
+              "name": "showTab",
+              "parameters":
+              [
+                {
+                  "id": "DartGameScreen/Methods[showTab]/Parameters[tabName]",
+                  "name": "tabName",
+                  "parameterType": { "__id": ":String" }
+                }
+              ]
+            },
+            {
+              "id": "DartGameScreen/Methods[showDialog]",
+              "name": "showDialog",
+              "parameters":
+              [
+                {
+                  "id": "DartGameScreen/Methods[showDialog]/Parameters[dialogName]",
+                  "name": "dialogName",
+                  "parameterType": { "__id": ":String" }
+                }
+              ]
+            }
+          ]
         }
       ],
       "methods":
@@ -4054,6 +4166,11 @@
           "id": "!module/Methods[showBrowseUserSet]",
           "name": "showBrowseUserSet",
           ":@ShowScreenMethod": { "targetScreen": { "__id": "BrowseUserSet" } }
+        },
+        {
+          "id": "!module/Methods[showDartGameScreen]",
+          "name": "showDartGameScreen",
+          ":@ShowScreenMethod": { "targetScreen": { "__id": "DartGameScreen" } }
         }
       ],
       "navigationItems":
@@ -4067,6 +4184,11 @@
           "id": "!module/NavigationItems[link1]",
           "name": "link1",
           "method": { "__id": "!module/Methods[showBrowseUserSet]" }
+        },
+        {
+          "id": "!module/NavigationItems[link2]",
+          "name": "link2",
+          "method": { "__id": "!module/Methods[showDartGameScreen]" }
         }
       ]
     }

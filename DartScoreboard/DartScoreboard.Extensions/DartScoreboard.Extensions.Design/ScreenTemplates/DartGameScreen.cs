@@ -16,8 +16,40 @@ namespace DartScoreboard.Extensions.ScreenTemplates
     {
         #region IScreenTemplate Members
 
+        //http://lightswitchhelpwebsite.com/Blog/tabid/61/EntryId/3239/Creating-A-LightSwitch-HTML-Screen-Extension.aspx
         public void Generate(IScreenTemplateHost host)
         {
+            ContentItem tabContentItem;
+
+            tabContentItem = host.AddContentItem(host.ScreenTabPagesContentItem, "Group",
+                ContentItemKind.Group);
+
+            // Set screen to use view controls by default
+
+            host.SetControlPropertyValue(
+                host.ScreenTabPagesContentItem, "Microsoft.LightSwitch.MobileWeb:RootControl", "BrowseOnly", "True");
+
+            // Add CustomControl to screen
+
+            string MyCustomControlName = "MyCustomControl";
+
+            host.AddContentItem(tabContentItem, MyCustomControlName, ContentItemKind.ScreenContent);
+
+            // Create JavaScript code for Utility function
+
+            string UtilityTemplate = "";
+
+            UtilityTemplate = UtilityTemplate + "{0}myapp.{2}" + ".{3}_render = function (element, contentItem) {{";
+            UtilityTemplate = UtilityTemplate + "{0}element.innerHTML = '<h1>Hello World!</h1>';";
+            UtilityTemplate = UtilityTemplate + "{0}}};";
+
+            // Call AddScreenCodeBehind for UtilityTemplate
+
+            host.AddScreenCodeBehind(String.Format(UtilityTemplate,
+                                                       Environment.NewLine,
+                                                       host.ScreenNamespace,
+                                                       host.ScreenName,
+                                                       MyCustomControlName));
 
         }
 
@@ -85,7 +117,7 @@ namespace DartScoreboard.Extensions.ScreenTemplates
         {
             return new DartGameScreen();
         }
-
+        
         #endregion
     }
 }

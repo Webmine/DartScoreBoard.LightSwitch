@@ -343,6 +343,14 @@
             data: lightSwitchApplication.GameSetItem,
             value: Number
         },
+        Id1: {
+            _$class: msls.ContentItem,
+            _$name: "Id1",
+            _$parentName: "rows",
+            screen: lightSwitchApplication.BrowseGameSet,
+            data: lightSwitchApplication.GameSetItem,
+            value: Number
+        },
         Popups: {
             _$class: msls.ContentItem,
             _$name: "Popups",
@@ -362,6 +370,16 @@
         /// <br/>beforeApplyChanges(msls.application.BrowseGameSet screen)
         /// </field>
         beforeApplyChanges: [lightSwitchApplication.BrowseGameSet],
+        /// <field>
+        /// Called to determine if the OpenGameScreen method can be executed.
+        /// <br/>canExecute(msls.application.BrowseGameSet screen)
+        /// </field>
+        OpenGameScreen_canExecute: [lightSwitchApplication.BrowseGameSet],
+        /// <field>
+        /// Called to execute the OpenGameScreen method.
+        /// <br/>execute(msls.application.BrowseGameSet screen)
+        /// </field>
+        OpenGameScreen_execute: [lightSwitchApplication.BrowseGameSet],
         /// <field>
         /// Called after the GamesList content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
@@ -416,7 +434,12 @@
         /// Called after the P2ActualScore content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
-        P2ActualScore_postRender: [$element, function () { return new lightSwitchApplication.BrowseGameSet().findContentItem("P2ActualScore"); }]
+        P2ActualScore_postRender: [$element, function () { return new lightSwitchApplication.BrowseGameSet().findContentItem("P2ActualScore"); }],
+        /// <field>
+        /// Called to render the Id1 content item.
+        /// <br/>render(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        Id1_render: [$element, function () { return new lightSwitchApplication.BrowseGameSet().findContentItem("Id1"); }]
     });
 
     lightSwitchApplication.BrowseUserSet.prototype._$contentItems = {
@@ -529,6 +552,60 @@
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         Lose_postRender: [$element, function () { return new lightSwitchApplication.BrowseUserSet().findContentItem("Lose"); }]
+    });
+
+    lightSwitchApplication.DartGameScreen.prototype._$contentItems = {
+        Tabs: {
+            _$class: msls.ContentItem,
+            _$name: "Tabs",
+            _$parentName: "RootContentItem",
+            screen: lightSwitchApplication.DartGameScreen
+        },
+        Group: {
+            _$class: msls.ContentItem,
+            _$name: "Group",
+            _$parentName: "Tabs",
+            screen: lightSwitchApplication.DartGameScreen,
+            data: lightSwitchApplication.DartGameScreen,
+            value: lightSwitchApplication.DartGameScreen
+        },
+        MyCustomControl: {
+            _$class: msls.ContentItem,
+            _$name: "MyCustomControl",
+            _$parentName: "Group",
+            screen: lightSwitchApplication.DartGameScreen,
+            data: lightSwitchApplication.DartGameScreen,
+            value: lightSwitchApplication.DartGameScreen
+        },
+        Popups: {
+            _$class: msls.ContentItem,
+            _$name: "Popups",
+            _$parentName: "RootContentItem",
+            screen: lightSwitchApplication.DartGameScreen
+        }
+    };
+
+    msls._addEntryPoints(lightSwitchApplication.DartGameScreen, {
+        /// <field>
+        /// Called when a new DartGameScreen screen is created.
+        /// <br/>created(msls.application.DartGameScreen screen)
+        /// </field>
+        created: [lightSwitchApplication.DartGameScreen],
+        /// <field>
+        /// Called before changes on an active DartGameScreen screen are applied.
+        /// <br/>beforeApplyChanges(msls.application.DartGameScreen screen)
+        /// </field>
+        beforeApplyChanges: [lightSwitchApplication.DartGameScreen],
+        /// <field>
+        /// Called after the Group content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        Group_postRender: [$element, function () { return new lightSwitchApplication.DartGameScreen().findContentItem("Group"); }],
+        /// <field>
+        /// Called to render the MyCustomControl content item.
+        /// <br/>render(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        MyCustomControl_render: [$element, function () { return new lightSwitchApplication.DartGameScreen().findContentItem("MyCustomControl"); }]
     });
 
 }(msls.application));
