@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{581633EB-B896-402F-8E60-36F3DA191C85}") = "DartScoreboard", "DartScoreboard\DartScoreboard.lsxtproj", "{1FF856B7-E47D-4807-8463-151091A6B1A6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DartScoreboard.Server", "DartScoreboard\DartScoreboard.Server\DartScoreboard.Server.csproj", "{A51BAF12-97B4-4B36-9ACA-1E058F94CED8}"
+EndProject
+Project("{262852C6-CD72-467D-83FE-5EEB1973A190}") = "DartScoreboard.HTMLClient", "DartScoreboard\DartScoreboard.HTMLClient\DartScoreboard.HTMLClient.jsproj", "{52442845-A954-4778-AC7C-5EC7A3206CA9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1FF856B7-E47D-4807-8463-151091A6B1A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1FF856B7-E47D-4807-8463-151091A6B1A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1FF856B7-E47D-4807-8463-151091A6B1A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1FF856B7-E47D-4807-8463-151091A6B1A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A51BAF12-97B4-4B36-9ACA-1E058F94CED8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A51BAF12-97B4-4B36-9ACA-1E058F94CED8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A51BAF12-97B4-4B36-9ACA-1E058F94CED8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A51BAF12-97B4-4B36-9ACA-1E058F94CED8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52442845-A954-4778-AC7C-5EC7A3206CA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52442845-A954-4778-AC7C-5EC7A3206CA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52442845-A954-4778-AC7C-5EC7A3206CA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52442845-A954-4778-AC7C-5EC7A3206CA9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

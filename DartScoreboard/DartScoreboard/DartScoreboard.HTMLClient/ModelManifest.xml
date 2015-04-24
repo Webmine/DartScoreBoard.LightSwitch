@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<ModelDocumentManifest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Documents>
+    <Document FullPath="C:\Users\heringei.daniel.WM\Source\Repos\DartScoreboard\DartScoreboard\DartScoreboard\DartScoreboard.HTMLClient\Properties\Client.lsml" Checksum="8DB84B3216DC509BD9C90BB5F871DD468C182352BEEBA2AC177855096CC94EB7" />
+    <Document FullPath="C:\Users\heringei.daniel.WM\Source\Repos\DartScoreboard\DartScoreboard\DartScoreboard\DartScoreboard.HTMLClient\Properties\Proxies.lsml" Checksum="47128F059D88CBD8453A2DEF60CBB7D15C969128710D7A0F8FDF321C2D56B3FD" />
+    <Document FullPath="C:\Users\heringei.daniel.WM\Source\Repos\DartScoreboard\DartScoreboard\DartScoreboard\DartScoreboard.HTMLClient\Screens\AddEditUser.lsml" Checksum="16F60FAFBAB20417E6B3D52E8EE558EB6F886379C5A669620A49D0D1204F035A" />
+    <Document FullPath="C:\Users\heringei.daniel.WM\Source\Repos\DartScoreboard\DartScoreboard\DartScoreboard\DartScoreboard.HTMLClient\Screens\BrowseGamesSet.lsml" Checksum="F6FACF43E4931784D97E053C0A43775797553606BA09DD9B14D950CAD0E8285D" />
+    <Document FullPath="C:\Users\heringei.daniel.WM\Source\Repos\DartScoreboard\DartScoreboard\DartScoreboard\DartScoreboard.HTMLClient\Screens\AddEditGames.lsml" Checksum="CBC5F3CDCBCACCE91AD2B6CCB596FD1E9759A4BF9DE4D4D3885C95D2D3C6D483" />
+    <Document FullPath="C:\Users\heringei.daniel.WM\Source\Repos\DartScoreboard\DartScoreboard\DartScoreboard\DartScoreboard.HTMLClient\Screens\BrowseUsersSet.lsml" Checksum="695E4FEFF03129D9F1A1B60903FFE10004B1FAF0B001CD496936F36943451D88" />
+  </Documents>
+</ModelDocumentManifest>

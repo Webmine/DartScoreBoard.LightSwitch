@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="ApplicationDataStore" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="ApplicationDataStore">
+    <EntitySet Name="UserSet" EntityType="ApplicationDataStore.UserSetItem" store:Type="Tables" Schema="dbo" Table="UserSet" />
+    <EntitySet Name="GameSet" EntityType="ApplicationDataStore.GameSetItem" store:Type="Tables" Schema="dbo" Table="GameSet" />
+    <EntitySet Name="HitSet" EntityType="ApplicationDataStore.HitSetItem" store:Type="Tables" Schema="dbo" Table="HitSet" />
+    <AssociationSet Name="GameSetItem_UserSetItem" Association="ApplicationDataStore.GameSetItem_UserSetItem">
+      <End Role="UserSetItem" EntitySet="UserSet" />
+      <End Role="GameSetItem" EntitySet="GameSet" />
+    </AssociationSet>
+    <AssociationSet Name="GameSetItem_UserSetItem1" Association="ApplicationDataStore.GameSetItem_UserSetItem1">
+      <End Role="UserSetItem" EntitySet="UserSet" />
+      <End Role="GameSetItem" EntitySet="GameSet" />
+    </AssociationSet>
+    <AssociationSet Name="HitSetItem_GameSetItem" Association="ApplicationDataStore.HitSetItem_GameSetItem">
+      <End Role="GameSetItem" EntitySet="GameSet" />
+      <End Role="HitSetItem" EntitySet="HitSet" />
+    </AssociationSet>
+    <AssociationSet Name="HitSetItem_UserSetItem" Association="ApplicationDataStore.HitSetItem_UserSetItem">
+      <End Role="UserSetItem" EntitySet="UserSet" />
+      <End Role="HitSetItem" EntitySet="HitSet" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="UserSetItem">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="Win" Type="int" Nullable="false" />
+    <Property Name="Lose" Type="int" Nullable="false" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="255" />
+    <Property Name="Created" Type="datetimeoffset" />
+    <Property Name="ModifiedBy" Type="nvarchar" MaxLength="255" />
+    <Property Name="Modified" Type="datetimeoffset" />
+    <Property Name="RowVersion" Type="rowversion" Nullable="false" StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="GameSetItem">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="255" />
+    <Property Name="Created" Type="datetimeoffset" />
+    <Property Name="ModifiedBy" Type="nvarchar" MaxLength="255" />
+    <Property Name="Modified" Type="datetimeoffset" />
+    <Property Name="RowVersion" Type="rowversion" Nullable="false" StoreGeneratedPattern="Computed" />
+    <Property Name="IsFinished" Type="bit" Nullable="false" />
+    <Property Name="StartScore" Type="int" Nullable="false" />
+    <Property Name="P1ActualScore" Type="int" Nullable="false" />
+    <Property Name="P2ActualScore" Type="int" Nullable="false" />
+    <Property Name="StartDate" Type="datetime" Nullable="false" />
+    <Property Name="EndDate" Type="datetime" />
+    <Property Name="Games_Users" Type="int" Nullable="false" />
+    <Property Name="Games_Users1" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="HitSetItem">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Value" Type="int" Nullable="false" />
+    <Property Name="Multiplicity" Type="int" Nullable="false" />
+    <Property Name="Turn" Type="int" Nullable="false" />
+    <Property Name="DartNumber" Type="int" Nullable="false" />
+    <Property Name="Succesful" Type="bit" Nullable="false" />
+    <Property Name="ThrowDate" Type="datetime" Nullable="false" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="255" />
+    <Property Name="Created" Type="datetimeoffset" />
+    <Property Name="ModifiedBy" Type="nvarchar" MaxLength="255" />
+    <Property Name="Modified" Type="datetimeoffset" />
+    <Property Name="RowVersion" Type="rowversion" Nullable="false" StoreGeneratedPattern="Computed" />
+    <Property Name="Hits_Games" Type="int" Nullable="false" />
+    <Property Name="Hits_Users" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="GameSetItem_UserSetItem">
+    <End Role="UserSetItem" Type="ApplicationDataStore.UserSetItem" Multiplicity="1">
+      <OnDeleteAnnotation Action="Restrict" xmlns="http://schemas.microsoft.com/LightSwitch/2013/edm/annotations" />
+    </End>
+    <End Role="GameSetItem" Type="ApplicationDataStore.GameSetItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UserSetItem">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="GameSetItem">
+        <PropertyRef Name="Games_Users" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="GameSetItem_UserSetItem1">
+    <End Role="UserSetItem" Type="ApplicationDataStore.UserSetItem" Multiplicity="1">
+      <OnDeleteAnnotation Action="Restrict" xmlns="http://schemas.microsoft.com/LightSwitch/2013/edm/annotations" />
+    </End>
+    <End Role="GameSetItem" Type="ApplicationDataStore.GameSetItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UserSetItem">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="GameSetItem">
+        <PropertyRef Name="Games_Users1" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="HitSetItem_GameSetItem">
+    <End Role="GameSetItem" Type="ApplicationDataStore.GameSetItem" Multiplicity="1">
+      <OnDeleteAnnotation Action="Restrict" xmlns="http://schemas.microsoft.com/LightSwitch/2013/edm/annotations" />
+    </End>
+    <End Role="HitSetItem" Type="ApplicationDataStore.HitSetItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GameSetItem">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="HitSetItem">
+        <PropertyRef Name="Hits_Games" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="HitSetItem_UserSetItem">
+    <End Role="UserSetItem" Type="ApplicationDataStore.UserSetItem" Multiplicity="1">
+      <OnDeleteAnnotation Action="Restrict" xmlns="http://schemas.microsoft.com/LightSwitch/2013/edm/annotations" />
+    </End>
+    <End Role="HitSetItem" Type="ApplicationDataStore.HitSetItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UserSetItem">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="HitSetItem">
+        <PropertyRef Name="Hits_Users" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

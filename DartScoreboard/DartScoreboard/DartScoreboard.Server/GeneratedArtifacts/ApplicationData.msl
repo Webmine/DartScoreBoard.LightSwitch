@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping CdmEntityContainer="ApplicationData" StorageEntityContainer="ApplicationDataStore">
+    <EntitySetMapping Name="UserSet">
+      <EntityTypeMapping TypeName="IsTypeOf(LightSwitchApplication.UserSetItem)">
+        <MappingFragment StoreEntitySet="UserSet">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Win" ColumnName="Win" />
+          <ScalarProperty Name="Lose" ColumnName="Lose" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Created" ColumnName="Created" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="Modified" ColumnName="Modified" />
+          <ScalarProperty Name="RowVersion" ColumnName="RowVersion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GameSet">
+      <EntityTypeMapping TypeName="IsTypeOf(LightSwitchApplication.GameSetItem)">
+        <MappingFragment StoreEntitySet="GameSet">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Games_Users" ColumnName="Games_Users" />
+          <ScalarProperty Name="Games_Users1" ColumnName="Games_Users1" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Created" ColumnName="Created" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="Modified" ColumnName="Modified" />
+          <ScalarProperty Name="RowVersion" ColumnName="RowVersion" />
+          <ScalarProperty Name="IsFinished" ColumnName="IsFinished" />
+          <ScalarProperty Name="StartScore" ColumnName="StartScore" />
+          <ScalarProperty Name="P1ActualScore" ColumnName="P1ActualScore" />
+          <ScalarProperty Name="P2ActualScore" ColumnName="P2ActualScore" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HitSet">
+      <EntityTypeMapping TypeName="IsTypeOf(LightSwitchApplication.HitSetItem)">
+        <MappingFragment StoreEntitySet="HitSet">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Hits_Games" ColumnName="Hits_Games" />
+          <ScalarProperty Name="Hits_Users" ColumnName="Hits_Users" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+          <ScalarProperty Name="Multiplicity" ColumnName="Multiplicity" />
+          <ScalarProperty Name="Turn" ColumnName="Turn" />
+          <ScalarProperty Name="DartNumber" ColumnName="DartNumber" />
+          <ScalarProperty Name="Succesful" ColumnName="Succesful" />
+          <ScalarProperty Name="ThrowDate" ColumnName="ThrowDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Created" ColumnName="Created" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="Modified" ColumnName="Modified" />
+          <ScalarProperty Name="RowVersion" ColumnName="RowVersion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
