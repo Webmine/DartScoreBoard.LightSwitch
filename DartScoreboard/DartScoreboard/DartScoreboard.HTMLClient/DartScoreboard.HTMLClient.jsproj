@@ -75,6 +75,9 @@
     <Content Include="Screens\BrowseGameSet.lsml.js">
       <DependentUpon>BrowseGameSet.lsml</DependentUpon>
     </Content>
+    <Content Include="Screens\ViewGameSetItem.lsml.js">
+      <DependentUpon>ViewGameSetItem.lsml</DependentUpon>
+    </Content>
     <Content Include="Scripts\datajs-1.1.1.js" />
     <Content Include="Scripts\datajs-1.1.1.min.js" />
     <Content Include="Scripts\jquery-1.9.1.intellisense.js" />

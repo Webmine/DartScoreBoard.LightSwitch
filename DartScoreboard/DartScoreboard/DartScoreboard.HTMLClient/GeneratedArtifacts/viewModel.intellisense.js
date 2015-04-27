@@ -666,6 +666,30 @@
             data: lightSwitchApplication.GameSetItem,
             value: Date
         },
+        ActualPlayer: {
+            _$class: msls.ContentItem,
+            _$name: "ActualPlayer",
+            _$parentName: "right",
+            screen: lightSwitchApplication.ViewGameSetItem,
+            data: lightSwitchApplication.GameSetItem,
+            value: lightSwitchApplication.GameSetItem
+        },
+        ActualTurn: {
+            _$class: msls.ContentItem,
+            _$name: "ActualTurn",
+            _$parentName: "right",
+            screen: lightSwitchApplication.ViewGameSetItem,
+            data: lightSwitchApplication.GameSetItem,
+            value: lightSwitchApplication.GameSetItem
+        },
+        ActualDart: {
+            _$class: msls.ContentItem,
+            _$name: "ActualDart",
+            _$parentName: "right",
+            screen: lightSwitchApplication.ViewGameSetItem,
+            data: lightSwitchApplication.GameSetItem,
+            value: lightSwitchApplication.GameSetItem
+        },
         HitsCollection: {
             _$class: msls.ContentItem,
             _$name: "HitsCollection",
@@ -859,6 +883,21 @@
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         EndDate_postRender: [$element, function () { return new lightSwitchApplication.ViewGameSetItem().findContentItem("EndDate"); }],
+        /// <field>
+        /// Called to render the ActualPlayer content item.
+        /// <br/>render(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        ActualPlayer_render: [$element, function () { return new lightSwitchApplication.ViewGameSetItem().findContentItem("ActualPlayer"); }],
+        /// <field>
+        /// Called to render the ActualTurn content item.
+        /// <br/>render(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        ActualTurn_render: [$element, function () { return new lightSwitchApplication.ViewGameSetItem().findContentItem("ActualTurn"); }],
+        /// <field>
+        /// Called to render the ActualDart content item.
+        /// <br/>render(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        ActualDart_render: [$element, function () { return new lightSwitchApplication.ViewGameSetItem().findContentItem("ActualDart"); }],
         /// <field>
         /// Called after the HitsCollection content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)

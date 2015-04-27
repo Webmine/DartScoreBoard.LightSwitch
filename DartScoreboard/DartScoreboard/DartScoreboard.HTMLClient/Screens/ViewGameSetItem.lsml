@@ -249,6 +249,15 @@
                     </ScreenExpressionTree>
                   </ContentItem.DataSource>
                 </ContentItem>
+                <ContentItem
+                  Name="ActualPlayer"
+                  Kind="ScreenContent" />
+                <ContentItem
+                  Name="ActualTurn"
+                  Kind="ScreenContent" />
+                <ContentItem
+                  Name="ActualDart"
+                  Kind="ScreenContent" />
                 <ContentItem.PropertySources>
                   <ControlPropertySource
                     Property="Microsoft.LightSwitch.MobileWeb:RootControl/Properties[MinWidth]">

@@ -4239,6 +4239,24 @@
                                 {
                                   "member": { "__id": "GameSetItem/Properties[EndDate]" }
                                 }
+                              },
+                              {
+                                "displayName": "Actual Player",
+                                "name": "ActualPlayer",
+                                "kind": "ScreenContent",
+                                "view": { "__id": ":ScreenCustomControl" }
+                              },
+                              {
+                                "displayName": "Actual Turn",
+                                "name": "ActualTurn",
+                                "kind": "ScreenContent",
+                                "view": { "__id": ":ScreenCustomControl" }
+                              },
+                              {
+                                "displayName": "Actual Dart",
+                                "name": "ActualDart",
+                                "kind": "ScreenContent",
+                                "view": { "__id": ":ScreenCustomControl" }
                               }
                             ],
                             "propertySources":
@@ -4645,25 +4663,20 @@
                               {
                                 "displayName": "Player",
                                 "name": "Player",
-                                "kind": "Details",
-                                "view": { "__id": ":DetailsModalPicker" },
+                                "kind": "Value",
+                                "view": { "__id": ":Text" },
                                 "dataSource":
                                 {
-                                  "member": { "__id": "HitSetItem/Properties[Player]" }
-                                },
-                                "childContentItems":
-                                [
-                                  {
-                                    "displayName": "User Set Item",
-                                    "name": "RowTemplate1",
-                                    "kind": "Value",
-                                    "view": { "__id": ":Text" },
-                                    "dataSource":
+                                  "links":
+                                  [
+                                    {
+                                      "member": { "__id": "HitSetItem/Properties[Player]" }
+                                    },
                                     {
                                       "member": { "__id": "UserSetItem/Properties[Name]" }
                                     }
-                                  }
-                                ]
+                                  ]
+                                }
                               },
                               {
                                 "displayName": "Value",
