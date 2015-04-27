@@ -4255,6 +4255,34 @@
                           }
                         ]
                       }
+                    ],
+                    "commandItems":
+                    [
+                      {
+                        "displayName": "Add Hit",
+                        "name": "AddHitOnDetails",
+                        "kind": "Command",
+                        "view": { "__id": ":CommandBarButton" },
+                        "propertySources":
+                        [
+                          {
+                            "property": { "__id": ":RootControl/Properties[Tap]" },
+                            "source":
+                            {
+                              "target": { "__id": "!module/Methods[showAddEditHitSetItem]" },
+                              ":@AssociatedCollection": { "collection": { "__id": "ViewGameSetItem/Properties[HitsCollection]" } },
+                              ":@CreateNewEntity":
+                              {
+                                "targetParameter": { "__id": "!module/Methods[showAddEditHitSetItem]/Parameters[HitSetItem]" }
+                              }
+                            }
+                          },
+                          {
+                            "property": { "__id": ":RootCommand/Properties[Icon]" },
+                            "value": "msls-add"
+                          }
+                        ]
+                      }
                     ]
                   },
                   {
@@ -4268,7 +4296,7 @@
                         "displayName": "HitsCollection",
                         "name": "HitsCollection1",
                         "kind": "Collection",
-                        "view": { "__id": ":TileList" },
+                        "view": { "__id": ":Table" },
                         "dataSource":
                         {
                           "member": { "__id": "ViewGameSetItem/Properties[HitsCollection]" }
@@ -4279,7 +4307,7 @@
                             "displayName": "rows",
                             "name": "rows",
                             "kind": "Details",
-                            "view": { "__id": ":RowsLayout" },
+                            "view": { "__id": ":TableRowLayout" },
                             "dataSource":
                             {
                               "links":
@@ -4346,6 +4374,56 @@
                                     "value": "Small"
                                   }
                                 ]
+                              },
+                              {
+                                "displayName": "Multiplicity",
+                                "name": "Multiplicity",
+                                "kind": "Value",
+                                "view": { "__id": ":Text" },
+                                "dataSource":
+                                {
+                                  "member": { "__id": "HitSetItem/Properties[Multiplicity]" }
+                                }
+                              },
+                              {
+                                "displayName": "Turn",
+                                "name": "Turn",
+                                "kind": "Value",
+                                "view": { "__id": ":Text" },
+                                "dataSource":
+                                {
+                                  "member": { "__id": "HitSetItem/Properties[Turn]" }
+                                }
+                              },
+                              {
+                                "displayName": "Dart Number",
+                                "name": "DartNumber",
+                                "kind": "Value",
+                                "view": { "__id": ":Text" },
+                                "dataSource":
+                                {
+                                  "member": { "__id": "HitSetItem/Properties[DartNumber]" }
+                                }
+                              },
+                              {
+                                "displayName": "Succesful",
+                                "name": "Succesful",
+                                "kind": "Value",
+                                "view": { "__id": ":Text" },
+                                "dataSource":
+                                {
+                                  "member": { "__id": "HitSetItem/Properties[Succesful]" }
+                                }
+                              },
+                              {
+                                "displayName": "Throw Date",
+                                "name": "ThrowDate",
+                                "kind": "Value",
+                                "view": { "__id": ":Text" },
+                                "dataSource":
+                                {
+                                  "member": { "__id": "HitSetItem/Properties[ThrowDate]" }
+                                }
                               }
                             ],
                             "propertySources":
@@ -4373,6 +4451,34 @@
                                 }
                               ]
                             }
+                          }
+                        ]
+                      }
+                    ],
+                    "commandItems":
+                    [
+                      {
+                        "displayName": "Add Hit",
+                        "name": "AddHitOnHitsCollection",
+                        "kind": "Command",
+                        "view": { "__id": ":CommandBarButton" },
+                        "propertySources":
+                        [
+                          {
+                            "property": { "__id": ":RootControl/Properties[Tap]" },
+                            "source":
+                            {
+                              "target": { "__id": "!module/Methods[showAddEditHitSetItem]" },
+                              ":@AssociatedCollection": { "collection": { "__id": "ViewGameSetItem/Properties[HitsCollection]" } },
+                              ":@CreateNewEntity":
+                              {
+                                "targetParameter": { "__id": "!module/Methods[showAddEditHitSetItem]/Parameters[HitSetItem]" }
+                              }
+                            }
+                          },
+                          {
+                            "property": { "__id": ":RootCommand/Properties[Icon]" },
+                            "value": "msls-add"
                           }
                         ]
                       }
@@ -4462,6 +4568,260 @@
               }
             }
           ]
+        },
+        {
+          "displayName": "Add Edit Hit Set Item",
+          "id": "AddEditHitSetItem",
+          "name": "AddEditHitSetItem",
+          "launchMode": "Single",
+          ":@SaveChangesTo":
+          {
+            "property": { "__id": "DataWorkspace/Members[ApplicationData]" }
+          },
+          "rootContentItem":
+          {
+            "displayName": "Root Content Item",
+            "name": "RootContentItem",
+            "kind": "Screen",
+            "view": { "__id": ":Screen" },
+            "childContentItems":
+            [
+              {
+                "displayName": "Tabs",
+                "name": "Tabs",
+                "kind": "Group",
+                "view": { "__id": ":TabPages" },
+                "childContentItems":
+                [
+                  {
+                    "displayName": "Details",
+                    "name": "Details",
+                    "kind": "Tab",
+                    "view": { "__id": ":RowsLayout" },
+                    "childContentItems":
+                    [
+                      {
+                        "displayName": "columns",
+                        "name": "columns",
+                        "kind": "Details",
+                        "view": { "__id": ":ColumnsLayout" },
+                        "dataSource":
+                        {
+                          "member": { "__id": "AddEditHitSetItem/Properties[HitSetItem]" }
+                        },
+                        "childContentItems":
+                        [
+                          {
+                            "displayName": "left",
+                            "name": "left",
+                            "kind": "Group",
+                            "view": { "__id": ":RowsLayout" },
+                            "childContentItems":
+                            [
+                              {
+                                "displayName": "Game",
+                                "name": "Game",
+                                "isHidden": true,
+                                "kind": "Details",
+                                "view": { "__id": ":DetailsModalPicker" },
+                                "dataSource":
+                                {
+                                  "member": { "__id": "HitSetItem/Properties[Game]" }
+                                },
+                                "childContentItems":
+                                [
+                                  {
+                                    "displayName": "Game Set Item",
+                                    "name": "RowTemplate",
+                                    "kind": "Value",
+                                    "view": { "__id": ":Text" },
+                                    "dataSource":
+                                    {
+                                      "member": { "__id": "GameSetItem/Properties[Id]" }
+                                    }
+                                  }
+                                ]
+                              },
+                              {
+                                "displayName": "Player",
+                                "name": "Player",
+                                "kind": "Details",
+                                "view": { "__id": ":DetailsModalPicker" },
+                                "dataSource":
+                                {
+                                  "member": { "__id": "HitSetItem/Properties[Player]" }
+                                },
+                                "childContentItems":
+                                [
+                                  {
+                                    "displayName": "User Set Item",
+                                    "name": "RowTemplate1",
+                                    "kind": "Value",
+                                    "view": { "__id": ":Text" },
+                                    "dataSource":
+                                    {
+                                      "member": { "__id": "UserSetItem/Properties[Name]" }
+                                    }
+                                  }
+                                ]
+                              },
+                              {
+                                "displayName": "Value",
+                                "name": "Value",
+                                "kind": "Value",
+                                "view": { "__id": ":TextBox" },
+                                "dataSource":
+                                {
+                                  "member": { "__id": "HitSetItem/Properties[Value]" }
+                                }
+                              },
+                              {
+                                "displayName": "Multiplicity",
+                                "name": "Multiplicity",
+                                "kind": "Value",
+                                "view": { "__id": ":TextBox" },
+                                "dataSource":
+                                {
+                                  "member": { "__id": "HitSetItem/Properties[Multiplicity]" }
+                                }
+                              }
+                            ],
+                            "propertySources":
+                            [
+                              {
+                                "property": { "__id": ":RootControl/Properties[MinWidth]" },
+                                "value": 200
+                              },
+                              {
+                                "property": { "__id": ":RootControl/Properties[MaxWidth]" },
+                                "value": 400
+                              }
+                            ]
+                          },
+                          {
+                            "displayName": "right",
+                            "name": "right",
+                            "kind": "Group",
+                            "view": { "__id": ":RowsLayout" },
+                            "childContentItems":
+                            [
+                              {
+                                "displayName": "Turn",
+                                "name": "Turn",
+                                "kind": "Value",
+                                "view": { "__id": ":Text" },
+                                "dataSource":
+                                {
+                                  "member": { "__id": "HitSetItem/Properties[Turn]" }
+                                }
+                              },
+                              {
+                                "displayName": "Dart Number",
+                                "name": "DartNumber",
+                                "kind": "Value",
+                                "view": { "__id": ":Text" },
+                                "dataSource":
+                                {
+                                  "member": { "__id": "HitSetItem/Properties[DartNumber]" }
+                                }
+                              },
+                              {
+                                "displayName": "Succesful",
+                                "name": "Succesful",
+                                "isHidden": true,
+                                "kind": "Value",
+                                "view": { "__id": ":FlipSwitchControl" },
+                                "dataSource":
+                                {
+                                  "member": { "__id": "HitSetItem/Properties[Succesful]" }
+                                }
+                              },
+                              {
+                                "displayName": "Throw Date",
+                                "name": "ThrowDate",
+                                "isHidden": true,
+                                "kind": "Value",
+                                "view": { "__id": ":DateTimePicker" },
+                                "dataSource":
+                                {
+                                  "member": { "__id": "HitSetItem/Properties[ThrowDate]" }
+                                }
+                              }
+                            ],
+                            "propertySources":
+                            [
+                              {
+                                "property": { "__id": ":RootControl/Properties[MinWidth]" },
+                                "value": 200
+                              },
+                              {
+                                "property": { "__id": ":RootControl/Properties[MaxWidth]" },
+                                "value": 400
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "displayName": "Popups",
+                "name": "Popups",
+                "kind": "Group",
+                "view": { "__id": ":DialogPages" }
+              }
+            ],
+            "propertySources":
+            [
+              {
+                "property": { "__id": ":Screen/Properties[ScreenType]" },
+                "value": "Edit"
+              },
+              {
+                "property": { "__id": ":Screen/Properties[ShowAsDialog]" },
+                "value": true
+              }
+            ]
+          },
+          "methods":
+          [
+            {
+              "id": "AddEditHitSetItem/Methods[showTab]",
+              "name": "showTab",
+              "parameters":
+              [
+                {
+                  "id": "AddEditHitSetItem/Methods[showTab]/Parameters[tabName]",
+                  "name": "tabName",
+                  "parameterType": { "__id": ":String" }
+                }
+              ]
+            },
+            {
+              "id": "AddEditHitSetItem/Methods[showDialog]",
+              "name": "showDialog",
+              "parameters":
+              [
+                {
+                  "id": "AddEditHitSetItem/Methods[showDialog]/Parameters[dialogName]",
+                  "name": "dialogName",
+                  "parameterType": { "__id": ":String" }
+                }
+              ]
+            }
+          ],
+          "properties":
+          [
+            {
+              "id": "AddEditHitSetItem/Properties[HitSetItem]",
+              "name": "HitSetItem",
+              "elementType": { "__id": "HitSetItem" },
+              "propertyType": { "__id": "HitSetItem" },
+              ":@IsParameter": { }
+            }
+          ]
         }
       ],
       "methods":
@@ -4512,6 +4872,19 @@
               "id": "!module/Methods[showViewGameSetItem]/Parameters[GameSetItem]",
               "name": "GameSetItem",
               "parameterType": { "__id": "GameSetItem" }
+            }
+          ]
+        },
+        {
+          "id": "!module/Methods[showAddEditHitSetItem]",
+          "name": "showAddEditHitSetItem",
+          ":@ShowScreenMethod": { "targetScreen": { "__id": "AddEditHitSetItem" } },
+          "parameters":
+          [
+            {
+              "id": "!module/Methods[showAddEditHitSetItem]/Parameters[HitSetItem]",
+              "name": "HitSetItem",
+              "parameterType": { "__id": "HitSetItem" }
             }
           ]
         }

@@ -720,6 +720,46 @@
             data: lightSwitchApplication.HitSetItem,
             value: Number
         },
+        Multiplicity: {
+            _$class: msls.ContentItem,
+            _$name: "Multiplicity",
+            _$parentName: "rows",
+            screen: lightSwitchApplication.ViewGameSetItem,
+            data: lightSwitchApplication.HitSetItem,
+            value: Number
+        },
+        Turn: {
+            _$class: msls.ContentItem,
+            _$name: "Turn",
+            _$parentName: "rows",
+            screen: lightSwitchApplication.ViewGameSetItem,
+            data: lightSwitchApplication.HitSetItem,
+            value: Number
+        },
+        DartNumber: {
+            _$class: msls.ContentItem,
+            _$name: "DartNumber",
+            _$parentName: "rows",
+            screen: lightSwitchApplication.ViewGameSetItem,
+            data: lightSwitchApplication.HitSetItem,
+            value: Number
+        },
+        Succesful: {
+            _$class: msls.ContentItem,
+            _$name: "Succesful",
+            _$parentName: "rows",
+            screen: lightSwitchApplication.ViewGameSetItem,
+            data: lightSwitchApplication.HitSetItem,
+            value: Boolean
+        },
+        ThrowDate: {
+            _$class: msls.ContentItem,
+            _$name: "ThrowDate",
+            _$parentName: "rows",
+            screen: lightSwitchApplication.ViewGameSetItem,
+            data: lightSwitchApplication.HitSetItem,
+            value: Date
+        },
         Popups: {
             _$class: msls.ContentItem,
             _$name: "Popups",
@@ -848,7 +888,229 @@
         /// Called after the Value content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
-        Value_postRender: [$element, function () { return new lightSwitchApplication.ViewGameSetItem().findContentItem("Value"); }]
+        Value_postRender: [$element, function () { return new lightSwitchApplication.ViewGameSetItem().findContentItem("Value"); }],
+        /// <field>
+        /// Called after the Multiplicity content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        Multiplicity_postRender: [$element, function () { return new lightSwitchApplication.ViewGameSetItem().findContentItem("Multiplicity"); }],
+        /// <field>
+        /// Called after the Turn content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        Turn_postRender: [$element, function () { return new lightSwitchApplication.ViewGameSetItem().findContentItem("Turn"); }],
+        /// <field>
+        /// Called after the DartNumber content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        DartNumber_postRender: [$element, function () { return new lightSwitchApplication.ViewGameSetItem().findContentItem("DartNumber"); }],
+        /// <field>
+        /// Called after the Succesful content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        Succesful_postRender: [$element, function () { return new lightSwitchApplication.ViewGameSetItem().findContentItem("Succesful"); }],
+        /// <field>
+        /// Called after the ThrowDate content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        ThrowDate_postRender: [$element, function () { return new lightSwitchApplication.ViewGameSetItem().findContentItem("ThrowDate"); }]
+    });
+
+    lightSwitchApplication.AddEditHitSetItem.prototype._$contentItems = {
+        Tabs: {
+            _$class: msls.ContentItem,
+            _$name: "Tabs",
+            _$parentName: "RootContentItem",
+            screen: lightSwitchApplication.AddEditHitSetItem
+        },
+        Details: {
+            _$class: msls.ContentItem,
+            _$name: "Details",
+            _$parentName: "Tabs",
+            screen: lightSwitchApplication.AddEditHitSetItem,
+            data: lightSwitchApplication.AddEditHitSetItem,
+            value: lightSwitchApplication.AddEditHitSetItem
+        },
+        columns: {
+            _$class: msls.ContentItem,
+            _$name: "columns",
+            _$parentName: "Details",
+            screen: lightSwitchApplication.AddEditHitSetItem,
+            data: lightSwitchApplication.AddEditHitSetItem,
+            value: lightSwitchApplication.HitSetItem
+        },
+        left: {
+            _$class: msls.ContentItem,
+            _$name: "left",
+            _$parentName: "columns",
+            screen: lightSwitchApplication.AddEditHitSetItem,
+            data: lightSwitchApplication.HitSetItem,
+            value: lightSwitchApplication.HitSetItem
+        },
+        Game: {
+            _$class: msls.ContentItem,
+            _$name: "Game",
+            _$parentName: "left",
+            screen: lightSwitchApplication.AddEditHitSetItem,
+            data: lightSwitchApplication.HitSetItem,
+            value: lightSwitchApplication.GameSetItem
+        },
+        RowTemplate: {
+            _$class: msls.ContentItem,
+            _$name: "RowTemplate",
+            _$parentName: "Game",
+            screen: lightSwitchApplication.AddEditHitSetItem,
+            data: lightSwitchApplication.GameSetItem,
+            value: lightSwitchApplication.GameSetItem
+        },
+        Player: {
+            _$class: msls.ContentItem,
+            _$name: "Player",
+            _$parentName: "left",
+            screen: lightSwitchApplication.AddEditHitSetItem,
+            data: lightSwitchApplication.HitSetItem,
+            value: lightSwitchApplication.UserSetItem
+        },
+        Value: {
+            _$class: msls.ContentItem,
+            _$name: "Value",
+            _$parentName: "left",
+            screen: lightSwitchApplication.AddEditHitSetItem,
+            data: lightSwitchApplication.HitSetItem,
+            value: Number
+        },
+        Multiplicity: {
+            _$class: msls.ContentItem,
+            _$name: "Multiplicity",
+            _$parentName: "left",
+            screen: lightSwitchApplication.AddEditHitSetItem,
+            data: lightSwitchApplication.HitSetItem,
+            value: Number
+        },
+        right: {
+            _$class: msls.ContentItem,
+            _$name: "right",
+            _$parentName: "columns",
+            screen: lightSwitchApplication.AddEditHitSetItem,
+            data: lightSwitchApplication.HitSetItem,
+            value: lightSwitchApplication.HitSetItem
+        },
+        Turn: {
+            _$class: msls.ContentItem,
+            _$name: "Turn",
+            _$parentName: "right",
+            screen: lightSwitchApplication.AddEditHitSetItem,
+            data: lightSwitchApplication.HitSetItem,
+            value: Number
+        },
+        DartNumber: {
+            _$class: msls.ContentItem,
+            _$name: "DartNumber",
+            _$parentName: "right",
+            screen: lightSwitchApplication.AddEditHitSetItem,
+            data: lightSwitchApplication.HitSetItem,
+            value: Number
+        },
+        Succesful: {
+            _$class: msls.ContentItem,
+            _$name: "Succesful",
+            _$parentName: "right",
+            screen: lightSwitchApplication.AddEditHitSetItem,
+            data: lightSwitchApplication.HitSetItem,
+            value: Boolean
+        },
+        ThrowDate: {
+            _$class: msls.ContentItem,
+            _$name: "ThrowDate",
+            _$parentName: "right",
+            screen: lightSwitchApplication.AddEditHitSetItem,
+            data: lightSwitchApplication.HitSetItem,
+            value: Date
+        },
+        Popups: {
+            _$class: msls.ContentItem,
+            _$name: "Popups",
+            _$parentName: "RootContentItem",
+            screen: lightSwitchApplication.AddEditHitSetItem
+        }
+    };
+
+    msls._addEntryPoints(lightSwitchApplication.AddEditHitSetItem, {
+        /// <field>
+        /// Called when a new AddEditHitSetItem screen is created.
+        /// <br/>created(msls.application.AddEditHitSetItem screen)
+        /// </field>
+        created: [lightSwitchApplication.AddEditHitSetItem],
+        /// <field>
+        /// Called before changes on an active AddEditHitSetItem screen are applied.
+        /// <br/>beforeApplyChanges(msls.application.AddEditHitSetItem screen)
+        /// </field>
+        beforeApplyChanges: [lightSwitchApplication.AddEditHitSetItem],
+        /// <field>
+        /// Called after the Details content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        Details_postRender: [$element, function () { return new lightSwitchApplication.AddEditHitSetItem().findContentItem("Details"); }],
+        /// <field>
+        /// Called after the columns content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        columns_postRender: [$element, function () { return new lightSwitchApplication.AddEditHitSetItem().findContentItem("columns"); }],
+        /// <field>
+        /// Called after the left content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        left_postRender: [$element, function () { return new lightSwitchApplication.AddEditHitSetItem().findContentItem("left"); }],
+        /// <field>
+        /// Called after the Game content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        Game_postRender: [$element, function () { return new lightSwitchApplication.AddEditHitSetItem().findContentItem("Game"); }],
+        /// <field>
+        /// Called after the RowTemplate content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        RowTemplate_postRender: [$element, function () { return new lightSwitchApplication.AddEditHitSetItem().findContentItem("RowTemplate"); }],
+        /// <field>
+        /// Called after the Player content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        Player_postRender: [$element, function () { return new lightSwitchApplication.AddEditHitSetItem().findContentItem("Player"); }],
+        /// <field>
+        /// Called after the Value content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        Value_postRender: [$element, function () { return new lightSwitchApplication.AddEditHitSetItem().findContentItem("Value"); }],
+        /// <field>
+        /// Called after the Multiplicity content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        Multiplicity_postRender: [$element, function () { return new lightSwitchApplication.AddEditHitSetItem().findContentItem("Multiplicity"); }],
+        /// <field>
+        /// Called after the right content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        right_postRender: [$element, function () { return new lightSwitchApplication.AddEditHitSetItem().findContentItem("right"); }],
+        /// <field>
+        /// Called after the Turn content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        Turn_postRender: [$element, function () { return new lightSwitchApplication.AddEditHitSetItem().findContentItem("Turn"); }],
+        /// <field>
+        /// Called after the DartNumber content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        DartNumber_postRender: [$element, function () { return new lightSwitchApplication.AddEditHitSetItem().findContentItem("DartNumber"); }],
+        /// <field>
+        /// Called after the Succesful content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        Succesful_postRender: [$element, function () { return new lightSwitchApplication.AddEditHitSetItem().findContentItem("Succesful"); }],
+        /// <field>
+        /// Called after the ThrowDate content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        ThrowDate_postRender: [$element, function () { return new lightSwitchApplication.AddEditHitSetItem().findContentItem("ThrowDate"); }]
     });
 
 }(msls.application));

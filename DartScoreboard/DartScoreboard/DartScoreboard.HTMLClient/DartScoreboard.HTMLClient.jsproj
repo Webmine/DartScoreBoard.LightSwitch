@@ -102,6 +102,7 @@
     </LightSwitchModel>
     <LightSwitchModel Include="Properties\Proxies.lsml" />
     <LightSwitchModel Include="Screens\AddEditGame.lsml" />
+    <LightSwitchModel Include="Screens\AddEditHitSetItem.lsml" />
     <LightSwitchModel Include="Screens\AddEditUser.lsml" />
     <LightSwitchModel Include="Screens\BrowseGameSet.lsml" />
     <LightSwitchModel Include="Screens\BrowseUserSet.lsml" />
