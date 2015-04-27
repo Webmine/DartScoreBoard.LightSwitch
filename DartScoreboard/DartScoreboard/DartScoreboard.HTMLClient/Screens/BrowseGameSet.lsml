@@ -241,24 +241,6 @@
                     </ScreenExpressionTree>
                   </ContentItem.DataSource>
                 </ContentItem>
-                <ContentItem
-                  Name="Id1"
-                  Kind="Value"
-                  DataType=":Int32"
-                  View="Microsoft.LightSwitch.MobileWeb:ValueCustomControl">
-                  <ContentItem.Attributes>
-                    <DisplayName
-                      Value="tzdtz" />
-                  </ContentItem.Attributes>
-                  <ContentItem.DataSource>
-                    <ScreenExpressionTree>
-                      <ChainExpression>
-                        <MemberExpression
-                          Member="GameSetItem/Properties[Id]" />
-                      </ChainExpression>
-                    </ScreenExpressionTree>
-                  </ContentItem.DataSource>
-                </ContentItem>
                 <ContentItem.PropertySources>
                   <ControlPropertySource
                     Property="Microsoft.LightSwitch.MobileWeb:RootControl/Properties[WidthSizingMode]">
@@ -398,8 +380,6 @@
           Name="dialogName"
           ParameterType=":String" />
       </ScreenMethod>
-      <ScreenMethod
-        Name="OpenGameScreen" />
     </Screen.Methods>
     <Screen.Properties>
       <ScreenCollectionProperty

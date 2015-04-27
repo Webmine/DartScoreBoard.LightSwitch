@@ -135,7 +135,6 @@
                 }
             }
         ], [
-            { name: "OpenGameScreen" }
         ]),
 
         BrowseUserSet: $defineScreen(BrowseUserSet, [

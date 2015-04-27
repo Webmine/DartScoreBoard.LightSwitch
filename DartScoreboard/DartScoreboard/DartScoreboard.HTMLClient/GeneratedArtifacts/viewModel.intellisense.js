@@ -343,14 +343,6 @@
             data: lightSwitchApplication.GameSetItem,
             value: Number
         },
-        Id1: {
-            _$class: msls.ContentItem,
-            _$name: "Id1",
-            _$parentName: "rows",
-            screen: lightSwitchApplication.BrowseGameSet,
-            data: lightSwitchApplication.GameSetItem,
-            value: Number
-        },
         Popups: {
             _$class: msls.ContentItem,
             _$name: "Popups",
@@ -370,16 +362,6 @@
         /// <br/>beforeApplyChanges(msls.application.BrowseGameSet screen)
         /// </field>
         beforeApplyChanges: [lightSwitchApplication.BrowseGameSet],
-        /// <field>
-        /// Called to determine if the OpenGameScreen method can be executed.
-        /// <br/>canExecute(msls.application.BrowseGameSet screen)
-        /// </field>
-        OpenGameScreen_canExecute: [lightSwitchApplication.BrowseGameSet],
-        /// <field>
-        /// Called to execute the OpenGameScreen method.
-        /// <br/>execute(msls.application.BrowseGameSet screen)
-        /// </field>
-        OpenGameScreen_execute: [lightSwitchApplication.BrowseGameSet],
         /// <field>
         /// Called after the GamesList content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
@@ -434,12 +416,7 @@
         /// Called after the P2ActualScore content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
-        P2ActualScore_postRender: [$element, function () { return new lightSwitchApplication.BrowseGameSet().findContentItem("P2ActualScore"); }],
-        /// <field>
-        /// Called to render the Id1 content item.
-        /// <br/>render(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        Id1_render: [$element, function () { return new lightSwitchApplication.BrowseGameSet().findContentItem("Id1"); }]
+        P2ActualScore_postRender: [$element, function () { return new lightSwitchApplication.BrowseGameSet().findContentItem("P2ActualScore"); }]
     });
 
     lightSwitchApplication.BrowseUserSet.prototype._$contentItems = {

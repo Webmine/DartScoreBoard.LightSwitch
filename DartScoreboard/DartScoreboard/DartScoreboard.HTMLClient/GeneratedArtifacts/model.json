@@ -3606,16 +3606,6 @@
                                 {
                                   "member": { "__id": "GameSetItem/Properties[P2ActualScore]" }
                                 }
-                              },
-                              {
-                                "displayName": "OpenThisShit",
-                                "name": "Id1",
-                                "kind": "Value",
-                                "view": { "__id": ":ValueCustomControl" },
-                                "dataSource":
-                                {
-                                  "member": { "__id": "GameSetItem/Properties[Id]" }
-                                }
                               }
                             ],
                             "propertySources":
@@ -3746,10 +3736,6 @@
                   "parameterType": { "__id": ":String" }
                 }
               ]
-            },
-            {
-              "id": "BrowseGameSet/Methods[OpenGameScreen]",
-              "name": "OpenGameScreen"
             }
           ],
           "properties":
@@ -4184,11 +4170,6 @@
           "id": "!module/NavigationItems[link1]",
           "name": "link1",
           "method": { "__id": "!module/Methods[showBrowseUserSet]" }
-        },
-        {
-          "id": "!module/NavigationItems[link2]",
-          "name": "link2",
-          "method": { "__id": "!module/Methods[showDartGameScreen]" }
         }
       ]
     }

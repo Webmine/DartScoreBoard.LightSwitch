@@ -42,8 +42,5 @@
     <ApplicationNavigationMethodLink
       Name="link1"
       Method="!module/Methods[showBrowseUserSet]" />
-    <ApplicationNavigationMethodLink
-      Name="link2"
-      Method="!module/Methods[showDartGameScreen]" />
   </Application.NavigationItems>
 </Application>
