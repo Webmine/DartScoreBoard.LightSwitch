@@ -5,7 +5,7 @@ myapp.AddEditGame.created = function (screen) {
     screen.Game.IsFinished = false;
     screen.Game.P1ActualScore = 0;
     screen.Game.P2ActualScore = 0;
-    screen.Game.StartDate = Date.now();
+    screen.Game.StartDate = new Date();
 };
 myapp.AddEditGame.beforeApplyChanges = function (screen) {
     // Write code here.
