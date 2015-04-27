@@ -29,5 +29,7 @@ obj/
 _ReSharper*/
 [Tt]est[Rr]esult*
 packages*/
-GeneratedArtifacts*/
+
 *.lsgen
+LsPkgLastWriteTime.txt
+GeneratedArtifacts*/
