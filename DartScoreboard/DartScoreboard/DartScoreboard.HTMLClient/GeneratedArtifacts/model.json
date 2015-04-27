@@ -2739,6 +2739,14 @@
           "id": "GameSetItem",
           "name": "GameSetItem",
           ":@CreatedModifiedPropertiesEnabled": { },
+          ":@DefaultScreen":
+          {
+            "value": { "__id": "ViewGameSetItem" },
+            ":@ScreenParameterMapping":
+            {
+              "screenParameter": { "__id": "ViewGameSetItem/Properties[GameSetItem]" }
+            }
+          },
           "methods":
           [
             {
@@ -4028,10 +4036,14 @@
           ]
         },
         {
-          "displayName": "Dart Game Screen",
-          "id": "DartGameScreen",
-          "name": "DartGameScreen",
+          "displayName": "View Game Set Item",
+          "id": "ViewGameSetItem",
+          "name": "ViewGameSetItem",
           "launchMode": "Single",
+          ":@SaveChangesTo":
+          {
+            "property": { "__id": "DataWorkspace/Members[ApplicationData]" }
+          },
           "rootContentItem":
           {
             "displayName": "Root Content Item",
@@ -4048,22 +4060,319 @@
                 "childContentItems":
                 [
                   {
-                    "displayName": "Group",
-                    "name": "Group",
+                    "displayName": "Details",
+                    "name": "Details",
                     "kind": "Tab",
                     "view": { "__id": ":RowsLayout" },
                     "childContentItems":
                     [
                       {
-                        "displayName": "skldnflksflksdjf",
-                        "name": "MyCustomControl",
-                        "kind": "ScreenContent",
-                        "view": { "__id": ":ScreenCustomControl" },
+                        "displayName": "columns",
+                        "name": "columns",
+                        "kind": "Details",
+                        "view": { "__id": ":ColumnsLayout" },
+                        "dataSource":
+                        {
+                          "member": { "__id": "ViewGameSetItem/Properties[GameSetItem]" }
+                        },
+                        "childContentItems":
+                        [
+                          {
+                            "displayName": "left",
+                            "name": "left",
+                            "kind": "Group",
+                            "view": { "__id": ":RowsLayout" },
+                            "childContentItems":
+                            [
+                              {
+                                "displayName": "Player1User",
+                                "name": "Player1User",
+                                "kind": "Value",
+                                "view": { "__id": ":Text" },
+                                "dataSource":
+                                {
+                                  "links":
+                                  [
+                                    {
+                                      "member": { "__id": "GameSetItem/Properties[Player1User]" }
+                                    },
+                                    {
+                                      "member": { "__id": "UserSetItem/Properties[Name]" }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "displayName": "Player2User",
+                                "name": "Player2User",
+                                "kind": "Value",
+                                "view": { "__id": ":Text" },
+                                "dataSource":
+                                {
+                                  "links":
+                                  [
+                                    {
+                                      "member": { "__id": "GameSetItem/Properties[Player2User]" }
+                                    },
+                                    {
+                                      "member": { "__id": "UserSetItem/Properties[Name]" }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "displayName": "Created By",
+                                "name": "CreatedBy",
+                                "kind": "Value",
+                                "view": { "__id": ":Text" },
+                                "dataSource":
+                                {
+                                  "member": { "__id": "GameSetItem/Properties[CreatedBy]" }
+                                }
+                              },
+                              {
+                                "displayName": "Created",
+                                "name": "Created",
+                                "kind": "Value",
+                                "view": { "__id": ":Text" },
+                                "dataSource":
+                                {
+                                  "member": { "__id": "GameSetItem/Properties[Created]" }
+                                }
+                              },
+                              {
+                                "displayName": "Modified By",
+                                "name": "ModifiedBy",
+                                "kind": "Value",
+                                "view": { "__id": ":Text" },
+                                "dataSource":
+                                {
+                                  "member": { "__id": "GameSetItem/Properties[ModifiedBy]" }
+                                }
+                              },
+                              {
+                                "displayName": "Modified",
+                                "name": "Modified",
+                                "kind": "Value",
+                                "view": { "__id": ":Text" },
+                                "dataSource":
+                                {
+                                  "member": { "__id": "GameSetItem/Properties[Modified]" }
+                                }
+                              }
+                            ],
+                            "propertySources":
+                            [
+                              {
+                                "property": { "__id": ":RootControl/Properties[MinWidth]" },
+                                "value": 200
+                              },
+                              {
+                                "property": { "__id": ":RootControl/Properties[MaxWidth]" },
+                                "value": 400
+                              }
+                            ]
+                          },
+                          {
+                            "displayName": "right",
+                            "name": "right",
+                            "kind": "Group",
+                            "view": { "__id": ":RowsLayout" },
+                            "childContentItems":
+                            [
+                              {
+                                "displayName": "Is Finished",
+                                "name": "IsFinished",
+                                "kind": "Value",
+                                "view": { "__id": ":Text" },
+                                "dataSource":
+                                {
+                                  "member": { "__id": "GameSetItem/Properties[IsFinished]" }
+                                }
+                              },
+                              {
+                                "displayName": "Start Score",
+                                "name": "StartScore",
+                                "kind": "Value",
+                                "view": { "__id": ":Text" },
+                                "dataSource":
+                                {
+                                  "member": { "__id": "GameSetItem/Properties[StartScore]" }
+                                }
+                              },
+                              {
+                                "displayName": "P1Actual Score",
+                                "name": "P1ActualScore",
+                                "kind": "Value",
+                                "view": { "__id": ":Text" },
+                                "dataSource":
+                                {
+                                  "member": { "__id": "GameSetItem/Properties[P1ActualScore]" }
+                                }
+                              },
+                              {
+                                "displayName": "P2Actual Score",
+                                "name": "P2ActualScore",
+                                "kind": "Value",
+                                "view": { "__id": ":Text" },
+                                "dataSource":
+                                {
+                                  "member": { "__id": "GameSetItem/Properties[P2ActualScore]" }
+                                }
+                              },
+                              {
+                                "displayName": "Start Date",
+                                "name": "StartDate",
+                                "kind": "Value",
+                                "view": { "__id": ":Text" },
+                                "dataSource":
+                                {
+                                  "member": { "__id": "GameSetItem/Properties[StartDate]" }
+                                }
+                              },
+                              {
+                                "displayName": "End Date",
+                                "name": "EndDate",
+                                "kind": "Value",
+                                "view": { "__id": ":Text" },
+                                "dataSource":
+                                {
+                                  "member": { "__id": "GameSetItem/Properties[EndDate]" }
+                                }
+                              }
+                            ],
+                            "propertySources":
+                            [
+                              {
+                                "property": { "__id": ":RootControl/Properties[MinWidth]" },
+                                "value": 200
+                              },
+                              {
+                                "property": { "__id": ":RootControl/Properties[MaxWidth]" },
+                                "value": 400
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "displayName": "Hits Collection",
+                    "name": "HitsCollection",
+                    "kind": "Tab",
+                    "view": { "__id": ":RowsLayout" },
+                    "childContentItems":
+                    [
+                      {
+                        "displayName": "HitsCollection",
+                        "name": "HitsCollection1",
+                        "kind": "Collection",
+                        "view": { "__id": ":TileList" },
+                        "dataSource":
+                        {
+                          "member": { "__id": "ViewGameSetItem/Properties[HitsCollection]" }
+                        },
+                        "childContentItems":
+                        [
+                          {
+                            "displayName": "rows",
+                            "name": "rows",
+                            "kind": "Details",
+                            "view": { "__id": ":RowsLayout" },
+                            "dataSource":
+                            {
+                              "links":
+                              [
+                              ]
+                            },
+                            "childContentItems":
+                            [
+                              {
+                                "displayName": "Id",
+                                "name": "Id",
+                                "kind": "Value",
+                                "view": { "__id": ":Text" },
+                                "dataSource":
+                                {
+                                  "member": { "__id": "HitSetItem/Properties[Id]" }
+                                },
+                                "propertySources":
+                                [
+                                  {
+                                    "property": { "__id": ":RootControl/Properties[FontStyle]" },
+                                    "value": "Large"
+                                  }
+                                ]
+                              },
+                              {
+                                "displayName": "Player",
+                                "name": "Player",
+                                "kind": "Value",
+                                "view": { "__id": ":Text" },
+                                "dataSource":
+                                {
+                                  "links":
+                                  [
+                                    {
+                                      "member": { "__id": "HitSetItem/Properties[Player]" }
+                                    },
+                                    {
+                                      "member": { "__id": "UserSetItem/Properties[Name]" }
+                                    }
+                                  ]
+                                },
+                                "propertySources":
+                                [
+                                  {
+                                    "property": { "__id": ":RootControl/Properties[FontStyle]" },
+                                    "value": "Small"
+                                  }
+                                ]
+                              },
+                              {
+                                "displayName": "Value",
+                                "name": "Value",
+                                "kind": "Value",
+                                "view": { "__id": ":Text" },
+                                "dataSource":
+                                {
+                                  "member": { "__id": "HitSetItem/Properties[Value]" }
+                                },
+                                "propertySources":
+                                [
+                                  {
+                                    "property": { "__id": ":RootControl/Properties[FontStyle]" },
+                                    "value": "Small"
+                                  }
+                                ]
+                              }
+                            ],
+                            "propertySources":
+                            [
+                              {
+                                "property": { "__id": ":RootControl/Properties[WidthSizingMode]" },
+                                "value": "FitToContent"
+                              }
+                            ]
+                          }
+                        ],
                         "propertySources":
                         [
                           {
-                            "property": { "__id": ":RootControl/Properties[AttachedLabelPosition]" },
-                            "value": "Hidden"
+                            "property": { "__id": ":RootCollectionControl/Properties[ItemTap]" },
+                            "source":
+                            {
+                              "links":
+                              [
+                                {
+                                  "member": { "__id": "ViewGameSetItem/Properties[HitsCollection]" }
+                                },
+                                {
+                                  "target": { "__id": "CollectionView$HitSetItem/Methods[viewSelected]" }
+                                }
+                              ]
+                            }
                           }
                         ]
                       }
@@ -4089,28 +4398,68 @@
           "methods":
           [
             {
-              "id": "DartGameScreen/Methods[showTab]",
+              "id": "ViewGameSetItem/Methods[showTab]",
               "name": "showTab",
               "parameters":
               [
                 {
-                  "id": "DartGameScreen/Methods[showTab]/Parameters[tabName]",
+                  "id": "ViewGameSetItem/Methods[showTab]/Parameters[tabName]",
                   "name": "tabName",
                   "parameterType": { "__id": ":String" }
                 }
               ]
             },
             {
-              "id": "DartGameScreen/Methods[showDialog]",
+              "id": "ViewGameSetItem/Methods[showDialog]",
               "name": "showDialog",
               "parameters":
               [
                 {
-                  "id": "DartGameScreen/Methods[showDialog]/Parameters[dialogName]",
+                  "id": "ViewGameSetItem/Methods[showDialog]/Parameters[dialogName]",
                   "name": "dialogName",
                   "parameterType": { "__id": ":String" }
                 }
               ]
+            }
+          ],
+          "properties":
+          [
+            {
+              "id": "ViewGameSetItem/Properties[GameSetItem]",
+              "name": "GameSetItem",
+              "elementType": { "__id": "GameSetItem" },
+              "propertyType": { "__id": "GameSetItem" },
+              ":@IsParameter": { }
+            },
+            {
+              "id": "ViewGameSetItem/Properties[HitsCollection]",
+              "name": "HitsCollection",
+              "pageSize": 15,
+              "elementType": { "__id": "HitSetItem" },
+              "propertyType": { "__id": "CollectionView$HitSetItem" },
+              "query":
+              {
+                "id": "ViewGameSetItem/Properties[HitsCollection]/Query",
+                "name": "HitsCollectionQuery",
+                "elementType": { "__id": "HitSetItem" },
+                "returnType": { "__id": "HitSetItem*" },
+                "source":
+                {
+                  "links":
+                  [
+                    {
+                      "member": { "__id": "ViewGameSetItem/Properties[GameSetItem]" }
+                    },
+                    {
+                      "member": { "__id": "GameSetItem/Properties[HitsCollection]" }
+                    }
+                  ]
+                }
+              },
+              "source":
+              {
+                "target": { "__id": "ViewGameSetItem/Properties[HitsCollection]/Query" }
+              }
             }
           ]
         }
@@ -4154,9 +4503,17 @@
           ":@ShowScreenMethod": { "targetScreen": { "__id": "BrowseUserSet" } }
         },
         {
-          "id": "!module/Methods[showDartGameScreen]",
-          "name": "showDartGameScreen",
-          ":@ShowScreenMethod": { "targetScreen": { "__id": "DartGameScreen" } }
+          "id": "!module/Methods[showViewGameSetItem]",
+          "name": "showViewGameSetItem",
+          ":@ShowScreenMethod": { "targetScreen": { "__id": "ViewGameSetItem" } },
+          "parameters":
+          [
+            {
+              "id": "!module/Methods[showViewGameSetItem]/Parameters[GameSetItem]",
+              "name": "GameSetItem",
+              "parameterType": { "__id": "GameSetItem" }
+            }
+          ]
         }
       ],
       "navigationItems":

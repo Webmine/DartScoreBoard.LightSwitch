@@ -531,58 +531,324 @@
         Lose_postRender: [$element, function () { return new lightSwitchApplication.BrowseUserSet().findContentItem("Lose"); }]
     });
 
-    lightSwitchApplication.DartGameScreen.prototype._$contentItems = {
+    lightSwitchApplication.ViewGameSetItem.prototype._$contentItems = {
         Tabs: {
             _$class: msls.ContentItem,
             _$name: "Tabs",
             _$parentName: "RootContentItem",
-            screen: lightSwitchApplication.DartGameScreen
+            screen: lightSwitchApplication.ViewGameSetItem
         },
-        Group: {
+        Details: {
             _$class: msls.ContentItem,
-            _$name: "Group",
+            _$name: "Details",
             _$parentName: "Tabs",
-            screen: lightSwitchApplication.DartGameScreen,
-            data: lightSwitchApplication.DartGameScreen,
-            value: lightSwitchApplication.DartGameScreen
+            screen: lightSwitchApplication.ViewGameSetItem,
+            data: lightSwitchApplication.ViewGameSetItem,
+            value: lightSwitchApplication.ViewGameSetItem
         },
-        MyCustomControl: {
+        columns: {
             _$class: msls.ContentItem,
-            _$name: "MyCustomControl",
-            _$parentName: "Group",
-            screen: lightSwitchApplication.DartGameScreen,
-            data: lightSwitchApplication.DartGameScreen,
-            value: lightSwitchApplication.DartGameScreen
+            _$name: "columns",
+            _$parentName: "Details",
+            screen: lightSwitchApplication.ViewGameSetItem,
+            data: lightSwitchApplication.ViewGameSetItem,
+            value: lightSwitchApplication.GameSetItem
+        },
+        left: {
+            _$class: msls.ContentItem,
+            _$name: "left",
+            _$parentName: "columns",
+            screen: lightSwitchApplication.ViewGameSetItem,
+            data: lightSwitchApplication.GameSetItem,
+            value: lightSwitchApplication.GameSetItem
+        },
+        Player1User: {
+            _$class: msls.ContentItem,
+            _$name: "Player1User",
+            _$parentName: "left",
+            screen: lightSwitchApplication.ViewGameSetItem,
+            data: lightSwitchApplication.GameSetItem,
+            value: lightSwitchApplication.UserSetItem
+        },
+        Player2User: {
+            _$class: msls.ContentItem,
+            _$name: "Player2User",
+            _$parentName: "left",
+            screen: lightSwitchApplication.ViewGameSetItem,
+            data: lightSwitchApplication.GameSetItem,
+            value: lightSwitchApplication.UserSetItem
+        },
+        CreatedBy: {
+            _$class: msls.ContentItem,
+            _$name: "CreatedBy",
+            _$parentName: "left",
+            screen: lightSwitchApplication.ViewGameSetItem,
+            data: lightSwitchApplication.GameSetItem,
+            value: String
+        },
+        Created: {
+            _$class: msls.ContentItem,
+            _$name: "Created",
+            _$parentName: "left",
+            screen: lightSwitchApplication.ViewGameSetItem,
+            data: lightSwitchApplication.GameSetItem,
+            value: Date
+        },
+        ModifiedBy: {
+            _$class: msls.ContentItem,
+            _$name: "ModifiedBy",
+            _$parentName: "left",
+            screen: lightSwitchApplication.ViewGameSetItem,
+            data: lightSwitchApplication.GameSetItem,
+            value: String
+        },
+        Modified: {
+            _$class: msls.ContentItem,
+            _$name: "Modified",
+            _$parentName: "left",
+            screen: lightSwitchApplication.ViewGameSetItem,
+            data: lightSwitchApplication.GameSetItem,
+            value: Date
+        },
+        right: {
+            _$class: msls.ContentItem,
+            _$name: "right",
+            _$parentName: "columns",
+            screen: lightSwitchApplication.ViewGameSetItem,
+            data: lightSwitchApplication.GameSetItem,
+            value: lightSwitchApplication.GameSetItem
+        },
+        IsFinished: {
+            _$class: msls.ContentItem,
+            _$name: "IsFinished",
+            _$parentName: "right",
+            screen: lightSwitchApplication.ViewGameSetItem,
+            data: lightSwitchApplication.GameSetItem,
+            value: Boolean
+        },
+        StartScore: {
+            _$class: msls.ContentItem,
+            _$name: "StartScore",
+            _$parentName: "right",
+            screen: lightSwitchApplication.ViewGameSetItem,
+            data: lightSwitchApplication.GameSetItem,
+            value: Number
+        },
+        P1ActualScore: {
+            _$class: msls.ContentItem,
+            _$name: "P1ActualScore",
+            _$parentName: "right",
+            screen: lightSwitchApplication.ViewGameSetItem,
+            data: lightSwitchApplication.GameSetItem,
+            value: Number
+        },
+        P2ActualScore: {
+            _$class: msls.ContentItem,
+            _$name: "P2ActualScore",
+            _$parentName: "right",
+            screen: lightSwitchApplication.ViewGameSetItem,
+            data: lightSwitchApplication.GameSetItem,
+            value: Number
+        },
+        StartDate: {
+            _$class: msls.ContentItem,
+            _$name: "StartDate",
+            _$parentName: "right",
+            screen: lightSwitchApplication.ViewGameSetItem,
+            data: lightSwitchApplication.GameSetItem,
+            value: Date
+        },
+        EndDate: {
+            _$class: msls.ContentItem,
+            _$name: "EndDate",
+            _$parentName: "right",
+            screen: lightSwitchApplication.ViewGameSetItem,
+            data: lightSwitchApplication.GameSetItem,
+            value: Date
+        },
+        HitsCollection: {
+            _$class: msls.ContentItem,
+            _$name: "HitsCollection",
+            _$parentName: "Tabs",
+            screen: lightSwitchApplication.ViewGameSetItem,
+            data: lightSwitchApplication.ViewGameSetItem,
+            value: lightSwitchApplication.ViewGameSetItem
+        },
+        HitsCollection1: {
+            _$class: msls.ContentItem,
+            _$name: "HitsCollection1",
+            _$parentName: "HitsCollection",
+            screen: lightSwitchApplication.ViewGameSetItem,
+            data: lightSwitchApplication.ViewGameSetItem,
+            value: {
+                _$class: msls.VisualCollection,
+                screen: lightSwitchApplication.ViewGameSetItem,
+                _$entry: {
+                    elementType: lightSwitchApplication.HitSetItem
+                }
+            }
+        },
+        rows: {
+            _$class: msls.ContentItem,
+            _$name: "rows",
+            _$parentName: "HitsCollection1",
+            screen: lightSwitchApplication.ViewGameSetItem,
+            data: lightSwitchApplication.HitSetItem,
+            value: lightSwitchApplication.HitSetItem
+        },
+        Id: {
+            _$class: msls.ContentItem,
+            _$name: "Id",
+            _$parentName: "rows",
+            screen: lightSwitchApplication.ViewGameSetItem,
+            data: lightSwitchApplication.HitSetItem,
+            value: Number
+        },
+        Player: {
+            _$class: msls.ContentItem,
+            _$name: "Player",
+            _$parentName: "rows",
+            screen: lightSwitchApplication.ViewGameSetItem,
+            data: lightSwitchApplication.HitSetItem,
+            value: lightSwitchApplication.UserSetItem
+        },
+        Value: {
+            _$class: msls.ContentItem,
+            _$name: "Value",
+            _$parentName: "rows",
+            screen: lightSwitchApplication.ViewGameSetItem,
+            data: lightSwitchApplication.HitSetItem,
+            value: Number
         },
         Popups: {
             _$class: msls.ContentItem,
             _$name: "Popups",
             _$parentName: "RootContentItem",
-            screen: lightSwitchApplication.DartGameScreen
+            screen: lightSwitchApplication.ViewGameSetItem
         }
     };
 
-    msls._addEntryPoints(lightSwitchApplication.DartGameScreen, {
+    msls._addEntryPoints(lightSwitchApplication.ViewGameSetItem, {
         /// <field>
-        /// Called when a new DartGameScreen screen is created.
-        /// <br/>created(msls.application.DartGameScreen screen)
+        /// Called when a new ViewGameSetItem screen is created.
+        /// <br/>created(msls.application.ViewGameSetItem screen)
         /// </field>
-        created: [lightSwitchApplication.DartGameScreen],
+        created: [lightSwitchApplication.ViewGameSetItem],
         /// <field>
-        /// Called before changes on an active DartGameScreen screen are applied.
-        /// <br/>beforeApplyChanges(msls.application.DartGameScreen screen)
+        /// Called before changes on an active ViewGameSetItem screen are applied.
+        /// <br/>beforeApplyChanges(msls.application.ViewGameSetItem screen)
         /// </field>
-        beforeApplyChanges: [lightSwitchApplication.DartGameScreen],
+        beforeApplyChanges: [lightSwitchApplication.ViewGameSetItem],
         /// <field>
-        /// Called after the Group content item has been rendered.
+        /// Called after the Details content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
-        Group_postRender: [$element, function () { return new lightSwitchApplication.DartGameScreen().findContentItem("Group"); }],
+        Details_postRender: [$element, function () { return new lightSwitchApplication.ViewGameSetItem().findContentItem("Details"); }],
         /// <field>
-        /// Called to render the MyCustomControl content item.
-        /// <br/>render(HTMLElement element, msls.ContentItem contentItem)
+        /// Called after the columns content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
-        MyCustomControl_render: [$element, function () { return new lightSwitchApplication.DartGameScreen().findContentItem("MyCustomControl"); }]
+        columns_postRender: [$element, function () { return new lightSwitchApplication.ViewGameSetItem().findContentItem("columns"); }],
+        /// <field>
+        /// Called after the left content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        left_postRender: [$element, function () { return new lightSwitchApplication.ViewGameSetItem().findContentItem("left"); }],
+        /// <field>
+        /// Called after the Player1User content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        Player1User_postRender: [$element, function () { return new lightSwitchApplication.ViewGameSetItem().findContentItem("Player1User"); }],
+        /// <field>
+        /// Called after the Player2User content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        Player2User_postRender: [$element, function () { return new lightSwitchApplication.ViewGameSetItem().findContentItem("Player2User"); }],
+        /// <field>
+        /// Called after the CreatedBy content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        CreatedBy_postRender: [$element, function () { return new lightSwitchApplication.ViewGameSetItem().findContentItem("CreatedBy"); }],
+        /// <field>
+        /// Called after the Created content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        Created_postRender: [$element, function () { return new lightSwitchApplication.ViewGameSetItem().findContentItem("Created"); }],
+        /// <field>
+        /// Called after the ModifiedBy content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        ModifiedBy_postRender: [$element, function () { return new lightSwitchApplication.ViewGameSetItem().findContentItem("ModifiedBy"); }],
+        /// <field>
+        /// Called after the Modified content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        Modified_postRender: [$element, function () { return new lightSwitchApplication.ViewGameSetItem().findContentItem("Modified"); }],
+        /// <field>
+        /// Called after the right content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        right_postRender: [$element, function () { return new lightSwitchApplication.ViewGameSetItem().findContentItem("right"); }],
+        /// <field>
+        /// Called after the IsFinished content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        IsFinished_postRender: [$element, function () { return new lightSwitchApplication.ViewGameSetItem().findContentItem("IsFinished"); }],
+        /// <field>
+        /// Called after the StartScore content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        StartScore_postRender: [$element, function () { return new lightSwitchApplication.ViewGameSetItem().findContentItem("StartScore"); }],
+        /// <field>
+        /// Called after the P1ActualScore content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        P1ActualScore_postRender: [$element, function () { return new lightSwitchApplication.ViewGameSetItem().findContentItem("P1ActualScore"); }],
+        /// <field>
+        /// Called after the P2ActualScore content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        P2ActualScore_postRender: [$element, function () { return new lightSwitchApplication.ViewGameSetItem().findContentItem("P2ActualScore"); }],
+        /// <field>
+        /// Called after the StartDate content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        StartDate_postRender: [$element, function () { return new lightSwitchApplication.ViewGameSetItem().findContentItem("StartDate"); }],
+        /// <field>
+        /// Called after the EndDate content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        EndDate_postRender: [$element, function () { return new lightSwitchApplication.ViewGameSetItem().findContentItem("EndDate"); }],
+        /// <field>
+        /// Called after the HitsCollection content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        HitsCollection_postRender: [$element, function () { return new lightSwitchApplication.ViewGameSetItem().findContentItem("HitsCollection"); }],
+        /// <field>
+        /// Called after the HitsCollection1 content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        HitsCollection1_postRender: [$element, function () { return new lightSwitchApplication.ViewGameSetItem().findContentItem("HitsCollection1"); }],
+        /// <field>
+        /// Called after the rows content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        rows_postRender: [$element, function () { return new lightSwitchApplication.ViewGameSetItem().findContentItem("rows"); }],
+        /// <field>
+        /// Called after the Id content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        Id_postRender: [$element, function () { return new lightSwitchApplication.ViewGameSetItem().findContentItem("Id"); }],
+        /// <field>
+        /// Called after the Player content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        Player_postRender: [$element, function () { return new lightSwitchApplication.ViewGameSetItem().findContentItem("Player"); }],
+        /// <field>
+        /// Called after the Value content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        Value_postRender: [$element, function () { return new lightSwitchApplication.ViewGameSetItem().findContentItem("Value"); }]
     });
 
 }(msls.application));

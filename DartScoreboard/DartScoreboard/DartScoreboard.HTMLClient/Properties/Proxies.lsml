@@ -16,12 +16,6 @@
         Target="ServiceInterface:UserSetItem" />
     </EntityType.Attributes>
   </EntityType>
-  <EntityType>
-    <EntityType.Attributes>
-      <Proxy
-        Target="ServiceInterface:GameSetItem" />
-    </EntityType.Attributes>
-  </EntityType>
   <Association>
     <Association.Attributes>
       <Proxy

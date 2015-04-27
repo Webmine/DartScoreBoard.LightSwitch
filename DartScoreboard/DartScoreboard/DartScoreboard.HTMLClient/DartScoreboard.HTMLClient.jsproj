@@ -96,6 +96,7 @@
     </ServiceMetadataReference>
   </ItemGroup>
   <ItemGroup>
+    <LightSwitchModel Include="Properties\ApplicationData\GameSet.lsml" />
     <LightSwitchModel Include="Properties\Client.lsml">
       <ProjectCritical>true</ProjectCritical>
     </LightSwitchModel>
@@ -104,6 +105,7 @@
     <LightSwitchModel Include="Screens\AddEditUser.lsml" />
     <LightSwitchModel Include="Screens\BrowseGameSet.lsml" />
     <LightSwitchModel Include="Screens\BrowseUserSet.lsml" />
+    <LightSwitchModel Include="Screens\ViewGameSetItem.lsml" />
   </ItemGroup>
   <ItemGroup>
     <_ClientBuildFile Include="GeneratedArtifacts\model.json">

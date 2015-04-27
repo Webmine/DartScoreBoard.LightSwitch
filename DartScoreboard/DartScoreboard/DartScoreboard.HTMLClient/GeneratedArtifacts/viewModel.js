@@ -96,9 +96,9 @@
         $Screen.call(this, dataWorkspace, "BrowseUserSet", parameters);
     }
 
-    function DartGameScreen(parameters, dataWorkspace) {
+    function ViewGameSetItem(parameters, dataWorkspace) {
         /// <summary>
-        /// Represents the DartGameScreen screen.
+        /// Represents the ViewGameSetItem screen.
         /// </summary>
         /// <param name="parameters" type="Array">
         /// An array of screen parameter values.
@@ -106,13 +106,19 @@
         /// <param name="dataWorkspace" type="msls.application.DataWorkspace" optional="true">
         /// An existing data workspace for this screen to use. By default, a new data workspace is created.
         /// </param>
-        /// <field name="details" type="msls.application.DartGameScreen.Details">
+        /// <field name="GameSetItem" type="msls.application.GameSetItem">
+        /// Gets or sets the gameSetItem for this screen.
+        /// </field>
+        /// <field name="HitsCollection" type="msls.VisualCollection" elementType="msls.application.HitSetItem">
+        /// Gets the hitsCollection for this screen.
+        /// </field>
+        /// <field name="details" type="msls.application.ViewGameSetItem.Details">
         /// Gets the details for this screen.
         /// </field>
         if (!dataWorkspace) {
             dataWorkspace = new lightSwitchApplication.DataWorkspace();
         }
-        $Screen.call(this, dataWorkspace, "DartGameScreen", parameters);
+        $Screen.call(this, dataWorkspace, "ViewGameSetItem", parameters);
     }
 
     msls._addToNamespace("msls.application", {
@@ -147,7 +153,20 @@
         ], [
         ]),
 
-        DartGameScreen: $defineScreen(DartGameScreen, [
+        ViewGameSetItem: $defineScreen(ViewGameSetItem, [
+            { name: "GameSetItem", kind: "local", type: lightSwitchApplication.GameSetItem },
+            {
+                name: "HitsCollection", kind: "collection", elementType: lightSwitchApplication.HitSetItem,
+                getNavigationProperty: function () {
+                    if (this.owner.GameSetItem) {
+                        return this.owner.GameSetItem.details.properties.HitsCollection;
+                    }
+                    return null;
+                },
+                appendQuery: function () {
+                    return this.expand("Player");
+                }
+            }
         ], [
         ]),
 
@@ -199,16 +218,16 @@
             return lightSwitchApplication.showScreen("BrowseUserSet", parameters, options);
         }),
 
-        showDartGameScreen: $defineShowScreen(function showDartGameScreen(options) {
+        showViewGameSetItem: $defineShowScreen(function showViewGameSetItem(GameSetItem, options) {
             /// <summary>
-            /// Asynchronously navigates forward to the DartGameScreen screen.
+            /// Asynchronously navigates forward to the ViewGameSetItem screen.
             /// </summary>
             /// <param name="options" optional="true">
             /// An object that provides one or more of the following options:<br/>- beforeShown: a function that is called after boundary behavior has been applied but before the screen is shown.<br/>+ Signature: beforeShown(screen)<br/>- afterClosed: a function that is called after boundary behavior has been applied and the screen has been closed.<br/>+ Signature: afterClosed(screen, action : msls.NavigateBackAction)
             /// </param>
             /// <returns type="WinJS.Promise" />
-            var parameters = Array.prototype.slice.call(arguments, 0, 0);
-            return lightSwitchApplication.showScreen("DartGameScreen", parameters, options);
+            var parameters = Array.prototype.slice.call(arguments, 0, 1);
+            return lightSwitchApplication.showScreen("ViewGameSetItem", parameters, options);
         })
 
     });
