@@ -2251,6 +2251,64 @@
           ]
         },
         {
+          "id": "UserSetItem*",
+          "name": "UserSetItem*",
+          "kind": "Enumerable",
+          "elementType": { "__id": "UserSetItem" }
+        },
+        {
+          "id": "CollectionView$UserSetItem",
+          "name": "CollectionView$UserSetItem",
+          "kind": "CollectionView",
+          "elementType": { "__id": "UserSetItem" },
+          "methods":
+          [
+            {
+              "id": "CollectionView$UserSetItem/Methods[addNew]",
+              "name": "addNew",
+              "returnType": { "__id": "UserSetItem" }
+            },
+            {
+              "id": "CollectionView$UserSetItem/Methods[addAndEditNew]",
+              "name": "addAndEditNew",
+              "returnType": { "__id": "UserSetItem" }
+            },
+            {
+              "id": "CollectionView$UserSetItem/Methods[showSearch]",
+              "name": "showSearch",
+              "returnType": { "__id": "UserSetItem" }
+            },
+            {
+              "id": "CollectionView$UserSetItem/Methods[editSelected]",
+              "name": "editSelected"
+            },
+            {
+              "id": "CollectionView$UserSetItem/Methods[deleteSelected]",
+              "name": "deleteSelected"
+            },
+            {
+              "id": "CollectionView$UserSetItem/Methods[removeSelected]",
+              "name": "removeSelected"
+            },
+            {
+              "id": "CollectionView$UserSetItem/Methods[refresh]",
+              "name": "refresh"
+            },
+            {
+              "id": "CollectionView$UserSetItem/Methods[viewSelected]",
+              "name": "viewSelected"
+            }
+          ],
+          "properties":
+          [
+            {
+              "id": "CollectionView$UserSetItem/Properties[selectedItem]",
+              "name": "selectedItem",
+              "propertyType": { "__id": "UserSetItem" }
+            }
+          ]
+        },
+        {
           "id": "GameSetItem*",
           "name": "GameSetItem*",
           "kind": "Enumerable",
@@ -2309,60 +2367,157 @@
           ]
         },
         {
-          "id": "UserSetItem*",
-          "name": "UserSetItem*",
-          "kind": "Enumerable",
-          "elementType": { "__id": "UserSetItem" }
-        },
-        {
-          "id": "CollectionView$UserSetItem",
-          "name": "CollectionView$UserSetItem",
-          "kind": "CollectionView",
-          "elementType": { "__id": "UserSetItem" },
+          "__isEntityType": 1,
+          ":@SummaryProperty": { "property": { "__id": "GameSetItem/Properties[Id]" } },
+          "id": "GameSetItem",
+          "name": "GameSetItem",
+          ":@CreatedModifiedPropertiesEnabled": { },
+          ":@DefaultScreen":
+          {
+            "value": { "__id": "ViewGameSetItem" },
+            ":@ScreenParameterMapping":
+            {
+              "screenParameter": { "__id": "ViewGameSetItem/Properties[GameSetItem]" }
+            }
+          },
           "methods":
           [
             {
-              "id": "CollectionView$UserSetItem/Methods[addNew]",
-              "name": "addNew",
-              "returnType": { "__id": "UserSetItem" }
+              "id": "GameSetItem/Methods[deleteEntity]",
+              "name": "deleteEntity"
             },
             {
-              "id": "CollectionView$UserSetItem/Methods[addAndEditNew]",
-              "name": "addAndEditNew",
-              "returnType": { "__id": "UserSetItem" }
+              "id": "GameSetItem/Methods[edit]",
+              "name": "edit"
             },
             {
-              "id": "CollectionView$UserSetItem/Methods[showSearch]",
-              "name": "showSearch",
-              "returnType": { "__id": "UserSetItem" }
-            },
-            {
-              "id": "CollectionView$UserSetItem/Methods[editSelected]",
-              "name": "editSelected"
-            },
-            {
-              "id": "CollectionView$UserSetItem/Methods[deleteSelected]",
-              "name": "deleteSelected"
-            },
-            {
-              "id": "CollectionView$UserSetItem/Methods[removeSelected]",
-              "name": "removeSelected"
-            },
-            {
-              "id": "CollectionView$UserSetItem/Methods[refresh]",
-              "name": "refresh"
-            },
-            {
-              "id": "CollectionView$UserSetItem/Methods[viewSelected]",
-              "name": "viewSelected"
+              "id": "GameSetItem/Methods[view]",
+              "name": "view"
             }
           ],
           "properties":
           [
             {
-              "id": "CollectionView$UserSetItem/Properties[selectedItem]",
-              "name": "selectedItem",
-              "propertyType": { "__id": "UserSetItem" }
+              "__isKeyProperty": 1,
+              "id": "GameSetItem/Properties[Id]",
+              "name": "Id",
+              "isReadOnly": true,
+              "propertyType": { "__id": ":Int32" },
+              ":@Required": { },
+              ":@NotSearchable": { }
+            },
+            {
+              "id": "GameSetItem/Properties[Player1User]",
+              "name": "Player1User",
+              "association": { "__id": "GameSetItem_UserSetItem" },
+              "elementType": { "__id": "UserSetItem" },
+              "fromEnd": { "__id": "GameSetItem_UserSetItem/Ends[GameSetItem]" },
+              "propertyType": { "__id": "UserSetItem" },
+              "toEnd": { "__id": "GameSetItem_UserSetItem/Ends[UserSetItem]" }
+            },
+            {
+              "id": "GameSetItem/Properties[Player2User]",
+              "name": "Player2User",
+              "association": { "__id": "GameSetItem_UserSetItem1" },
+              "elementType": { "__id": "UserSetItem" },
+              "fromEnd": { "__id": "GameSetItem_UserSetItem1/Ends[GameSetItem]" },
+              "propertyType": { "__id": "UserSetItem" },
+              "toEnd": { "__id": "GameSetItem_UserSetItem1/Ends[UserSetItem]" }
+            },
+            {
+              "id": "GameSetItem/Properties[CreatedBy]",
+              "name": "CreatedBy",
+              "isReadOnly": true,
+              "propertyType": { "__id": ":Person?" },
+              ":@NotSearchable": { },
+              ":@MaxLength":
+              {
+                "value": 255
+              }
+            },
+            {
+              "id": "GameSetItem/Properties[Created]",
+              "name": "Created",
+              "isReadOnly": true,
+              "propertyType": { "__id": ":DateTimeOffset?" },
+              ":@NotSearchable": { }
+            },
+            {
+              "id": "GameSetItem/Properties[ModifiedBy]",
+              "name": "ModifiedBy",
+              "isReadOnly": true,
+              "propertyType": { "__id": ":Person?" },
+              ":@NotSearchable": { },
+              ":@MaxLength":
+              {
+                "value": 255
+              }
+            },
+            {
+              "id": "GameSetItem/Properties[Modified]",
+              "name": "Modified",
+              "isReadOnly": true,
+              "propertyType": { "__id": ":DateTimeOffset?" },
+              ":@NotSearchable": { }
+            },
+            {
+              "id": "GameSetItem/Properties[RowVersion]",
+              "name": "RowVersion",
+              "isReadOnly": true,
+              "propertyType": { "__id": ":RowVersion" },
+              ":@Hidden": { },
+              ":@UseForConcurrency": { },
+              ":@NotSearchable": { }
+            },
+            {
+              "id": "GameSetItem/Properties[IsFinished]",
+              "name": "IsFinished",
+              "propertyType": { "__id": ":Boolean" },
+              ":@Required": { },
+              ":@NotSearchable": { }
+            },
+            {
+              "id": "GameSetItem/Properties[StartScore]",
+              "name": "StartScore",
+              "propertyType": { "__id": ":Int32" },
+              ":@Required": { },
+              ":@NotSearchable": { }
+            },
+            {
+              "id": "GameSetItem/Properties[P1ActualScore]",
+              "name": "P1ActualScore",
+              "propertyType": { "__id": ":Int32" },
+              ":@Required": { },
+              ":@NotSearchable": { }
+            },
+            {
+              "id": "GameSetItem/Properties[P2ActualScore]",
+              "name": "P2ActualScore",
+              "propertyType": { "__id": ":Int32" },
+              ":@Required": { },
+              ":@NotSearchable": { }
+            },
+            {
+              "id": "GameSetItem/Properties[StartDate]",
+              "name": "StartDate",
+              "propertyType": { "__id": ":DateTime" },
+              ":@Required": { },
+              ":@NotSearchable": { }
+            },
+            {
+              "id": "GameSetItem/Properties[EndDate]",
+              "name": "EndDate",
+              "propertyType": { "__id": ":DateTime?" },
+              ":@NotSearchable": { }
+            },
+            {
+              "id": "GameSetItem/Properties[HitsCollection]",
+              "name": "HitsCollection",
+              "association": { "__id": "HitSetItem_GameSetItem" },
+              "elementType": { "__id": "HitSetItem" },
+              "fromEnd": { "__id": "HitSetItem_GameSetItem/Ends[GameSetItem]" },
+              "propertyType": { "__id": "HitSetItem*" },
+              "toEnd": { "__id": "HitSetItem_GameSetItem/Ends[HitSetItem]" }
             }
           ]
         },
@@ -2730,161 +2885,6 @@
               ":@Hidden": { },
               ":@UseForConcurrency": { },
               ":@NotSearchable": { }
-            }
-          ]
-        },
-        {
-          "__isEntityType": 1,
-          ":@SummaryProperty": { "property": { "__id": "GameSetItem/Properties[Id]" } },
-          "id": "GameSetItem",
-          "name": "GameSetItem",
-          ":@CreatedModifiedPropertiesEnabled": { },
-          ":@DefaultScreen":
-          {
-            "value": { "__id": "ViewGameSetItem" },
-            ":@ScreenParameterMapping":
-            {
-              "screenParameter": { "__id": "ViewGameSetItem/Properties[GameSetItem]" }
-            }
-          },
-          "methods":
-          [
-            {
-              "id": "GameSetItem/Methods[deleteEntity]",
-              "name": "deleteEntity"
-            },
-            {
-              "id": "GameSetItem/Methods[edit]",
-              "name": "edit"
-            },
-            {
-              "id": "GameSetItem/Methods[view]",
-              "name": "view"
-            }
-          ],
-          "properties":
-          [
-            {
-              "__isKeyProperty": 1,
-              "id": "GameSetItem/Properties[Id]",
-              "name": "Id",
-              "isReadOnly": true,
-              "propertyType": { "__id": ":Int32" },
-              ":@Required": { },
-              ":@NotSearchable": { }
-            },
-            {
-              "id": "GameSetItem/Properties[Player1User]",
-              "name": "Player1User",
-              "association": { "__id": "GameSetItem_UserSetItem" },
-              "elementType": { "__id": "UserSetItem" },
-              "fromEnd": { "__id": "GameSetItem_UserSetItem/Ends[GameSetItem]" },
-              "propertyType": { "__id": "UserSetItem" },
-              "toEnd": { "__id": "GameSetItem_UserSetItem/Ends[UserSetItem]" }
-            },
-            {
-              "id": "GameSetItem/Properties[Player2User]",
-              "name": "Player2User",
-              "association": { "__id": "GameSetItem_UserSetItem1" },
-              "elementType": { "__id": "UserSetItem" },
-              "fromEnd": { "__id": "GameSetItem_UserSetItem1/Ends[GameSetItem]" },
-              "propertyType": { "__id": "UserSetItem" },
-              "toEnd": { "__id": "GameSetItem_UserSetItem1/Ends[UserSetItem]" }
-            },
-            {
-              "id": "GameSetItem/Properties[CreatedBy]",
-              "name": "CreatedBy",
-              "isReadOnly": true,
-              "propertyType": { "__id": ":Person?" },
-              ":@NotSearchable": { },
-              ":@MaxLength":
-              {
-                "value": 255
-              }
-            },
-            {
-              "id": "GameSetItem/Properties[Created]",
-              "name": "Created",
-              "isReadOnly": true,
-              "propertyType": { "__id": ":DateTimeOffset?" },
-              ":@NotSearchable": { }
-            },
-            {
-              "id": "GameSetItem/Properties[ModifiedBy]",
-              "name": "ModifiedBy",
-              "isReadOnly": true,
-              "propertyType": { "__id": ":Person?" },
-              ":@NotSearchable": { },
-              ":@MaxLength":
-              {
-                "value": 255
-              }
-            },
-            {
-              "id": "GameSetItem/Properties[Modified]",
-              "name": "Modified",
-              "isReadOnly": true,
-              "propertyType": { "__id": ":DateTimeOffset?" },
-              ":@NotSearchable": { }
-            },
-            {
-              "id": "GameSetItem/Properties[RowVersion]",
-              "name": "RowVersion",
-              "isReadOnly": true,
-              "propertyType": { "__id": ":RowVersion" },
-              ":@Hidden": { },
-              ":@UseForConcurrency": { },
-              ":@NotSearchable": { }
-            },
-            {
-              "id": "GameSetItem/Properties[IsFinished]",
-              "name": "IsFinished",
-              "propertyType": { "__id": ":Boolean" },
-              ":@Required": { },
-              ":@NotSearchable": { }
-            },
-            {
-              "id": "GameSetItem/Properties[StartScore]",
-              "name": "StartScore",
-              "propertyType": { "__id": ":Int32" },
-              ":@Required": { },
-              ":@NotSearchable": { }
-            },
-            {
-              "id": "GameSetItem/Properties[P1ActualScore]",
-              "name": "P1ActualScore",
-              "propertyType": { "__id": ":Int32" },
-              ":@Required": { },
-              ":@NotSearchable": { }
-            },
-            {
-              "id": "GameSetItem/Properties[P2ActualScore]",
-              "name": "P2ActualScore",
-              "propertyType": { "__id": ":Int32" },
-              ":@Required": { },
-              ":@NotSearchable": { }
-            },
-            {
-              "id": "GameSetItem/Properties[StartDate]",
-              "name": "StartDate",
-              "propertyType": { "__id": ":DateTime" },
-              ":@Required": { },
-              ":@NotSearchable": { }
-            },
-            {
-              "id": "GameSetItem/Properties[EndDate]",
-              "name": "EndDate",
-              "propertyType": { "__id": ":DateTime?" },
-              ":@NotSearchable": { }
-            },
-            {
-              "id": "GameSetItem/Properties[HitsCollection]",
-              "name": "HitsCollection",
-              "association": { "__id": "HitSetItem_GameSetItem" },
-              "elementType": { "__id": "HitSetItem" },
-              "fromEnd": { "__id": "HitSetItem_GameSetItem/Ends[GameSetItem]" },
-              "propertyType": { "__id": "HitSetItem*" },
-              "toEnd": { "__id": "HitSetItem_GameSetItem/Ends[HitSetItem]" }
             }
           ]
         },
